@@ -1,0 +1,13 @@
+windows:
+  - name: sfodev.r101-lt-perf
+    root: ~
+    layout: tiled
+    panes:
+      - ssh test-sfo9938
+      - ssh test-sfo9939 
+      - ssh test-sfo9940 
+      - ssh test-sfo9941
+      - ssh test-sfo9942
+      - ssh test-sfo9980
+      - ssh test-sfo9985      
+      

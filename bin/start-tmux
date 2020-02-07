@@ -1,0 +1,6 @@
+#!/bin/bash
+tmux new-session \; \
+  split-window -h -p 50 \; \
+  split-window -v -p 80 \; \
+  select-pane -t 1 \; \
+  split-window -v -p 80 \; \

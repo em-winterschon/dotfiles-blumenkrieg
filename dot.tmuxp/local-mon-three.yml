@@ -1,0 +1,13 @@
+session_name: local-mon-three
+windows:
+- layout: 12f9,219x74,0,0[219x31,0,0{109x31,0,0,47,109x31,110,0,51},219x42,0,32,49]
+  panes:
+  - sudo iotop --only --delay=2 --processes --accumulated
+  - sudo ~/bin/binaries/nethogs -d 2 -s -v 3
+  - htop --sort-key=PERCENT_CPU
+  window_name: local-mon-three
+
+ # Layout Notes
+ # run to display active tmux session layout:
+ # $> tmux list-windows -F "#{window_active} #{window_layout}" | grep "^1" | cut -d " " -f 2
+ 

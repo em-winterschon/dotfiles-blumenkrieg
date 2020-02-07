@@ -1,0 +1,2 @@
+#!/bin/bash
+ssh -i $HOME/.ssh/_keys/mwinterschon.fastly.id_rsa mwinterschon@172.16.40.254

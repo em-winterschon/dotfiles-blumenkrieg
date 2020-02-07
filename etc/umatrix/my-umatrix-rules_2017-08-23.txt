@@ -1,0 +1,143 @@
+{
+  "app": "uMatrix",
+  "version": "1.0.0",
+  "when": 1503495061607,
+  "settings": {
+    "autoUpdate": true,
+    "clearBrowserCache": false,
+    "clearBrowserCacheAfter": 60,
+    "cloudStorageEnabled": true,
+    "collapseBlocked": false,
+    "colorBlindFriendly": false,
+    "deleteCookies": true,
+    "deleteLocalStorage": true,
+    "deleteUnusedSessionCookies": false,
+    "deleteUnusedSessionCookiesAfter": 60,
+    "displayTextSize": "13px",
+    "externalHostsFiles": "",
+    "iconBadgeEnabled": true,
+    "maxLoggedRequests": 1000,
+    "popupScopeLevel": "domain",
+    "processHyperlinkAuditing": true,
+    "processReferer": false,
+    "spoofUserAgent": false,
+    "spoofUserAgentEvery": 5,
+    "spoofUserAgentWith": "# http://techblog.willshouse.com/2012/01/03/most-common-user-agents/\n# using ua string which are same browser as real one may work better overall\nMozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36\nMozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36\nMozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36\nMozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/603.3.8 (KHTML, like Gecko) Version/10.1.2 Safari/603.3.8\nMozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0\nMozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36\nMozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36\nMozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.101 Safari/537.36\nMozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36\nMozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36\nMozilla/5.0 (Windows NT 6.1; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0\nMozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36\nMozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:54.0) Gecko/20100101 Firefox/54.0\nMozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/603.2.4 (KHTML, like Gecko) Version/10.1.1 Safari/603.2.4\nMozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko\nMozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:54.0) Gecko/20100101 Firefox/54.0\nMozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.101 Safari/537.36\nMozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36\nMozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36\nMozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36 Edge/15.15063\nMozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.78 Safari/537.36\nMozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36\nMozilla/5.0 (Windows NT 10.0; Win64; x64; rv:54.0) Gecko/20100101 Firefox/54.0\nMozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.101 Safari/537.36\nMozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36\nMozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36\nMozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36\nMozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.78 Safari/537.36\nMozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36\nMozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36\nMozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/603.3.8 (KHTML, like Gecko) Version/10.1.2 Safari/603.3.8\nMozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.79 Safari/537.36 Edge/14.14393\nMozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36\nMozilla/5.0 (X11; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52.0\nMozilla/5.0 (Windows NT 6.3; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0\nMozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko\nMozilla/5.0 (X11; Linux x86_64; rv:54.0) Gecko/20100101 Firefox/54.0\nMozilla/5.0 (Windows NT 10.0; Win64; x64; rv:55.0) Gecko/20100101 Firefox/55.0\nMozilla/5.0 (Windows NT 6.1; rv:54.0) Gecko/20100101 Firefox/54.0\nMozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.78 Safari/537.36\nMozilla/5.0 (Windows NT 10.0; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0\nMozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36\nMozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.78 Safari/537.36\nMozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36 OPR/46.0.2597.57\nMozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:54.0) Gecko/20100101 Firefox/54.0\nMozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36\nMozilla/5.0 (Windows NT 6.1; Win64; x64; rv:54.0) Gecko/20100101 Firefox/54.0\nMozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko\nMozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/59.0.3071.109 Chrome/59.0.3071.109 Safari/537.36\nMozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0\nMozilla/5.0 (iPad; CPU OS 10_3_3 like Mac OS X) AppleWebKit/603.3.8 (KHTML, like Gecko) Version/10.0 Mobile/14G60 Safari/602.1\nMozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.101 Safari/537.36\nMozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0\nMozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.101 Safari/537.36\nMozilla/5.0 (Windows NT 6.1; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0\nMozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36\nMozilla/5.0 (X11; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0\nMozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36\nMozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.101 Safari/537.36\nMozilla/5.0 (Windows NT 5.1; rv:52.0) Gecko/20100101 Firefox/52.0\nMozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36\nMozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:55.0) Gecko/20100101 Firefox/55.0\nMozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36\nMozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.1 Safari/603.1.30\nMozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; rv:11.0) like Gecko\nMozilla/5.0 (iPad; CPU OS 10_3_2 like Mac OS X) AppleWebKit/603.2.4 (KHTML, like Gecko) Version/10.0 Mobile/14F89 Safari/602.1\nMozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36\nMozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36\nMozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.101 Safari/537.36\nMozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36\nMozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/603.3.8 (KHTML, like Gecko) Version/10.1.2 Safari/603.3.8\nMozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36\nMozilla/5.0 (Windows NT 6.1; Win64; x64; rv:55.0) Gecko/20100101 Firefox/55.0\nMozilla/5.0 (X11; Fedora; Linux x86_64; rv:54.0) Gecko/20100101 Firefox/54.0\nMozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36\nMozilla/5.0 (X11; Linux x86_64; rv:45.0) Gecko/20100101 Firefox/45.0\nMozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/60.0.3112.78 Chrome/60.0.3112.78 Safari/537.36\nMozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36\nMozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0;  Trident/5.0)\nMozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36\nMozilla/5.0 (Macintosh; Intel Mac OS X 10.10; rv:54.0) Gecko/20100101 Firefox/54.0\nMozilla/5.0 (Windows NT 10.0; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0\nMozilla/5.0 (Windows NT 6.1; WOW64; rv:37.0) Gecko/20100101 Firefox/37.0\nMozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.101 Safari/537.36\nMozilla/5.0 (Windows NT 6.1; rv:52.0) Gecko/20100101 Firefox/52.0\n"
+  },
+  "rules": "* * * block\n* * css allow\n* * frame block\n* * image allow\n* 1st-party * allow\n* 1st-party frame allow\n* 3lift.com * block\n* adnxs.com * block\n* ads-twitter.com * block\n* amazon-adsystem.com * block\n* aolcdn.com * allow\n* bing.com * block\n* bkrtx.com * block\n* bluekai.com * block\n* casalemedia.com * block\n* chasecdn.com * allow\n* cloud.githubusercontent.com * allow\n* cloudfront.net * allow\n* cur.cursors-4u.net * allow\n* cursors-4u.net * allow\n* disqus.com * block\n* doubleclick.net * block\n* facebook.com * block\n* gfycat.com * allow\n* github.com * allow\n* githubapp.com * allow\n* go-mpulse.net * block\n* google-analytics.com * block\n* googleadservices.com * block\n* googletagmanager.com * block\n* googletagservices.com * block\n* googleusercontent.com * allow\n* gstatic.com * allow\n* gu-web.net * allow\n* guim.co.uk * allow\n* huffingtonpost.com * allow\n* images-amazon.com * allow\n* imgur.com * allow\n* imrworldwide.com * block\n* indexww.com * block\n* jezebel.com * allow\n* jwpcdn.com * allow\n* kinja-img.com * allow\n* kinja-static.com * allow\n* kinja.com * allow\n* krxd.net * block\n* licdn.com * allow\n* listrakbi.com * block\n* media-amazon.com * allow\n* media.net * block\n* medium.com * allow\n* moatads.com * block\n* msecnd.net * block\n* openx.net * block\n* ophan.co.uk * block\n* optimizely.com * allow\n* outbrain.com * block\n* rawgit.com * block\n* recurhub.com * block\n* reddit.com * allow\n* redditmedia.com * allow\n* redditstatic.com * allow\n* rubiconproject.com * block\n* scorecardresearch.com * block\n* sharethis.com * block\n* shopify.com * block\n* sonobi.com * block\n* ssl-images-amazon.com * allow\n* ssl.fastly.net * allow\n* switchadhub.com * block\n* timetrade.com * block\n* www.redditstatic.com * allow\n* youtube.com * allow\n* ytimg.com * block\namazon.com * * allow\namazon.com 1st-party * allow\namazon.com amazon-adsystem.com * allow\namazon.com amazon.com * allow\namazon.com media-amazon.com * allow\nfilterlists.com * * allow\nfilterlists.com 1st-party * allow\nfilterlists.com filterlists.com * allow\nfilterlists.com google.com * allow\nfilterlists.com www.google.com * allow\nforum.vivaldi.net * * allow\nforum.vivaldi.net vivaldi.com * allow\nforum.vivaldi.net vivaldi.net * allow\ngithub.com 1st-party * allow\ngithub.com camo.githubusercontent.com * allow\ngithub.com cloud.githubusercontent.com * allow\ngithub.com collector.githubapp.com * allow\ngithub.com collector.githubapp.com image allow\ngithub.com githubapp.com * allow\ngithub.com raw.githubusercontent.com * allow\ngithub.com www.google.com image allow\ngoogle.com * * allow\ngoogle.com 1st-party * allow\ngoogle.com fonts.googleapis.com * allow\ngoogle.com google.com * allow\ngoogle.com googleusercontent.com * allow\ngoogle.com gstatic.com * allow\ngoogle.com ssl.gstatic.com * allow\ngoogle.com www.google.com * allow\ngoogle.com www.gstatic.com * allow\nhttps-strict: * true\nhttps-strict: behind-the-scene false\nhttps-strict: google.com false\nimgur.com 1st-party * allow\ninclusiveaesthetics.com * * allow\njezebel.com jezebel.com * allow\nlinkedin.com linkedin.com * allow\nmail.protonmail.com audible.com * allow\nmail.protonmail.com protonmail.com * allow\nmatrix-off: about-scheme true\nmatrix-off: behind-the-scene true\nmatrix-off: chrome-extension-scheme true\nmatrix-off: chrome-scheme true\nmatrix-off: localhost true\nmatrix-off: opera-scheme true\nmedium.com * css inherit\nmedium.com * frame inherit\nmedium.com * image inherit\nmedium.com 1st-party frame inherit\nmega.nz g.api.mega.co.nz * allow\nmega.nz mega.co.nz * allow\nmega.nz mega.nz * allow\nmega.nz na.static.mega.co.nz * allow\nnetflix.com * * allow\nnetflix.com adtech.nflximg.net * allow\nnetflix.com api-global.netflix.com * allow\nnetflix.com assets.nflxext.com * allow\nnetflix.com codex.nflxext.com * allow\nnetflix.com customerevents.netflix.com * allow\nnetflix.com ichnaea.netflix.com * allow\nnetflix.com netflix.com * allow\nnetflix.com nflxext.com * allow\nnetflix.com nflximg.net * allow\nnetflix.com nflxso.net * allow\nnetflix.com nflxvideo.net * allow\nnetflix.com push.prod.netflix.com * allow\nnytimes.com 1st-party * allow\nnytimes.com nyt.com * allow\nnytimes.com nytimes.com cookie block\nnytimes.com optimizely.com * allow\nreddit.com 1st-party * allow\nreddit.com pixel.redditmedia.com * inherit\nreddit.com redditmedia.com * allow\nreddit.com redditstatic.com * allow\nreferrer-spoof: behind-the-scene false\nreferrer-spoof: blank.about-scheme false\nreferrer-spoof: github.com false\nreferrer-spoof: google.com false\nreferrer-spoof: vivaldi.net true\nreferrer-spoof: washingtonpost.com true\nroastco.com 1st-party * allow\nroastco.com ajax.googleapis.com * allow\nroastco.com bootstrapcdn.com * allow\nroastco.com cdn.shopify.com * allow\nroastco.com fonts.googleapis.com * allow\nroastco.com g.doubleclick.net * block\nroastco.com netdna.bootstrapcdn.com * allow\nroastco.com roastco.com * allow\nroastco.com shopify.com * allow\nroastco.com stats.g.doubleclick.net * block\nroastco.com v.shopify.com * allow\nroastco.com www.roastco.com * allow\nsecure01c.chase.com chase.com * allow\ntheupsstore.com 1st-party * allow\ntheupsstore.com ajax.googleapis.com * allow\ntheupsstore.com aspnetcdn.com * allow\nua-spoof: * true\nua-spoof: behind-the-scene false\nvivaldi.net * * allow\nvox.com 1st-party * allow\nvox.com 3lift.com * block\nvox.com facebook.com * block\nvox.com googletagmanager.com * block\nvox.com googletagservices.com * block\nvox.com krxd.net * block\nvox.com openx.net * block\nvox.com sonobi.com * block\nvox.com vox-cdn.com * allow\nvox.com voxmedia.com * allow\nwashingtonpost.com 1st-party * allow\nwww.nytimes.com nyt.com * allow\nwww.nytimes.com nytimes.com * allow\nwww.reddit.com * * allow\nwww.roastco.com bootstrapcdn.com * allow\nwww.roastco.com fonts.googleapis.com * allow\nwww.roastco.com roastco.com * allow\nwww.theupsstore.com ajax.googleapis.com * allow\nwww.theupsstore.com aspnetcdn.com * allow\nwww.theupsstore.com theupsstore.com * allow\nwww.vox.com vox-cdn.com * allow\nwww.vox.com vox.com * allow\nwww.vox.com voxmedia.com * allow",
+  "hostsFiles": {
+    "dpollock-0": {
+      "content": "filters",
+      "contentURL": [
+        "http://someonewhocares.org/hosts/hosts"
+      ],
+      "group": "multipurpose",
+      "hasLocalURL": false,
+      "hasRemoteURL": true,
+      "supportURL": "http://someonewhocares.org/hosts/",
+      "title": "Dan Pollock’s hosts file",
+      "updateAfter": 11,
+      "cached": true,
+      "writeTime": 1503439193093,
+      "obsolete": false,
+      "remoteURL": "http://someonewhocares.org/hosts/hosts",
+      "off": false,
+      "entryCount": 12896,
+      "entryUsedCount": 9236
+    },
+    "hphosts": {
+      "content": "filters",
+      "contentURL": [
+        "https://hosts-file.net/.%5Cad_servers.txt"
+      ],
+      "group": "multipurpose",
+      "hasLocalURL": false,
+      "hasRemoteURL": true,
+      "supportURL": "https://hosts-file.net/",
+      "title": "hpHosts’ Ad and tracking servers",
+      "updateAfter": 11,
+      "cached": true,
+      "writeTime": 1503439193571,
+      "obsolete": false,
+      "remoteURL": "https://hosts-file.net/.%5Cad_servers.txt",
+      "off": false,
+      "entryCount": 48021,
+      "entryUsedCount": 43836
+    },
+    "malware-0": {
+      "content": "filters",
+      "contentURL": [
+        "https://www.malwaredomainlist.com/hostslist/hosts.txt",
+        "assets/thirdparties/www.malwaredomainlist.com/hostslist/hosts.txt"
+      ],
+      "group": "malware",
+      "hasLocalURL": true,
+      "hasRemoteURL": true,
+      "title": "Malware Domain List",
+      "updateAfter": 13,
+      "writeTime": 0,
+      "obsolete": true,
+      "off": false,
+      "entryCount": 1488,
+      "entryUsedCount": 1482
+    },
+    "malware-1": {
+      "content": "filters",
+      "contentURL": [
+        "https://mirror.cedia.org.ec/malwaredomains/justdomains",
+        "https://mirror1.malwaredomains.com/files/justdomains",
+        "assets/thirdparties/mirror1.malwaredomains.com/files/justdomains",
+        "assets/thirdparties/mirror1.malwaredomains.com/files/justdomains.txt"
+      ],
+      "group": "malware",
+      "hasLocalURL": true,
+      "hasRemoteURL": true,
+      "supportURL": "http://www.malwaredomains.com/",
+      "title": "Malware domains",
+      "updateAfter": 13,
+      "writeTime": 0,
+      "obsolete": true,
+      "off": false,
+      "entryCount": 9612,
+      "entryUsedCount": 9519
+    },
+    "mvps-0": {
+      "content": "filters",
+      "contentURL": [
+        "http://winhelp2002.mvps.org/hosts.txt"
+      ],
+      "group": "multipurpose",
+      "hasLocalURL": false,
+      "hasRemoteURL": true,
+      "supportURL": "http://winhelp2002.mvps.org/",
+      "title": "MVPS HOSTS",
+      "updateAfter": 11,
+      "cached": true,
+      "writeTime": 1503439193299,
+      "obsolete": false,
+      "remoteURL": "http://winhelp2002.mvps.org/hosts.txt",
+      "off": false,
+      "entryCount": 13173,
+      "entryUsedCount": 13173
+    },
+    "plowe-0": {
+      "content": "filters",
+      "contentURL": [
+        "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=1&mimetype=plaintext",
+        "assets/thirdparties/pgl.yoyo.org/as/serverlist",
+        "assets/thirdparties/pgl.yoyo.org/as/serverlist.txt"
+      ],
+      "group": "multipurpose",
+      "hasLocalURL": true,
+      "hasRemoteURL": true,
+      "supportURL": "https://pgl.yoyo.org/adservers/",
+      "title": "Peter Lowe’s Ad and tracking server list",
+      "updateAfter": 13,
+      "writeTime": 0,
+      "obsolete": true,
+      "off": false,
+      "entryCount": 2425,
+      "entryUsedCount": 1943
+    }
+  }
+}

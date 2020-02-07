@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+#--------------------------------------------------------------------------------------------------#
+#-- Name     : sfodev
+#-- Purpose  : ssh login menu 
+#-- Author   : EM Winterschon
+#-- Repo     : https://github.com/em-winterschon/dotfiles
+#-- Requires : Bash 4.3+ , host list file in format "hostname ip" living in $HOME/etc/hosts.menu
+#------------:
+#-- Date     : 2019-01-15
+#-- Version  : 1.0
+#--------------------------------------------------------------------------------------------------#
+
+declare -a opt_host=() # Empty host array
+declare -A opt_ip=()   # Empty IP array
+readarray -t options < $HOME/etc/hosts.menu
+
+for i in "${!options[@]}"; do
+  opt_host[$i]="${options[$i]%% *}"             # array of hostnames
+  opt_ip[${opt_host[$i]}]="${options[$i]#* }"   # map hostnames to IPs
+done
+
+PS3='Select host (q to quit): '
+select host in "${opt_host[@]}"; do
+  case "$host" in
+    "") break ;;  # This is a fake; any invalid entry makes $host=="", not just "q".
+    *) ssh "${opt_ip[$host]}" ;;
+  esac
+done

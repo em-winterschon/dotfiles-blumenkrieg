@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ArcadeDeviceGUID</key>
+	<string>8C859017FE50</string>
+	<key>ArcadeDeviceID</key>
+	<string>2906C084-4DE2-4C4E-8896-C1865A95788B</string>
+	<key>ArcadeDeviceIDCreationDate</key>
+	<date>2019-10-11T01:49:49Z</date>
+	<key>ArcadeSubscriptionState</key>
+	<string>Unsubscribed</string>
+</dict>
+</plist>

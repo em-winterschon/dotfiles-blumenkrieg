@@ -1,0 +1,102 @@
+{
+  "timeStamp": 1504218162465,
+  "version": "1.13.8",
+  "userSettings": {
+    "advancedUserEnabled": true,
+    "alwaysDetachLogger": false,
+    "autoUpdate": true,
+    "cloudStorageEnabled": true,
+    "collapseBlocked": true,
+    "colorBlindFriendly": false,
+    "contextMenuEnabled": true,
+    "dynamicFilteringEnabled": true,
+    "externalLists": "",
+    "firewallPaneMinimized": true,
+    "hyperlinkAuditingDisabled": true,
+    "ignoreGenericCosmeticFilters": false,
+    "largeMediaSize": 1024,
+    "parseAllABPHideFilters": false,
+    "prefetchingDisabled": false,
+    "requestLogMaxEntries": 1000,
+    "showIconBadge": true,
+    "tooltipsDisabled": false,
+    "webrtcIPAddressHidden": false
+  },
+  "selectedFilterLists": [
+    "plowe-0",
+    "fanboy-ultimate",
+    "fanboy-annoyance",
+    "disconnect-malware",
+    "malware-1",
+    "malware-0",
+    "disconnect-malvertising",
+    "fanboy-enhanced",
+    "easyprivacy",
+    "disconnect-tracking",
+    "easylist",
+    "ublock-unbreak",
+    "ublock-privacy",
+    "ublock-badware",
+    "ublock-filters",
+    "user-filters"
+  ],
+  "hiddenSettingsString": "assetFetchTimeout 30\nautoUpdateAssetFetchPeriod 120\nautoUpdatePeriod 7\nignoreRedirectFilters false\nignoreScriptInjectFilters false\nmanualUpdateAssetFetchPeriod 2000\npopupFontSize unset\nsuspendTabsUntilReady false\nuserResourcesLocation unset",
+  "netWhitelist": "aa.com\nabout-scheme\nbehind-the-scene\nchrome-extension-scheme\nchrome-scheme\ngoogle.com\nloopconversation.about-scheme\nmedium.com\nmoz-extension-scheme\nnamecheap.com\nnetflix.com\nopera-scheme\nunited.com\nuserstyles.org\nvivaldi-scheme",
+  "dynamicFilteringString": "* * inline-script allow\n* * 1p-script allow\n* * 3p-script block\n* * 3p-frame block\n* * image allow\n* 3lift.com * block\n* adnxs.com * block\n* ads-twitter.com * block\n* amazon-adsystem.com * block\n* aolcdn.com * allow\n* bing.com * block\n* bkrtx.com * block\n* bluekai.com * block\n* casalemedia.com * block\n* chartbeat.com * block\n* chasecdn.com * allow\n* cloud.githubusercontent.com * allow\n* cloudfront.net * allow\n* cur.cursors-4u.net * allow\n* cursors-4u.net * allow\n* disqus.com * block\n* doubleclick.net * block\n* facebook.com * block\n* gfycat.com * allow\n* github.com * allow\n* githubapp.com * allow\n* go-mpulse.net * block\n* google-analytics.com * block\n* googleadservices.com * block\n* googletagmanager.com * block\n* googletagservices.com * block\n* googleusercontent.com * allow\n* gstatic.com * allow\n* gu-web.net * allow\n* guim.co.uk * allow\n* huffingtonpost.com * allow\n* i.imgur.com * allow\n* images-amazon.com * allow\n* imgur.com * allow\n* imrworldwide.com * block\n* indexww.com * block\n* jwpcdn.com * allow\n* kinja.com * block\n* krxd.net * block\n* licdn.com * allow\n* listrakbi.com * block\n* media-amazon.com * allow\n* media.net * block\n* medium.com * allow\n* moatads.com * block\n* msecnd.net * block\n* openx.net * block\n* ophan.co.uk * block\n* optimizely.com * allow\n* outbrain.com * block\n* quantserve.com * block\n* rawgit.com * block\n* recurhub.com * block\n* reddit.com * allow\n* redditmedia.com * allow\n* redditstatic.com * allow\n* rubiconproject.com * block\n* samba.tv * block\n* scorecardresearch.com * block\n* sharethis.com * block\n* shopify.com * block\n* skimresources.com * block\n* sonobi.com * block\n* ssl-images-amazon.com * allow\n* ssl.fastly.net * allow\n* ssl.google-analytics.com * block\n* summerhamster.com * block\n* switchadhub.com * block\n* timetrade.com * block\n* www.google-analytics.com * block\n* www.googletagmanager.com * block\n* www.googletagservices.com * block\namazon.com amazon-adsystem.com * allow\namazon.com amazon.com * allow\namazon.com media-amazon.com * allow\nfilterlists.com filterlists.com * allow\nforum.vivaldi.net * * allow\nforum.vivaldi.net vivaldi.com * allow\nforum.vivaldi.net vivaldi.net * allow\nfoshttpcache.readthedocs.io cloudflare.com * allow\nfoshttpcache.readthedocs.io fonts.googleapis.com * allow\nfoshttpcache.readthedocs.io readthedocs.io * allow\nfoshttpcache.readthedocs.io readthedocs.org * allow\ngithub.com camo.githubusercontent.com * allow\ngithub.com raw.githubusercontent.com * allow\ngoogle.com google.com * allow\nhealthy.kaiserpermanente.org kaiserpermanente.org * allow\ninclusiveaesthetics.com * * allow\njezebel.com 0914.global.ssl.fastly.net * allow\njezebel.com kinja-img.com * allow\njezebel.com kinja-static.com * allow\nlinkedin.com linkedin.com * allow\nmail.protonmail.com audible.com * allow\nmail.protonmail.com protonmail.com * allow\nmega.nz g.api.mega.co.nz * allow\nmega.nz mega.co.nz * allow\nmega.nz mega.nz * allow\nmega.nz na.static.mega.co.nz * allow\nnetflix.com * * allow\nnetflix.com adtech.nflximg.net * allow\nnetflix.com api-global.netflix.com * allow\nnetflix.com assets.nflxext.com * allow\nnetflix.com codex.nflxext.com * allow\nnetflix.com customerevents.netflix.com * allow\nnetflix.com ichnaea.netflix.com * allow\nnetflix.com netflix.com * allow\nnetflix.com nflxext.com * allow\nnetflix.com nflximg.net * allow\nnetflix.com nflxso.net * allow\nnetflix.com nflxvideo.net * allow\nnetflix.com push.prod.netflix.com * allow\nsecure01c.chase.com chase.com * allow\nsincerelynuts.com ajax.googleapis.com * allow\nsincerelynuts.com bigcommerce.com * allow\nsincerelynuts.com cursors-4u.net * allow\nsincerelynuts.com d2z0bn1jv8xwtk.cloudfront.net * allow\nsincerelynuts.com fonts.googleapis.com * allow\nsincerelynuts.com ionicframework.com * allow\nsincerelynuts.com jquery.com * allow\nsincerelynuts.com minibc.com * allow\nsincerelynuts.com mybigcommerce.com * allow\nsincerelynuts.com sincerelynuts.com * allow\nwww.bankofamerica.com bac-assets.com * allow\nwww.bankofamerica.com bankofamerica.com * allow\nwww.ncbi.nlm.nih.gov pubmed.gov * allow\nwww.nytimes.com nyt.com * allow\nwww.nytimes.com nytimes.com * allow\nwww.reddit.com * inline-script allow\nwww.reddit.com * 1p-script allow\nwww.reddit.com * 3p-script block\nwww.reddit.com * 3p-frame block\nwww.reddit.com * image allow\nwww.reddit.com fbcdn.net * allow\nwww.roastco.com bootstrapcdn.com * allow\nwww.roastco.com fonts.googleapis.com * allow\nwww.roastco.com roastco.com * allow\nwww.theupsstore.com ajax.googleapis.com * allow\nwww.theupsstore.com aspnetcdn.com * allow\nwww.theupsstore.com theupsstore.com * allow\nwww.vox.com vox-cdn.com * allow\nwww.vox.com vox.com * allow\nwww.vox.com voxmedia.com * allow\nuserstyles.org userstyles.org * allow\n* apis.google.com * allow\nuserstyles.org gstatic.com * allow\nuserstyles.org fonts.gstatic.com * allow\nwww.youtube.com youtube.com * allow\nwww.youtube.com www.youtube.com * allow\nwww.youtube.com googlevideo.com * allow\nwww.youtube.com r10---sn-n4v7kn7z.googlevideo.com * allow\nwww.youtube.com s.youtube.com * allow\n* ytimg.com * allow\nwww.youtube.com redirector.googlevideo.com * allow\nwww.youtube.com r1---sn-5ualdnel.googlevideo.com * allow\nwww.youtube.com r3---sn-n4v7sn7l.googlevideo.com * allow\n* googleads.g.doubleclick.net * block\n* googlevideo.com * allow\n* ggpht.com * block\n* static.doubleclick.net * block\n* www.googleadservices.com * block\n* voicefive.com * block\nwww.huffingtonpost.com huffpost.com * allow\nwww.huffingtonpost.com instagram.com * allow\n* mediavoice.com * block\n* zergnet.com * block\n* keywee.co * block\n* parsely.com * block\n* sail-horizon.com * block\n* newrelic.com * block\n* connect.facebook.net * block\n* demdex.net * block\n* taboola.com * block\n* graph.instagram.com * block\napp2.docusign.com docusign.com * allow\napp2.docusign.com akamaihd.net * allow\nwww.theguardian.com theguardian.com * allow\nwww.theguardian.com guardianapps.co.uk * allow\nmedium.com * 3p-script allow\nmedium.com * 3p-frame allow\nmedium.com medium.com * allow\nmedium.com google-analytics.com * allow\nmedium.com lightstep.com * allow",
+  "urlFilteringString": "",
+  "hostnameSwitchesString": "",
+  "userFilters": "! 8/20/2017, 6:52:17 AM https://jezebel.com/\njezebel.com###post_1798092762 > header > .js_entry-title.entry-title.headline\n\n! 8/20/2017, 6:55:43 AM https://jezebel.com/\njezebel.com##.streamshare.js_post-wrapper.post-wrapper:nth-of-type(2)\n\n! 8/20/2017, 6:58:32 AM https://jezebel.com/\njezebel.com##.streamshare\n\n! 8/20/2017, 7:00:21 AM https://jezebel.com/\njezebel.com##.text-micro.text-upper.proxima.strapline\n\n! 8/20/2017, 7:02:22 AM https://jezebel.com/\njezebel.com##.js_inset_thumb.js_inset.thumb-inset:nth-of-type(1)\njezebel.com##.js_inset_thumb.js_inset.thumb-inset:nth-of-type(2)\njezebel.com##.js_inset_thumb.js_inset.thumb-inset:nth-of-type(3)\njezebel.com##.js_inset_thumb.js_inset.thumb-inset:nth-of-type(4)\n\n! 8/31/2017, 2:55:10 PM https://jezebel.com/an-actual-fire-is-burning-close-to-burning-man-1798666536\njezebel.com##.js_replies-wrapper.replies-wrapper\n\n! 8/31/2017, 3:21:47 PM https://www.theguardian.com/commentisfree/2017/aug/27/silicon-valley-new-technocrats-old-school-sexism-john-naughton-networker\nwww.theguardian.com##.gs-container.discussion__top-border\n",
+  "filterLists": {
+    "assets/thirdparties/pgl.yoyo.org/as/serverlist": {
+      "off": false
+    },
+    "https://www.fanboy.co.nz/r/fanboy-ultimate.txt": {
+      "off": false
+    },
+    "https://easylist-downloads.adblockplus.org/fanboy-annoyance.txt": {
+      "off": false
+    },
+    "https://s3.amazonaws.com/lists.disconnect.me/simple_malware.txt": {
+      "off": false
+    },
+    "assets/thirdparties/mirror1.malwaredomains.com/files/justdomains": {
+      "off": false
+    },
+    "assets/thirdparties/www.malwaredomainlist.com/hostslist/hosts.txt": {
+      "off": false
+    },
+    "https://s3.amazonaws.com/lists.disconnect.me/simple_malvertising.txt": {
+      "off": false
+    },
+    "https://www.fanboy.co.nz/enhancedstats.txt": {
+      "off": false
+    },
+    "assets/thirdparties/easylist-downloads.adblockplus.org/easyprivacy.txt": {
+      "off": false
+    },
+    "https://s3.amazonaws.com/lists.disconnect.me/simple_tracking.txt": {
+      "off": false
+    },
+    "assets/thirdparties/easylist-downloads.adblockplus.org/easylist.txt": {
+      "off": false
+    },
+    "assets/ublock/unbreak.txt": {
+      "off": false
+    },
+    "assets/ublock/privacy.txt": {
+      "off": false
+    },
+    "assets/ublock/badware.txt": {
+      "off": false
+    },
+    "assets/ublock/filters.txt": {
+      "off": false
+    },
+    "assets/user/filters.txt": {
+      "off": false
+    },
+    "assets/ublock/experimental.txt": {
+      "off": true
+    }
+  }
+}

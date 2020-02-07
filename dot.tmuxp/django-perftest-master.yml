@@ -1,0 +1,24 @@
+session_name: django-perftest-dev
+windows:
+- window_name: django-perftest-dev
+  layout: 6944,219x88,0,0[219x52,0,0{109x52,0,0,0,109x52,110,0,10},219x35,0,53,1]
+  panes:
+  - shell_command:      
+    - reset
+    - mycli perftest
+    - show tables;;
+  - shell_command:
+      - cd /home/mwinterschon/lnx/lnx-perf-iteration-py-dev/lnx_perftest
+      - reset
+      - source virtualenvs/lnx_perftest-ohdXq8WU/bin/activate
+      - reset
+      - bash ./x.virtualenv
+  - shell_command:
+      - cd /home/mwinterschon/lnx/lnx-perf-iteration-py-dev/lnx_perftest
+      - reset
+      - git status
+
+ # Layout Notes
+ # run to display active tmux session layout:
+ # $> tmux list-windows -F "#{window_active} #{window_layout}" | grep "^1" | cut -d " " -f 2
+ 

@@ -1,0 +1,2 @@
+#!/bin/bash
+cat /proc/spl/kstat/zfs/arcstats | egrep memory_free_bytes\|memory_available_bytes\|l2_size\|c_min\|c_max | awk '{print $1" = " int($3 / 1024 / 1024)" Mb"}'

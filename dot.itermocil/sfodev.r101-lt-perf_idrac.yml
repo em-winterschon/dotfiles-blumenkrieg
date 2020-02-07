@@ -1,0 +1,12 @@
+windows:
+  - name: sfodev.r101-lt-perf_idrac
+    root: ~
+    layout: tiled
+    panes:
+      - ssh root@172.16.254.138
+      - ssh root@172.16.254.139
+      - ssh root@172.16.254.140 
+      - ssh root@172.16.254.141
+      - ssh root@172.16.254.142      
+      - ssh root@172.16.254.180      
+      

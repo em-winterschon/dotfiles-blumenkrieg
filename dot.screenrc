@@ -1,0 +1,56 @@
+## ScreenRC file from https://bitbucket.org/madeline-everett/dotfiles
+startup_message off
+vbell off
+
+## Control key, set to ctrl-w (removes emacs clobber)
+escape ^Ww
+#note: to exist all tabs use "ctrl-w \"
+
+## General 
+altscreen on 
+attrcolor b ".I"
+defbce "on"
+defmonitor on
+defnonblock on
+defscrollback 65535
+defutf8 on
+ignorecase on
+
+## Logging
+compacthist on
+#logfile ~.screen/%S-%n.log
+logfile flush 30
+logtstamp on
+deflog on
+
+## Enables use of shift-PgUp and shift-PgDn
+term xterm-256color
+termcapinfo xterm|xterm-color|xterm-256color|xterms|xs|rxvt|bash|ssh ti@:te@
+
+## Keybindings
+bind f eval "hardstatus ignore"
+bind F eval "hardstatus alwayslastline"
+
+## Tab cycling hotkeys
+bindkey -k F1 prev
+bindkey -k F2 next
+
+## Status and caption line formatting
+# %+w - all window numbers and names following the current window
+# %-w - all window numbers and names up to the current window
+# %C:%s %A - 12 hour time + AM/PM
+# %H - hostname
+# %Y-%m-%d - year-month-day
+# %l - current load
+# %n - current window number
+# %t - current window title
+# %u - other users on this window (if any)
+
+hardstatus alwayslastline 
+hardstatus string '%{= Kd} %{= Kd}%-w%{= Kr}[%{= KW}%n %t%{= Kr}]%{= Kd}%+w %-= %{KG} %h%{KW} | LOAD [%l] | LOG '~/.screenlog.%n' | %Y%m%d %C:%s %A'
+
+## Initiate multiple screen tabs
+#screen -t bmon  2  bmon --show-all --output=curses:details,curses:info
+#screen -t htop  1  htop
+screen -t bash  0
+screen $SHELL -c 'screen -X caption always "Screen on: $STY, use ctrl-w-\ to quit"'

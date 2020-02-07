@@ -1,0 +1,13 @@
+windows:
+  - name: isomera.all
+    root: ~
+    layout: even-horizontal
+    panes:
+      - ssh admin-fra1.isomera.net
+      - ssh bastion-fra1.isomera.net
+      - ssh mysql-00-fra1.isomera.net
+      - ssh mysql-01-fra1.isomera.net
+      - ssh mysql-02-fra1.isomera.net      
+      - ssh nginx-00-fra1.isomera.net
+      - ssh nginx-01-fra1.isomera.net
+      

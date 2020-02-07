@@ -1,0 +1,6 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Type=Application
+Name=thinkorswim
+Exec="/home/mwinterschon/Applications/thinkorswim/thinkorswim" 
+Icon=/home/mwinterschon/Applications/thinkorswim/.install4j/thinkorswim.png

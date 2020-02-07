@@ -1,0 +1,20 @@
+session_name: lab-connect
+windows:
+- window_name: lab-connect
+  layout: 9a33,160x47,0,0{79x47,0,0[79x9,0,0,60,79x37,0,10,63],80x47,80,0[80x9,80,0,61,80x37,80,10,62]}
+  panes:
+  - shell_command:      
+    - cd ~/.ssh/bin
+    - ./socks.oob-sfo9908.p-8008.sh
+    focus: true
+  - shell_command:
+      - reset
+  - shell_command:
+      - reset
+  - shell_command:
+      - reset
+
+ # Layout Notes
+ # run to display active tmux session layout:
+ # $> tmux list-windows -F "#{window_active} #{window_layout}" | grep "^1" | cut -d " " -f 2
+ 

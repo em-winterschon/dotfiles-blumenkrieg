@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>DeviceCountryCode</key>
+	<string>US</string>
+	<key>ExperimentBucketGUID</key>
+	<string>3F3C2394-5C95-4C4E-885C-FAE7CA2B059C</string>
+	<key>ExperimentBucketGUIDTimestamp</key>
+	<real>526861747.78864801</real>
+	<key>GEOLastNetworkDefaultsURL</key>
+	<string>https://configuration.apple.com/configurations/pep/config/geo/networkDefaults-osx-10.12.1.plist</string>
+	<key>GEOLastResourceManifestURL</key>
+	<string>https://gspe35-ssl.ls.apple.com/geo_manifest/dynamic/config?application=geod&amp;application_version=1&amp;country_code=US&amp;hardware=MacBookPro14,2&amp;os=osx&amp;os_build=16G29&amp;os_version=10.12.6</string>
+	<key>GEOUsageSessionID</key>
+	<data>
+	CJmP/6X/raGnARCDg+OPm5HfwUI=
+	</data>
+	<key>GEOUsageSessionIDGenerationTime</key>
+	<real>526857758.597224</real>
+</dict>
+</plist>

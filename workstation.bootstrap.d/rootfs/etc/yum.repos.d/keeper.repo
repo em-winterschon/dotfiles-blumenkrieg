@@ -1,0 +1,6 @@
+[keeper-security]
+name=keeper-security
+baseurl=https://keepersecurity.com/desktop_electron/Linux/repo/rpm/
+enabled=1
+gpgcheck=1
+gpgkey=https://keepersecurity.com/desktop_electron/Linux/signing.pub

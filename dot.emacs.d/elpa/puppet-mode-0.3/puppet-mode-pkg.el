@@ -1,0 +1,2 @@
+;;; -*- no-byte-compile: t -*-
+(define-package "puppet-mode" "0.3" "Major mode for Puppet manifests" '((emacs "24.1") (cl-lib "0.5") (pkg-info "0.4")) :commit "d943149691abd7b66c85d58aee9657bfcf822c02" :keywords '("languages") :authors '(("Bozhidar Batsov" . "bozhidar@batsov.com") ("Sebastian Wiesner" . "lunaryorn@gmail.com") ("Russ Allbery" . "rra@stanford.edu")) :maintainer '("Bozhidar Batsov" . "bozhidar@batsov.com") :url "https://github.com/lunaryorn/puppet-mode")

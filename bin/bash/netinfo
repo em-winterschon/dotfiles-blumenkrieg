@@ -1,0 +1,198 @@
+#!/bin/bash
+#--------------------------------------------------------------------------------------------------#
+#-- Name     : netinfo
+#-- Purpose  : Print verbose info about network interfaces and devices
+#-- Author   : EM Winterschon
+#-- Repo     : https://github.com/em-winterschon/dotfiles
+#-- Requires : Linux
+#------------:
+#-- Date     : 2018-07-20
+#-- Version  : 1.0
+#--------------------------------------------------------------------------------------------------#
+
+##- Block: netinfo()
+##-- Purpose: Print verbose info about network interfaces and devices
+#--------------------------------------------------------------------------------------------------#
+function netinfo() {
+    ## Show general info
+    #------------------------------------------------------------------------------#
+    echo "DNS Settings"
+    echo "${BAR80}"
+    /bin/cat /etc/resolv.conf | egrep -i domain\|nameserver\|search
+    echo;
+    
+    echo "Localhost Resolution"
+    echo "${BAR80}"
+    /bin/cat /etc/hosts | grep localhost
+    echo;
+
+    echo "Routing - Gateway"
+    echo "${BAR80}"
+    netstat -rn | head -n2 | tail -n 1
+    netstat -rn | grep UG
+    echo;
+
+    echo "Routing - Subnets"
+    echo "${BAR80}"
+    netstat -rn | grep -v UG | tail -n +3
+    echo;
+    
+    ## Show all IPs
+    #------------------------------------------------------------------------------#
+    echo "Active Address Space"
+    echo "${BAR80}"
+    ip -4 addr | grep inet | awk '{print $7 " " $2}' | grep -v 127.0.0.1
+    echo;
+    
+    ## Per each bridge
+    #------------------------------------------------------------------------------#
+    which brctl >/dev/null 2>&1;
+    if [ $? -eq 0 ]; then	
+	for BRIDGE in `brctl show | tail -n +2 | awk '{print $1}' | grep br`; do
+	    echo "Bridge $BRIDGE"
+	    echo "${BAR80}"
+	    
+	    ## show the ip of the bridge
+	    BR_IPADDR=`ip -4 addr show $BRIDGE | grep -oP '(?<=inet\s)\d+(\.\d+){3}'`
+	    echo "ipaddr: $BR_IPADDR"
+	    
+	    ## show only the interfaces attached to the bridge, serialized if multiple ints
+	    echo -n "interfaces: "
+	    BR_INTS=`brctl show $BRIDGE | tail -n +2 | awk '{print $4}' | head -n 1 && \
+brctl show $BRIDGE | tail -n    +3 | awk '{print $1}'`
+	    for INTS in $BR_INTS; do echo -n "$INTS "; done
+	    echo; echo;
+	done
+    fi
+
+    ## Per each bond
+    #------------------------------------------------------------------------------#
+    chk_files=(/proc/net/bonding/*)
+    (( ${#chk_files[*]} )) && (
+	for BOND in `ls /proc/net/bonding/`; do
+	    ## show the ip of the bond
+	    IPADDR=`ip -4 addr show $BOND | grep -oP '(?<=inet\s)\d+(\.\d+){3}'`
+	    if [ "$IPADDR" = "" ]; then
+		## check to see if we have a bridge with the same numeral as the bond, eg br0 using bond0
+		BRNUM=`echo "$BOND" | sed 's/bond//g'`
+		ifconfig br$BRNUM > /dev/null
+		if [ $? -eq 0 ]; then
+		    ## get ipaddr of bridge in question, substitute in place
+		    BRIP=`ip -4 addr show br$BRNUM | grep -oP '(?<=inet\s)\d+(\.\d+){3}'`
+		    IPADDR="$BRIP, via br$BRNUM"
+		fi
+	    fi
+	    
+	    ## print header
+	    echo "$BOND [ipaddr: $IPADDR]"
+	    echo "${BAR80}"
+	    
+	    ## print each interface and its MAC
+	    printf "%14s %20s %8s %8s\n" "Interface" "MAC" "State" "Speed"
+	    echo "${BAR80}"
+	    for INT in `cat /proc/net/bonding/$BOND | egrep "Slave Interface" | awk '{print $3}'`; do
+		MAC=`ip link show $INT | tail -n 1 | awk '{print $2}'`
+		STATE=`cat /sys/class/net/$INT/operstate`
+		SPEED=`cat /sys/class/net/$INT/speed`
+		printf "%14s %20s %8s %8s\n" "$INT" "$MAC" "$STATE" "$SPEED"
+	    done
+	    echo;
+	done );
+    
+    ## Show device physical attributes: MAC/state/speed/AN/duplex/PCI-slot
+    #------------------------------------------------------------------------------#
+    echo "Device Physical Attributes"
+    echo "${BAR80}"
+    printf "%14s %19s %8s %8s %7s %6s %12s\n" "Device" "MAC" "Speed" "AutoNeg" "Duplex" "State" "PCIe"
+    echo "${BAR80}"
+    for f in /sys/class/net/*; do
+	if [ -h $f ]; then
+	    if [ "$f" != "/sys/class/net/lo" ]; then
+	        ## name of device without directory structure
+	        dev=$(basename $f)
+		
+		## MAC address
+		mac=$(cat $f/address)
+		
+		## interface operational state
+		operstate=$(cat $f/operstate)
+		
+		## speed [will fail for bridges]
+		file $f/speed > /dev/null
+		if [ $? -ne 0 ]; then
+		    speed=''
+		else
+		    speed=$(cat $f/speed)
+		fi
+
+		## Auto-Negotiation
+		autoneg=`ethtool $dev | grep "Auto-negotiation" | awk '{print $2}' | cut -f 1 -d ':' --complement` 
+
+		## Duplex
+		duplex=`ethtool $dev | grep "Duplex" | awk '{print $2}' | cut -f 1 -d ':' --complement | egrep Full\|Half` 
+		
+		## PCIe bus info
+		pcie=`ethtool -i $dev | grep "bus-info" | awk '{print $2}' | cut -f 1 -d ':' --complement`
+
+		## print summary info for interface
+		printf "%14s %19s %8s %8s %7s %6s %12s\n" "$dev" "$mac" "$speed" "$autoneg" "$duplex" "$operstate" "$pcie"
+	    fi
+	fi
+    done
+
+    ## Show device kmod/driver-version/firmware
+    #------------------------------------------------------------------------------#
+    echo;
+    echo "Device Software Attributes"
+    echo "${BAR80}"
+    printf "%14s %19s %15s %12s %16s\n" "Device" "MAC" "Driver" "Version" "Firmware"
+    echo "${BAR80}"
+    for f in /sys/class/net/*; do
+	if [ -h $f ]; then
+	    if [ "$f" != "/sys/class/net/lo" ]; then
+	        ## name of device without directory structure
+	        dev=$(basename $f)
+		
+		## kernel driver
+		readlink $f/device/driver/module > /dev/null
+		if [ $? -eq 0 ]; then
+		    driver=$(readlink $f/device/driver/module)
+		    if [ $driver ]; then
+			driver=$(basename $driver)
+			version=`modinfo $driver | grep -w "version" | awk '{print $2}'`
+		    fi
+		else
+		    driver=''
+		    version=''
+		fi
+		
+		## MAC address
+		mac=$(cat $f/address)
+		
+		## device firmware info
+		firmware=`ethtool -i $dev | grep firmware | awk '{print $2}' | awk -F, '{print $1}'`
+
+		## print summary info for interface
+		printf "%14s %19s %15s %12s %16s\n" "$dev" "$mac" "$driver" "$version" "$firmware"
+	    fi
+	fi
+    done
+    echo;
+
+}
+
+BAR80="--------------------------------------------------------------------------------"
+
+function header() {
+    cat<<EOF
+ __  _ ___ _____ _ __  _ ___ __   
+|  \| | __|_   _| |  \| | __/__\  
+| | ' | _|  | | | | | ' | _| \/ | 
+|_|\__|___| |_| |_|_|\__|_| \__/  
+${BAR80}                                   
+EOF
+}
+
+header
+netinfo
+

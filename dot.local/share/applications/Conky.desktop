@@ -1,0 +1,7 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Conky
+Exec=/usr/local/bin/conky
+Icon=/usr/share/icons/hicolor/scalable/conky.svg
+Type=Application
+Categories=System;

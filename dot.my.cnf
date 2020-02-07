@@ -1,0 +1,4 @@
+[mysql]
+#pager=less -inSFX
+pager=grcat conf.mysql
+user=root

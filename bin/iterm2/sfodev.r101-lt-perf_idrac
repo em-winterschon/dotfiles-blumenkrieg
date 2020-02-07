@@ -1,0 +1,3 @@
+#!/bin/bash
+itermocil --here sfodev.r101-lt-perf_idrac
+

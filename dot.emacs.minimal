@@ -1,0 +1,18 @@
+(global-unset-key (kbd "C-z"))
+(setq make-backup-files nil)
+(setq backup-inhibited t)
+(setq auto-save-default nil)
+(setq vc-follow-symlinks t)
+
+(add-to-list 'load-path "~/.emacs.d/plugins")
+(add-to-list 'load-path "~/.emacs.d/lisp")
+
+(when (version<= "26.0.50" emacs-version )
+  (global-display-line-numbers-mode))
+(custom-set-variables)
+(custom-set-faces '(line-number ((t (:background "black" :foreground "cyan" :slant oblique :weight thin)))))
+
+(global-set-key (kbd "M-r") 'replace-string) ;; bind "M-r" to command 'replace-string'
+(global-set-key (kbd "M-l") 'goto-line) ;; bind "M-l" to command 'goto-line'
+(global-set-key (kbd "M-e") 'end-of-buffer) ;; bind "M-e" to command 'end-of-buffer'
+(global-set-key (kbd "M-b") 'beginning-of-buffer) ;; bind "M-s" to command 'beginning-of-buffer'

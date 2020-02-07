@@ -1,0 +1,14 @@
+#!/bin/bash
+REMOTE="172.16.40.16"
+USER="root"
+KEY="$HOME/.ssh/_keys/mwinterschon.fastly.id_rsa"
+
+ssh -v -N -i $KEY \
+    -L 4500:$REMOTE:4500 \
+    -L 4501:$REMOTE:4501 \
+    -L 4507:$REMOTE:4507 \
+    -L 5901:$REMOTE:5901 \
+    -L 5902:$REMOTE:5902 \
+    -L 5903:$REMOTE:5903 \
+    -L 8090:$REMOTE:8090 \
+    $USER@$REMOTE

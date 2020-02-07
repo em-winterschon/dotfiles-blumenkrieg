@@ -1,0 +1,23 @@
+! 8/20/2017, 6:52:17 AM https://jezebel.com/
+jezebel.com###post_1798092762 > header > .js_entry-title.entry-title.headline
+
+! 8/20/2017, 6:55:43 AM https://jezebel.com/
+jezebel.com##.streamshare.js_post-wrapper.post-wrapper:nth-of-type(2)
+
+! 8/20/2017, 6:58:32 AM https://jezebel.com/
+jezebel.com##.streamshare
+
+! 8/20/2017, 7:00:21 AM https://jezebel.com/
+jezebel.com##.text-micro.text-upper.proxima.strapline
+
+! 8/20/2017, 7:02:22 AM https://jezebel.com/
+jezebel.com##.js_inset_thumb.js_inset.thumb-inset:nth-of-type(1)
+jezebel.com##.js_inset_thumb.js_inset.thumb-inset:nth-of-type(2)
+jezebel.com##.js_inset_thumb.js_inset.thumb-inset:nth-of-type(3)
+jezebel.com##.js_inset_thumb.js_inset.thumb-inset:nth-of-type(4)
+
+! 8/31/2017, 2:55:10 PM https://jezebel.com/an-actual-fire-is-burning-close-to-burning-man-1798666536
+jezebel.com##.js_replies-wrapper.replies-wrapper
+
+! 8/31/2017, 3:21:47 PM https://www.theguardian.com/commentisfree/2017/aug/27/silicon-valley-new-technocrats-old-school-sexism-john-naughton-networker
+www.theguardian.com##.gs-container.discussion__top-border

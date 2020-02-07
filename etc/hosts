@@ -1,0 +1,52 @@
+##
+# Host Database
+#
+# localhost is used to configure the loopback interface
+# when the system is booting.  Do not change this entry.
+##
+127.0.0.1	localhost
+255.255.255.255	broadcasthost
+::1             localhost
+
+## HomeNet
+172.16.40.252	flowers
+172.16.40.254	fraulein
+172.16.40.253	fraulein-wifi
+172.16.40.48	bunny
+
+## R104 SFODEV
+prometheus.sfodev.fastly.com	prometheus
+172.16.40.31			elastic-srv1.sfodev.fastly.com	elastic-srv1
+172.16.40.32			elastic-srv2.sfodev.fastly.com	elastic-srv2
+172.16.40.40			provision.sfodev.fastly.com	provision
+172.16.40.45			dci-userland.sfodev.fastly.com	dci-userland
+172.16.40.80			repo.sfodev.fastly.com		repo
+172.16.40.85			apt.sfodev.fastly.com		apt
+172.16.40.90			pandion.sfodev.fastly.com	pandion
+172.16.40.140			r740xd-eval.sfodev.fastly.com	r740xd-eval
+172.16.40.141			r940-eval.sfodev.fastly.com	r940-eval
+172.16.40.142			r7425-eval.sfodev.fastly.com	r7425-eval
+172.16.40.143			intel-s2600wf.sfodev.fastly.com	intel-s2600wf
+172.16.40.144			r640-eval.sfodev.fastly.com	r640-eval
+172.16.40.199			hwe-devtest.sfodev.fastly.com	hwe-devtest
+172.16.40.220			hwe-sevenfive-plabs.sfodev.fastly.com	hwe-sevenfive-plabs
+172.16.40.221			hwe-xenialtest.sfodev.fastly.com	hwe-xenialtest
+172.16.40.222			hwe-sevenfive.sfodev.fastly.com		hwe-sevenfive
+172.16.40.223			hwe-sevensix.sfodev.fastly.com		hwe-sevensix
+172.16.40.254			oob-dev-dci16207.sfodev.fastly.com	oob-dev-dci16207
+
+## R101 STG-SFO99
+172.16.254.38 	test-sfo9938	9938
+172.16.254.39 	test-sfo9939	9939
+172.16.254.40 	test-sfo9940	9940
+172.16.254.41 	test-sfo9941	9941
+172.16.254.42 	test-sfo9942	9942
+172.16.254.60 	test-sfo9960	9960
+172.16.254.64 	test-sfo9964	9964
+172.16.254.80 	test-sfo9980	9980
+172.16.254.85 	test-sfo9985	9985
+172.16.254.88 	test-sfo9988	9988
+172.16.254.7 	oob-sfo9907
+172.16.254.8 	oob-sfo9908
+172.16.254.5 	switch-sfo9905
+172.16.254.2 	switch-sfo9902

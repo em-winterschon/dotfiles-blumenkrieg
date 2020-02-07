@@ -1,0 +1,45 @@
+#!/bin/bash
+#--------------------------------------------------------------------------------------------------#
+#-- Name     : iso
+#-- Purpose  : Simple login case menu 
+#-- Author   : EM-Winterschon
+#-- Repo     : https://github.com/em-winterschon/site-organicalks
+#-- Requires : N/A
+#------------:
+#-- Date     : 2018-10-25
+#-- Version  : 1.0
+#--------------------------------------------------------------------------------------------------#
+ETLD="-fra1.isomera.net"
+OTLD="organicalkaloids.com"
+case "$1" in
+        bastion)
+	    ssh bastion${ETLD}
+            ;;        
+        admin)
+            ssh admin${ETLD}
+            ;;
+        mysql-00)
+            ssh mysql-00${ETLD}
+            ;;	
+        mysql-01)
+            ssh mysql-01${ETLD}
+            ;;
+        mysql-02)
+            ssh mysql-02${ETLD}
+            ;;
+        nginx-00)
+            ssh nginx-00${ETLD}
+            ;;
+        nginx-01)
+            ssh nginx-01${ETLD}
+            ;;
+        cloud)
+            ssh cloud
+            ;;
+        emergent)
+            ssh emergent
+            ;;
+        *)
+            echo $"Usage: $0 {first quad of host}"
+            exit 1 
+esac

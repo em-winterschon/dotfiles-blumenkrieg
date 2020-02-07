@@ -1,0 +1,62 @@
+SHELL=/bin/bash
+PATH=/sbin:/bin:/usr/sbin:/usr/bin
+MAILTO=root
+
+# For details see man 4 crontabs
+
+# Example of job definition:
+# .---------------- minute (0 - 59)
+# |  .------------- hour (0 - 23)
+# |  |  .---------- day of month (1 - 31)
+# |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...
+# |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
+# |  |  |  |  |
+# *  *  *  *  * user-name  command to be executed
+
+## Backup crontab
+#--------------------------------------------------------------------------------
+07 * * * *	 root	cp /etc/crontab /home/mwinterschon/Projects/dotfiles/etc/crontab/$HOSTNAME/crontab && chown mwinterschon: /home/mwinterschon/Projects/dotfiles/etc/crontab/$HOSTNAME/crontab
+
+
+## Backup Gnome3 settings + keybindings
+#--------------------------------------------------------------------------------
+07 * * * *	 mwinterschon	/bin/dconf dump / > /home/mwinterschon/Projects/dotfiles/gnome3/dconf.global-settings-gnome3_$HOSTNAME.conf
+07 * * * *	 mwinterschon	dconf dump /org/gnome/settings-daemon/plugins/media-keys/ > /home/mwinterschon/Projects/dotfiles/gnome3/gnome3.keyboard-remapping-media-keys.conf
+07 * * * *	 mwinterschon	dconf dump /org/gnome/desktop/wm/keybindings/ > /home/mwinterschon/Projects/dotfiles/gnome3/gnome3.keyboard-remapping-generic-keys.conf 
+
+
+## PingRateDNS for Conky latency graph
+#--------------------------------------------------------------------------------
+* * * * *	root	/usr/local/bin/one.sh /usr/local/bin/pingrate-dns
+
+
+## Tar backups
+#--------------------------------------------------------------------------------
+# path: /
+# exclude: /opt/nfs-shared,/var/lib/snapd,/home,/mnt/backup,/boot
+32 */12 * * *	root	/usr/local/bin/backup-localhost-filesystem.sh --fsmount / --compression no --incremental yes --exclude /opt/nfs-shared,/var/lib/snapd,/home,/mnt/backup,/boot
+
+# path: /boot
+# exclude: none
+01 00  * * 7	root	/usr/local/bin/backup-localhost-filesystem.sh --fsmount /boot --compression no --incremental yes
+
+# path: /home/mwinterschon -Media
+# exclude: /home/mwinterschon/Media
+02 */6 * * *	root	/usr/local/bin/backup-localhost-filesystem.sh --fsmount /home/mwinterschon --compression no --incremental yes --exclude /home/mwinterschon/Media
+
+# path: /home/mwinterschon/Media
+# exclude: none
+02 03  * * 7	root	/usr/local/bin/backup-localhost-filesystem.sh --fsmount /home/mwinterschon/Media --compression no --incremental yes 
+
+
+## Rclone Backups to B2
+#--------------------------------------------------------------------------------
+# ref: https://rclone.org/b2/
+01 */4 * * *	mwinterschon	/usr/bin/setsid  /bin/rclone --config=/home/mwinterschon/.rclone/rclone.conf --transfers 32 --log-level NOTICE --syslog --copy-links sync /home/mwinterschon/Documents b2-rclone:rclone-fraulein/Documents 
+
+
+## Rsync Media from Bunny
+#--------------------------------------------------------------------------------
+# ref: https://rclone.org/local/
+01 01 * * *	mwinterschon	/usr/bin/setsid /bin/rclone --log-level NOTICE --syslog --copy-links sync /opt/nfs-shared/bunny/Media /home/mwinterschon/Media
+

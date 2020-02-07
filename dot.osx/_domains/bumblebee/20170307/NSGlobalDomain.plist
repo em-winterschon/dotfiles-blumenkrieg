@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AppleFontSmoothing</key>
+	<integer>2</integer>
+	<key>AppleHighlightColor</key>
+	<string>0.968627 0.831373 1.000000</string>
+	<key>AppleKeyboardUIMode</key>
+	<integer>3</integer>
+	<key>ApplePressAndHoldEnabled</key>
+	<false/>
+	<key>AppleShowAllExtensions</key>
+	<true/>
+	<key>AppleShowScrollBars</key>
+	<string>Always</string>
+	<key>InitialKeyRepeat</key>
+	<integer>10</integer>
+	<key>KeyRepeat</key>
+	<integer>1</integer>
+	<key>NSAutomaticDashSubstitutionEnabled</key>
+	<false/>
+	<key>NSAutomaticQuoteSubstitutionEnabled</key>
+	<false/>
+	<key>NSAutomaticSpellingCorrectionEnabled</key>
+	<false/>
+	<key>NSDisableAutomaticTermination</key>
+	<true/>
+	<key>NSDocumentSaveNewDocumentsToCloud</key>
+	<false/>
+	<key>NSNavPanelExpandedStateForSaveMode</key>
+	<true/>
+	<key>NSNavPanelExpandedStateForSaveMode2</key>
+	<true/>
+	<key>NSTableViewDefaultSizeMode</key>
+	<integer>1</integer>
+	<key>NSTextShowsControlCharacters</key>
+	<true/>
+	<key>NSUseAnimatedFocusRing</key>
+	<false/>
+	<key>NSWindowResizeTime</key>
+	<real>0.0010000000474974513</real>
+	<key>PMPrintingExpandedStateForPrint</key>
+	<true/>
+	<key>PMPrintingExpandedStateForPrint2</key>
+	<true/>
+	<key>com.apple.mouse.tapBehavior</key>
+	<integer>1</integer>
+	<key>com.apple.springing.delay</key>
+	<real>0.0</real>
+	<key>com.apple.springing.enabled</key>
+	<true/>
+	<key>com.apple.swipescrolldirection</key>
+	<false/>
+</dict>
+</plist>

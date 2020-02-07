@@ -1,0 +1,111 @@
+#!/bin/bash
+
+DATE=`date +%Y%m%d-%H%M`
+LOC_MAIN="/var/lib/libvirt"
+LOC_BACKUP="$LOC_MAIN/backups/$DATE"
+LOC_DEFS="$LOC_BACKUP/xmldefs"
+
+function fail() {
+    MSG=$1
+    NOW=`date +%Y%m%d-%H%M%S` 
+    echo "[FAILED][$NOW] $MSG"
+    exit 1;
+}
+
+function debug() {
+    MSG=$1
+    NOW=`date +%Y%m%d-%H%M%S`
+    echo "[DEBUG][$NOW] $MSG"
+}
+
+function kvm.nodes-cfgbkup() {
+    for node in `kvm.list-fqdn-all`; do 
+	virsh dumpxml $node > $LOC_DEFS/$node.xml
+    done
+}
+
+function kvm.list-all() {
+    virsh list --all | \
+	tail -n +3 | \
+	head -n +$(expr `virsh list --all | tail -n +3 | wc -l` - 1) | \
+	awk '{print $1" "$3 " "$2 }'
+}
+
+function kvm.list-running() {
+    virsh list | \
+	tail -n +3 | \
+	head -n +$(expr `virsh list | tail -n +3 | wc -l` - 1) | \
+	awk '{print $1" "$3 " "$2 }'
+}
+
+function kvm.list-fqdn-all() {
+    kvm.list-all | awk '{print $3}'
+}
+
+function kvm.list-fqdn-all-running() {
+    kvm.list-running | awk '{print $3}'
+}
+
+function kvm.nodes-halt() {
+    for node in `kvm.list-fqdn-all-running`; do
+	virsh shutdown $node
+    done
+}
+
+
+## Check if any nodes are online, shutdown running ones.
+debug "Checking for running nodes."
+RUNNING=`virsh list | tail -n +3 | wc -l`
+if [ $RUNNING -gt 1 ]; then
+    debug "Some nodes are still online, initiating shutdown."
+    kvm.nodes-halt
+    ## Ensure no nodes running
+    TIME=5
+    for i in `seq 1 $TIME`; do
+	TOTAL=`expr $TIME \* 2`
+	kvm.list-fqdn-all-running > /dev/null
+	if [ $? -eq 0 ]; then
+	    # some nodes still running
+	    let STATE=1
+	    debug "Waiting for shutdown to complete: [$i/$TOTAL]"
+	    sleep 2
+	else 
+	    # nodes all shutdown
+	    let STATE=0
+	fi
+    done
+    
+    if [ $STATE -eq 1 ]; then
+	fail "Node shutdown process failed to complete in time. Exiting."    
+    else 
+	debug "Node have all completed shutdown. Continuing..."
+    fi
+else
+    debug "Nodes are all offline. Continuing backup..."
+fi
+
+## Create directories
+if [ ! -d $LOC_BACKUP ]; then
+    debug "Creating backup dir: $LOC_BACKUP"
+    mkdir -p $LOC_BACKUP || \
+	fail "Could not create backup directory. Check perms: $LOC_BACKUP"
+fi
+if [ ! -d $LOC_DEFS ]; then
+    debug "Creating definitions dir: $LOC_DEFS"
+    mkdir -p $LOC_DEFS || \
+	fail "Could not create backup directory. Check perms: $LOC_DEFS"
+fi
+
+## Backup definitions to XML
+debug "Issuing node definition xml backup to $LOC_DEFS"
+kvm.nodes-cfgbkup
+
+## Rsync node image files to backup dir
+for node in `kvm.list-fqdn-all`; do
+    debug "Issuing rsync of $node image data to $LOC_BACKUP"
+    rsync -avh --progress $LOC_MAIN/images/$node* $LOC_BACKUP/ || \
+	fail "Rsync backup of $node image data failed due to unknown exception."
+done
+
+## Complete
+debug "Backup process complete!"

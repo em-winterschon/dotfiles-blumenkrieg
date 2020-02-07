@@ -1,0 +1,29 @@
+[Desktop Entry]
+Type=Application
+Name=conky
+Exec=/home/mwinterschon/Applications/conky-x86_64.AppImage --daemonize --pause=1
+StartupNotify=false
+Terminal=false
+Icon=appimagekit_e78bc49abe5f3a9098287557f8646338_conky-logomark-violet
+Categories=System;Monitor;
+
+TryExec=/home/mwinterschon/Applications/conky-x86_64.AppImage
+X-AppImage-Old-Icon=conky-logomark-violet
+X-AppImage-Identifier=e78bc49abe5f3a9098287557f8646338
+Actions=Remove;
+X-AppImageLauncher-Version=2.1.0 (git commit d1be7e7), built on 2019-12-01 00:44:14 UTC
+
+[Desktop Action Remove]
+Name=Remove AppImage from system
+Icon=AppImageLauncher
+Exec=/usr/lib/x86_64-linux-gnu/appimagelauncher/remove "/home/mwinterschon/Applications/conky-x86_64.AppImage"
+Name[ast]=Desaniciar AppImage del sistema
+Name[de]=AppImage vom System entfernen
+Name[en]=Remove AppImage from system
+Name[es]=Eliminar Appimage del Sistema
+Name[fr]=Supprimer l'AppImage du système
+Name[it]=Rimuovi AppImage dal sistema
+Name[pt]=Remover AppImage do sistema
+Name[pt_PT]=Remover AppImage do sistema
+Name[ru]=Удалить AppImage из системы
+Name[zh_Hans]=从系统中移除 AppImage

@@ -1,0 +1,3 @@
+#!/bin/bash
+itermocil --here isomera.mysql
+

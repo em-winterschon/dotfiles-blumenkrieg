@@ -1,0 +1,8 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Postman
+Description=Postman REST API Browser
+Exec=/usr/local/bin/Postman/Postman
+Icon=/usr/share/icons/hicolor/scalable/postman.svg
+Type=Application
+Categories=Development;

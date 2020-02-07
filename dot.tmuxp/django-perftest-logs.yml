@@ -1,0 +1,12 @@
+session_name: django-perftest-logs
+windows:
+- layout: f843,238x72,0,0[238x36,0,0,74,238x35,0,37,95]
+  panes:
+  - sudo tail -f /var/log/mysql/general.log | grcat conf.mysql
+  - tail -f /tmp/perftest.logging.view.debug.log | lnav -t
+  window_name: django-perftest-logs
+
+ # Layout Notes
+ # run to display active tmux session layout:
+ # $> tmux list-windows -F "#{window_active} #{window_layout}" | grep "^1" | cut -d " " -f 2
+ 

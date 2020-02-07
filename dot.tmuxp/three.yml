@@ -1,0 +1,15 @@
+session_name: 3-split
+start_directory: '~'
+windows:
+- layout: main-horizontal
+  options:
+    main-pane-height: 30
+  panes:
+    - reset
+    - reset
+    - reset
+  window_name: main
+
+# Layout Notes
+# run to display active tmux session layout:
+# $> tmux list-windows -F "#{window_active} #{window_layout}" | grep "^1" | cut -d " " -f 2

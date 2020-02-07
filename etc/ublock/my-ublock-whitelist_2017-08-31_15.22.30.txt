@@ -1,0 +1,15 @@
+aa.com
+about-scheme
+behind-the-scene
+chrome-extension-scheme
+chrome-scheme
+google.com
+loopconversation.about-scheme
+medium.com
+moz-extension-scheme
+namecheap.com
+netflix.com
+opera-scheme
+united.com
+userstyles.org
+vivaldi-scheme

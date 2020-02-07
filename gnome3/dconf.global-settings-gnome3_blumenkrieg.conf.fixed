@@ -1,0 +1,177 @@
+[org/gnome/settings-daemon/plugins/power]
+sleep-inactive-battery-type='nothing'
+sleep-inactive-ac-timeout=3600
+sleep-inactive-ac-type='nothing'
+sleep-inactive-battery-timeout=1800
+
+[org/gnome/settings-daemon/plugins/color]
+night-light-schedule-automatic=false
+night-light-schedule-to=8.0
+night-light-schedule-from=18.0
+night-light-enabled=true
+
+[org/gnome/settings-daemon/plugins/media-keys]
+decrease-text-size='<Primary><Super>minus'
+control-center='<Super>BackSpace'
+screenshot='<Shift><Super>p'
+volume-up='<Super>Insert'
+calculator='<Super>c'
+volume-down='<Super>Delete'
+screencast='<Shift><Alt>r'
+window-screenshot='<Primary><Super>p'
+increase-text-size='<Primary><Super>equal'
+home='<Super>f'
+area-screenshot='<Shift><Alt>dollar'
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/']
+volume-mute='<Alt>Delete'
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1]
+binding='<Super>t'
+command='gnome-terminal'
+name='Open Terminal'
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0]
+binding='<Primary>BackSpace'
+command='/bin/gnome-tweaks'
+name='Open Gnome Tweaks'
+
+
+[org/gnome/shell]
+app-picker-view=uint32 1
+enabled-extensions=['desktop-icons@gnome-shell-extensions.gcampax.github.com', 'keyboard_modifiers_status@sneetsher']
+favorite-apps=['vivaldi-stable.desktop', 'chromium-browser.desktop', 'google-chrome.desktop', 'firefox.desktop', 'org.gnome.Terminal.desktop', 'spotify_spotify.desktop', 'pycharm-professional_pycharm-professional.desktop', 'datagrip_datagrip.desktop', 'slack.desktop', 'keeperpasswordmanager.desktop', 'org.gnome.Nautilus.desktop', 'Zoom.desktop']
+
+
+[org/gnome/desktop/interface]
+text-scaling-factor=1.0
+font-name='Montserrat weight=255 13'
+document-font-name='Montserrat weight=255 13'
+toolkit-accessibility=false
+gtk-im-module='gtk-im-context-simple'
+clock-show-seconds=true
+monospace-font-name='Monospace 12'
+gtk-theme='Adwaita-dark'
+clock-show-date=true
+
+
+[org/gnome/desktop/peripherals/mouse]
+natural-scroll=false
+speed=-0.84558823529411764
+accel-profile='adaptive'
+
+[org/gnome/desktop/privacy]
+recent-files-max-age=30
+remove-old-temp-files=true
+old-files-age=uint32 14
+report-technical-problems=true
+remove-old-trash-files=true
+
+[org/gnome/desktop/wm/preferences]
+mouse-button-modifier='disabled'
+button-layout='appmenu:minimize,maximize,close'
+num-workspaces=1
+titlebar-font='Montserrat weight=255 12'
+
+[org/gnome/desktop/wm/keybindings]
+toggle-maximized=['<Alt>0']
+unmaximize=['<Super>Down']
+switch-to-workspace-1=['<Super>1']
+switch-applications=['<Alt>Tab']
+panel-run-dialog=['<Super>Tab']
+panel-main-menu=@as []
+switch-to-workspace-2=['<Super>2']
+switch-to-workspace-3=['<Super>3']
+cycle-windows=@as []
+cycle-windows-backward=@as []
+show-desktop=['<Primary><Alt><Super>h']
+switch-applications-backward=['<Shift><Alt>Tab']
+switch-to-workspace-4=['<Super>4']
+toggle-fullscreen=['<Primary><Alt><Super>0']
+minimize=['<Super>h']
+
+[org/gnome/desktop/background]
+picture-uri='file:///usr/share/backgrounds/c8/default-hue-9.xml'
+primary-color='#000000000000'
+picture-options='scaled'
+secondary-color='#000000000000'
+
+[org/gnome/desktop/input-sources]
+show-all-sources=true
+current=uint32 0
+sources=[('xkb', 'us')]
+xkb-options=['terminate:ctrl_alt_bksp', 'lv5:ralt_switch_lock', 'shift:both_shiftlock', 'shift:breaks_caps', 'compose:ralt']
+
+[org/gnome/terminal/legacy/profiles:/:cf4c1b5c-d3cd-4ea3-9858-88cc6c34f6cb]
+foreground-color='rgb(160,125,171)'
+cjk-utf8-ambiguous-width='narrow'
+visible-name='Pink - Dark'
+highlight-foreground-color='rgb(227,167,255)'
+palette=['rgb(0,0,0)', 'rgb(244,5,194)', 'rgb(229,1,204)', 'rgb(255,37,245)', 'rgb(229,25,236)', 'rgb(205,0,205)', 'rgb(0,205,205)', 'rgb(229,229,229)', 'rgb(204,204,204)', 'rgb(201,12,188)', 'rgb(189,23,151)', 'rgb(217,26,252)', 'rgb(232,13,191)', 'rgb(255,0,255)', 'rgb(0,255,255)', 'rgb(255,255,255)']
+bold-is-bright=true
+custom-command='tmux'
+scroll-on-keystroke=true
+default-size-columns=240
+default-size-rows=80
+cursor-background-color='rgb(204,16,229)'
+scroll-on-output=false
+cursor-colors-set=true
+delete-binding='ascii-delete'
+cell-height-scale=1.1000000000000001
+use-custom-command=false
+highlight-colors-set=true
+cursor-foreground-color='rgb(212,12,206)'
+font='Monospace 12'
+use-theme-colors=false
+scrollback-unlimited=true
+use-system-font=false
+use-transparent-background=false
+bold-color-same-as-fg=false
+bold-color='rgb(139,3,203)'
+background-color='rgb(0,0,0)'
+background-transparency-percent=44
+highlight-background-color='rgb(199,118,232)'
+audible-bell=false
+
+[org/gnome/terminal/legacy/profiles:]
+list=['b1dcc9dd-5262-4d8d-a863-c897e6d979b9', 'cf4c1b5c-d3cd-4ea3-9858-88cc6c34f6cb']
+default='cf4c1b5c-d3cd-4ea3-9858-88cc6c34f6cb'
+
+[org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
+foreground-color='rgb(255,255,255)'
+visible-name='Default'
+palette=['rgb(0,0,0)', 'rgb(149,41,234)', 'rgb(147,26,208)', 'rgb(27,75,146)', 'rgb(158,23,221)', 'rgb(205,0,205)', 'rgb(0,205,205)', 'rgb(229,229,229)', 'rgb(204,204,204)', 'rgb(117,0,255)', 'rgb(166,37,210)', 'rgb(22,82,144)', 'rgb(140,28,244)', 'rgb(255,0,255)', 'rgb(0,255,255)', 'rgb(255,255,255)']
+cell-width-scale=1.1500000000000001
+bold-is-bright=true
+cursor-background-color='rgb(109,31,200)'
+use-system-font=false
+cursor-colors-set=true
+highlight-colors-set=true
+cell-height-scale=1.1000000000000001
+use-custom-command=false
+use-theme-colors=false
+cursor-foreground-color='rgb(131,23,182)'
+font='Monospace 11'
+use-transparent-background=false
+highlight-background-color='rgb(106,41,133)'
+background-color='rgb(0,0,0)'
+audible-bell=false
+highlight-foreground-color='rgb(163,112,248)'
+
+[org/gnome/terminal/legacy]
+schema-version=uint32 3
+
+[org/gnome/mutter]
+dynamic-workspaces=true
+overlay-key='Super_R'
+
+[org/gtk/settings/file-chooser]
+sort-column='name'
+sidebar-width=202
+window-position=(847, 695)
+show-size-column=true
+show-hidden=false
+window-size=(1231, 902)
+sort-directories-first=false
+date-format='regular'
+sort-order='ascending'
+location-mode='path-bar'

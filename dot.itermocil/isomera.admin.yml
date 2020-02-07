@@ -1,0 +1,7 @@
+windows:
+  - name: isomera.admin
+    root: ~
+    layout: main-vertical
+    panes:
+      - ssh admin-fra1.isomera.net
+      - ssh bastion-fra1.isomera.net

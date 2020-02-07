@@ -1,0 +1,18 @@
+windows:
+  - name: sfodev.physical
+    root: ~
+    layout: tiled
+    panes:
+      - ssh apt.sfodev.fastly.com
+      - ssh dci-netbox.sfodev.fastly.com
+      - ssh dci-userland.sfodev.fastly.com
+      - ssh elastic-srv1.sfodev.fastly.com
+      - ssh elastic-srv2.sfodev.fastly.com
+      - ssh haproxy.sfodev.fastly.com
+      - ssh hwe-xenialtest.sfodev.fastly.com
+      - ssh kibana.sfodev.fastly.com
+      - ssh prometheus.sfodev.fastly.com
+      - ssh provision.sfodev.fastly.com
+      - ssh repo.sfodev.fastly.com
+      - ssh vpn.sfodev.fastly.com
+      

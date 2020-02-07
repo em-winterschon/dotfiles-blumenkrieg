@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AppleShowAllFiles</key>
+	<true/>
+	<key>DisableAllAnimations</key>
+	<true/>
+	<key>FXDefaultSearchScope</key>
+	<string>SCcf</string>
+	<key>FXEnableExtensionChangeWarning</key>
+	<false/>
+	<key>FXInfoPanesExpanded</key>
+	<dict>
+		<key>General</key>
+		<true/>
+		<key>OpenWith</key>
+		<true/>
+		<key>Privileges</key>
+		<true/>
+	</dict>
+	<key>FXPreferredViewStyle</key>
+	<string>clmv</string>
+	<key>NewWindowTarget</key>
+	<string>PfDe</string>
+	<key>NewWindowTargetPath</key>
+	<string>file:///Users/meverett/</string>
+	<key>OpenWindowForNewRemovableDisk</key>
+	<true/>
+	<key>ShowExternalHardDrivesOnDesktop</key>
+	<true/>
+	<key>ShowHardDrivesOnDesktop</key>
+	<true/>
+	<key>ShowMountedServersOnDesktop</key>
+	<true/>
+	<key>ShowPathbar</key>
+	<true/>
+	<key>ShowRemovableMediaOnDesktop</key>
+	<true/>
+	<key>ShowStatusBar</key>
+	<true/>
+	<key>WarnOnEmptyTrash</key>
+	<false/>
+	<key>_FXShowPosixPathInTitle</key>
+	<true/>
+	<key>_FXSortFoldersFirst</key>
+	<false/>
+</dict>
+</plist>

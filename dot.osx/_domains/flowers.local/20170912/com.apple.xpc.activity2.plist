@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ActivityBaseDates</key>
+	<dict>
+		<key>com.apple.SoftwareUpdate.Activity</key>
+		<date>2017-08-05T07:41:12Z</date>
+		<key>com.apple.SymptomFramework.MaintenanceActivity</key>
+		<date>2017-09-11T21:21:31Z</date>
+		<key>com.apple.applessdbgrefresh.activity</key>
+		<date>2017-09-11T21:27:07Z</date>
+		<key>com.apple.applessdstatistics.activity</key>
+		<date>2017-08-05T07:41:12Z</date>
+		<key>com.apple.awdd.publication</key>
+		<date>2017-09-11T21:27:15Z</date>
+		<key>com.apple.awdd.trigger:0x7f004:86400:2</key>
+		<date>2017-09-11T21:27:15Z</date>
+		<key>com.apple.awdd.trigger:0x7f006:14400:2</key>
+		<date>2017-09-12T15:43:02Z</date>
+		<key>com.apple.coreduetd.knowledge</key>
+		<date>2017-08-05T07:41:12Z</date>
+		<key>com.apple.coreduetd.people</key>
+		<date>2017-08-05T07:41:12Z</date>
+		<key>com.apple.icloud.findmydeviced.keep-alive-on-dirty</key>
+		<date>2017-09-11T22:23:01Z</date>
+		<key>com.apple.mobileassetd.metadata-update</key>
+		<date>2017-08-05T07:41:12Z</date>
+		<key>com.apple.noticeboard.update</key>
+		<date>2017-08-05T07:41:13Z</date>
+		<key>com.apple.periodic-daily</key>
+		<date>2017-08-05T07:41:12Z</date>
+		<key>com.apple.periodic-monthly</key>
+		<date>2017-08-05T07:41:12Z</date>
+		<key>com.apple.periodic-weekly</key>
+		<date>2017-08-05T07:41:12Z</date>
+		<key>com.apple.quicklook.cloudThumbnailDatabaseCleanup</key>
+		<date>2017-08-05T07:41:13Z</date>
+		<key>com.apple.revisiond.requeue_chunking</key>
+		<date>2017-08-05T07:41:12Z</date>
+		<key>com.apple.security.syspolicy.rearm</key>
+		<date>2017-08-05T07:41:12Z</date>
+		<key>com.apple.storeagent.SoftwareMap.periodicReload</key>
+		<date>2017-09-11T21:22:37Z</date>
+		<key>com.apple.usbd.messageTracerLogging</key>
+		<date>2017-09-12T21:21:15Z</date>
+	</dict>
+</dict>
+</plist>

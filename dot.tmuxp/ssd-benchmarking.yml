@@ -1,0 +1,27 @@
+session_name: ssd-benchmarking
+windows:
+- window_name: ssd-benchmarking
+  layout: 5e37,273x79,0,0{136x79,0,0[136x8,0,0,51,136x70,0,9,60],136x79,137,0[136x18,137,0,1,136x19,137,19,58,136x40,137,39,2]}
+  panes:
+  - shell_command:
+      - clear
+      - sudo iotop -o -P
+  - shell_command:
+      - clear
+      - glances
+  - shell_command:
+      - cd ~/Projects/fastly/infra/sfodev-benchmarking/SSD-Bench/tools/logs
+      - clear
+      - watch ls -al
+  - shell_command:
+      - clear
+      - POSIXLY_CORRECT=1 iostat /dev/sda /dev/sdb /dev/sdc /dev/sdd /dev/sde /dev/sdf /dev/sdg /dev/sdh /dev/sdi /dev/sdj -x -h -m -d 2
+  - shell_command:
+      - cd ~/Projects/fastly/infra/sfodev-benchmarking/SSD-Bench/tools/logs
+      - clear
+      - sleep 6000 && ./associative.loop.sh
+    focus: true
+
+# Layout Notes
+# run to display active tmux session layout:
+# $> tmux list-windows -F "#{window_active} #{window_layout}" | grep "^1" | cut -d " " -f 2

@@ -1,0 +1,119 @@
+#!/bin/bash
+function tzones() {
+    ls /usr/share/zoneinfo/"$1";
+}
+function tzone() {
+    TZ="$1"/"$2" date;
+}
+
+## CentOS / RHEL specific
+alias y='sudo /bin/yum'
+alias yum='sudo /bin/yum'
+alias dnf='sudo /bin/dnf'
+
+## Debian based specific
+alias ag='sudo apt-get'
+alias agi='sudo apt-get install'
+alias ac='sudo apt-cache'
+alias acs='sudo apt-cache search'
+alias apt-get='sudo apt-get'
+alias apt-cache='sudo apt-cache'
+alias e.crontab='sudo emacs /etc/crontab'
+
+## iostat fio activity checker
+function iostat-fio-active() {
+    while true; do
+	cmd="POSIXLY_CORRECT=1 iostat `psa | grep -v "grep" | grep fio | awk -F= '{print $2}' | awk '{print $1}'` -x -h -m -d 2 10 | grcat conf.iostat_sar"
+	echo "Running: $cmd"
+	POSIXLY_CORRECT=1 iostat `psa | grep -v "grep" | grep fio | awk -F= '{print $2}' | awk '{print $1}'` -x -h -m -d 2 10 | grcat conf.iostat_sar
+    done
+}
+
+## iostat show all active drives
+function iostat-all-active() {
+    while true; do
+	POSIXLY_CORRECT=1 iostat -x -k -z -y -d 2 4 | grcat conf.iostat_sar
+    done
+}
+
+## Virsh shortcuts
+function virsh-start-console() {
+    sudo virsh start $1 && \
+	sleep 2 && \
+	sudo virsh console $1
+}
+
+## Quick aliases for system messages
+alias messages.nocruft='sudo tail -f /var/log/syslog | egrep -v chef-client\|dbus\|CRON\|ganglia\|ntpd\|systemd'
+alias messages.ansible='sudo tail -f /var/log/syslog | egrep ansible'
+alias grc.ansible='tail -f /var/log/ansible.log | grcat conf.log'
+alias grc.syslog='tail -f /var/log/syslog | grcat conf.log'
+alias grc.syslog.ansible='tail -f /var/log/syslog | grep ansible | grcat conf.log'
+alias grc.syslog.nocruft='tail -f /var/log/syslog | egrep -v chef-client\|dbus\|CRON\|ganglia\|ntpd\|systemd | grcat conf.log'
+alias grc.mysqlgenlog='tail -f /var/log/mysql/general.log | grcat conf.sql'
+alias grc.queueExecSSH-9942='tail -f /tmp/queueExecSSH-loadgen9942.log | grcat conf.log'
+alias grc.queueExecSSH-9943='tail -f /tmp/queueExecSSH-loadgen9943.log | grcat conf.log'
+
+function grc.log() {
+    [[ -r "$1" ]] && tail -f $1 | grcat conf.log
+    [[ -r "$1" ]] || sudo tail -f $1 | grcat conf.log
+}
+
+## Workstation specific aliases
+if [ $HOSTNAME = "fraulein" ] || [ $HOSTNAME = "flowers" ] || [ $HOSTNAME = "blumenkrieg" ]; then
+    ## Path addition for Snapd
+    PATH=$PATH:/var/lib/snapd/snap/bin
+    PATH=$PATH:~/Projects/GoLand-2019.2.5/bin
+    PATH=$PATH:~/Projects/dotfiles/dot.local/bin/
+
+    ## local aliases
+    alias mycli='mycli --logfile ~/.mycli.log --socket /var/lib/mysql/mysql.sock --user root'
+    alias rclone='/bin/rclone --config=/home/mwinterschon/.rclone/rclone.conf --transfers 32 --progress'
+    alias xrandr-connected='xrandr | grep -e " connected [^(]" | sed -e "s/\([A-Z0-9]\+\) connected.*/\1/"'
+    alias xrandr-profile='cat ~/.xprofile'
+
+    ## Start unique ssh-agent per shell instance
+    eval "$(ssh-agent)"
+
+    ## Enable chef properly
+    eval "$(chef shell-init bash)"
+fi
+
+
+## Tmux shortcuts
+# generic
+alias tmux2v='tmux new-session \; split-window -h -p 50 \; select-pane -t 2 \; send-keys C-l \; select-pane -t 1 \;'
+alias tmux2h='tmux new-session \; split-window -v -p 50 \; select-pane -t 2 \; send-keys C-l \; select-pane -t 1 \;'
+alias tmux3='tmux new-session \; split-window -h -p 50 \; split-window -v -p 50 \; select-pane -t 2 \; send-keys C-l \; select-pane -t 3 \; send-keys C-l \; select-pane -t 1 \; send-keys C-l \;'
+
+# development
+if [ $HOSTNAME = "fraulein" ] || [ $HOSTNAME = "flowers" ] || [ $HOSTNAME = "blumenkrieg" ]; then
+    alias tmuxDjangoBranch='tmuxp load django-perftest-branch'
+    alias tmuxDjangoLogs='tmuxp load django-perftest-logs'
+    alias tmuxDjangoMaster='tmuxp load django-perftest-master'
+    alias tmuxMon='tmuxp load local-mon'
+
+    # sfodev general
+    alias tmuxLab='tmuxp load lab-connect'
+
+    # load-test infra
+    alias tmuxSetAdminA='tmuxp load setAdminA'
+    alias tmuxSetAdminB='tmuxp load setAdminB'
+    alias tmuxSetDevA='tmuxp load setDevA'
+    alias tmuxSetDevB='tmuxp load setDevB'
+    alias tmuxSetDevC='tmuxp load setDevC'
+fi
+
+## sed colorization
+function sedcolor(){
+    sed --unbuffered -e 's/\(.*FATAL.*\)/\o033[1;31m\1\o033[0;39m/' \
+	-e 's/\(.*ERROR.*\)/\o033[31m\1\o033[39m/' \
+	-e 's/\(.*WARN.*\)/\o033[33m\1\o033[39m/' \
+	-e 's/\(.*INFO.*\)/\o033[32m\1\o033[39m/' \
+	-e 's/\(.*DEBUG.*\)/\o033[34m\1\o033[39m/' \
+	-e 's/\(.*TRACE.*\)/\o033[30m\1\o033[39m/' \
+	-e 's/\(.*[Ee]xception.*\)/\o033[1;39m\1\o033[0;39m/'
+}
+
+## import grc bash completions [DEPRECTED]
+#[[ -s "/etc/grc.bashrc" ]] && (echo "loading grc aliases" && source /etc/grc.bashrc)

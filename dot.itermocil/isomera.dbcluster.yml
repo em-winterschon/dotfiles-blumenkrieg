@@ -1,0 +1,10 @@
+windows:
+  - name: isomera.dbcluster
+    root: ~
+    layout: tiled
+    panes:
+      - ssh admin-fra1.isomera.net
+      - ssh mysql-00-fra1.isomera.net
+      - ssh mysql-01-fra1.isomera.net
+      - ssh mysql-02-fra1.isomera.net      
+      

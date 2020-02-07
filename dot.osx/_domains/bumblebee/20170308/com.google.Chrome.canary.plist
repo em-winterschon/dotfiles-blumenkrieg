@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AppleEnableMouseSwipeNavigateWithScrolls</key>
+	<false/>
+	<key>AppleEnableSwipeNavigateWithScrolls</key>
+	<false/>
+	<key>DisablePrintPreview</key>
+	<true/>
+	<key>ExtensionInstallSources</key>
+	<array>
+		<string>https://gist.githubusercontent.com/</string>
+		<string>http://userscripts.org/*</string>
+	</array>
+	<key>PMPrintingExpandedStateForPrint2</key>
+	<true/>
+</dict>
+</plist>

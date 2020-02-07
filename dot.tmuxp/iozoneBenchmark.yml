@@ -1,0 +1,29 @@
+session_name: iozoneBenchmark
+windows:
+- window_name: iozoneBenchmark
+  layout: f373,315x91,0,0{167x91,0,0[167x39,0,0{81x39,0,0[81x15,0,0,3,81x23,0,16,10],85x39,82,0,9},167x51,0,40,4],147x91,168,0[147x19,168,0,5,147x24,168,20,8,147x6,168,45,6,147x21,168,52,7,147x17,168,74,11]}x39,142,45,6]}
+  panes:
+  - shell_command:
+      - watch bin/arcstats.simple
+  - shell_command:
+      - arcstat -f "time,read,hit%,hits,miss%,miss,arcsz,c" 2 8192
+  - shell_command:
+      - zpool iostat -v 2
+  - shell_command:
+      - glances
+  - shell_command:
+      - watch cat /proc/mdstat
+  - shell_command:
+      - cd /opt/storage/local/zfs/viergigs/einsraum/
+      - clear
+      - echo "iozone -a -s 256g -r 8192"
+  - shell_command:
+      - cd ~/tmp
+      - while true; do import -window root foobar-`date +%Y%m%d-%H%M%S`.png && sleep 10; done
+  - shell_command:
+      - htop
+    focus: true
+
+ # Layout Notes
+ # run to display active tmux session layout:
+ # $> tmux list-windows -F "#{window_active} #{window_layout}" | grep "^1" | cut -d " " -f 2

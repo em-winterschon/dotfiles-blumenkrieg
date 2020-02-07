@@ -1,0 +1,53 @@
+#!/usr/bin/perl
+use Net::Ping;
+
+if ($#ARGV == 0) {
+    $host = $ARGV[0];
+
+} else {
+    $host = "1.1.1.1";
+    #print "Usage: pingrate <host>\n";
+    #exit();
+}
+
+$p = Net::Ping->new("icmp");
+$p->hires();
+
+sub beep {
+    system("playsound --volume 0.2 /home/aparicio/scripts/beep.wav >/dev/null");
+}
+
+sub flat {
+    system("playsound --volume 0.1 /home/aparicio/scripts/flat.wav >/dev/null");
+}
+
+$fail = 0;
+
+while (1) {
+    ($ret, $time, $ip) = $p->ping($host, 2);
+    open(OUT, ">/tmp/router_status");
+    if ($ret) {
+	printf "%.2f ms from $ip\n", $time*1000, $ip;
+	printf OUT "%.2f ms\n", $time*1000;
+	if ($fail > 1) {
+	    beep(); beep();
+	}
+	if ($fail > 0) {
+	    $fail = 0;
+	}
+
+    } else {
+	printf "unreachable\n";
+	print OUT "unreachable\n";
+	if ($fail <= 2) {
+	    beep();
+	} elsif ($fail == 3) {
+	    flat();
+	}
+	$fail++;
+    }
+    close(OUT);
+    sleep(2);
+}
+
+$p->close();

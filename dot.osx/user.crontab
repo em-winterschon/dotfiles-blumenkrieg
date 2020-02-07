@@ -1,0 +1,24 @@
+SHELL=/opt/local/bin/bash
+PATH=/sbin:/bin:/usr/sbin:/usr/bin:/opt/local/bin
+MAILTO=eva@bonitabel.la
+
+# For details see man 4 crontabs
+
+# Example of job definition:
+# .---------------- minute (0 - 59)
+# |  .------------- hour (0 - 23)
+# |  |  .---------- day of month (1 - 31)
+# |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...
+# |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
+# |  |  |  |  |
+# *  *  *  *  *
+
+## Fix hostname shenanagins re: jamfpro mfs and other such dumbassery
+##  note: requires visudo without password: "<username>    ALL=(ALL) NOPASSWD: ALL"
+*/2  *  *  *  * sudo /usr/sbin/scutil --set ComputerName flowers
+*/2  *  *  *  * sudo /usr/sbin/scutil --set HostName flowers
+*/2  *  *  *  * sudo /usr/sbin/scutil --set LocalHostName flowers
+
+## OA related backups from S3 for off-site sync to B2 via Ark
+01 */2  *  *  * sudo chown -R mwinterschon:staff ~/Projects/organic-alks/site-s3backups
+01 */10  *  *  * sudo /opt/local/bin/s3cmd sync --skip-existing s3://s3-oa-prod-backups/cloud.organicalkaloids.com/ ~/Projects/organic-alks/site-s3backups/

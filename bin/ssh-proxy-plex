@@ -1,0 +1,2 @@
+echo "Starting localhost Plex proxy for https://127.0.0.1:32400"
+ssh root@bunny -L 32400:localhost:32400 -N

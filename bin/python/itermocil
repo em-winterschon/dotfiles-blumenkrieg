@@ -1,0 +1,6 @@
+#!/opt/local/bin/python
+
+from itermocil import main
+
+if __name__ == '__main__':
+    main()

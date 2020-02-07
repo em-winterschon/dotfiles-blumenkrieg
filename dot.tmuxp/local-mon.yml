@@ -1,0 +1,14 @@
+session_name: local-mon
+windows:
+- layout: cb48,160x47,0,0[160x6,0,0,43,160x6,0,7,46,160x33,0,14{79x33,0,14,44,80x33,80,14,45}]
+  panes:
+  - sudo iotop --only --delay=2 --processes --accumulated
+  - sudo ~/bin/binaries/nethogs -d 2 -s -v 3
+  - glances  --disable-webui --disable-top --disable-plugin amps,connections,cloud,cpu,mem,load,core,docker,folders,fs,gpu,help,irq,memswap,now,psutilveresion,quicklook,sensors,smart,uptime --process-short-name --hide-kernel-threads --meangpu --disable-irix --enable-process-extended --cached-time 5
+  - htop --sort-key=PERCENT_CPU
+  window_name: local-mon
+
+ # Layout Notes
+ # run to display active tmux session layout:
+ # $> tmux list-windows -F "#{window_active} #{window_layout}" | grep "^1" | cut -d " " -f 2
+ 

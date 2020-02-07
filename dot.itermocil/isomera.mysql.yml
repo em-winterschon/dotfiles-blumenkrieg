@@ -1,0 +1,8 @@
+windows:
+  - name: isomera.mysql
+    root: ~
+    layout: tiled
+    panes:
+      - ssh mysql-00-fra1.isomera.net
+      - ssh mysql-01-fra1.isomera.net
+      - ssh mysql-02-fra1.isomera.net      

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Encoding=UTF-8
+Name=Chromium
+Comment=Chromium Browser
+Icon=/usr/share/icons/hicolor/scalable/chromium.svg
+Exec=/usr/local/bin/chromium
+Terminal=false
+Categories=Internet

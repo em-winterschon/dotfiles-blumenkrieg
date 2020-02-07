@@ -1,0 +1,7 @@
+windows:
+  - name: isomera.nginx
+    root: ~
+    layout: main-vertical
+    panes:
+      - ssh nginx-00-fra1.isomera.net
+      - ssh nginx-01-fra1.isomera.net

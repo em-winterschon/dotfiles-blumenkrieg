@@ -1,0 +1,7 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Abricotine
+Exec=/usr/local/bin/abricotine
+Icon=/usr/share/icons/hicolor/scalable/abricotine.svg
+Type=Application
+Categories=Development;

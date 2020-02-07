@@ -1,0 +1,16 @@
+windows:
+  - name: sfodev.physical
+    root: ~
+    layout: tiled
+    panes:
+      - ssh dci-bench-overflow.sfodev.fastly.com
+      - ssh hwe-devtest.sfodev.fastly.com
+      - ssh dci-ddos-sflow.sfodev.fastly.com
+      - ssh dci-foreman.sfodev.fastly.com
+      - ssh dci-infra-compute.sfodev.fastly.com
+      - ssh dci-infra-nfsrepo.sfodev.fastly.com
+      - ssh dci-testcase-x10.sfodev.fastly.com
+      - ssh dci-testcase-x9.sfodev.fastly.com
+      - ssh hwe-r740xd-tc.sfodev.fastly.com
+      - ssh oob-dev-dci16207.sfodev.fastly.com
+      - ssh r740xd-eval.sfodev.fastly.com

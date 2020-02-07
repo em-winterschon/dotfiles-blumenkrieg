@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ActivityBaseDates</key>
+	<dict>
+		<key>com.apple.DifferentialPrivacy.PrivacyBudgetMaintenance</key>
+		<date>2017-08-19T23:13:35Z</date>
+		<key>com.apple.DifferentialPrivacy.ReportFilesMaintenance</key>
+		<date>2017-08-19T17:13:33Z</date>
+		<key>com.apple.DifferentialPrivacy.ReportGenerator</key>
+		<date>2017-08-19T14:13:34Z</date>
+		<key>com.apple.DifferentialPrivacy.StorageCulling</key>
+		<date>2017-08-19T17:13:34Z</date>
+		<key>com.apple.DifferentialPrivacy.StorageMaintenance</key>
+		<date>2017-08-19T23:13:35Z</date>
+		<key>com.apple.SoftwareUpdate.Activity</key>
+		<date>2017-08-20T20:53:38Z</date>
+		<key>com.apple.SymptomFramework.MaintenanceActivity</key>
+		<date>2017-08-20T17:13:36Z</date>
+		<key>com.apple.applessdbgrefresh.activity</key>
+		<date>2017-08-20T14:53:35Z</date>
+		<key>com.apple.applessdstatistics.activity</key>
+		<date>2017-08-20T14:53:35Z</date>
+		<key>com.apple.coreduetd.knowledge</key>
+		<date>2017-08-20T14:53:38Z</date>
+		<key>com.apple.coreduetd.people</key>
+		<date>2017-08-20T14:53:38Z</date>
+		<key>com.apple.icloud.findmydeviced.keep-alive-on-dirty</key>
+		<date>2017-08-20T18:18:23Z</date>
+		<key>com.apple.mobileassetd.metadata-update</key>
+		<date>2017-08-20T18:41:08Z</date>
+		<key>com.apple.noticeboard.update</key>
+		<date>2017-07-24T15:23:30Z</date>
+		<key>com.apple.periodic-daily</key>
+		<date>2017-08-20T18:18:22Z</date>
+		<key>com.apple.periodic-monthly</key>
+		<date>2017-08-14T10:21:04Z</date>
+		<key>com.apple.periodic-weekly</key>
+		<date>2017-08-20T14:53:35Z</date>
+		<key>com.apple.quicklook.cloudThumbnailDatabaseCleanup</key>
+		<date>2017-07-24T15:23:30Z</date>
+		<key>com.apple.revisiond.requeue_chunking</key>
+		<date>2017-08-20T18:18:22Z</date>
+		<key>com.apple.security.syspolicy.rearm</key>
+		<date>2017-08-20T14:53:38Z</date>
+	</dict>
+</dict>
+</plist>

@@ -1,0 +1,142 @@
+[user]
+	name = E.M. Winterschön
+	email = eva@bonitabel.la
+[core]
+	editor = vim 
+	whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
+	excludesfile = ~/.gitignore
+	autocrlf = false
+    	safecrlf = false
+[web]
+	browser = google-chrome
+[instaweb]
+	httpd = apache2 -f
+[rerere]
+	enabled = 1
+	autoupdate = 1
+[push]
+	default = matching
+[color]
+	ui = auto
+[color "branch"]
+	current = yellow bold
+	local = green bold
+	remote = cyan bold
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
+[color "status"]
+	added = green bold
+	changed = yellow bold
+	untracked = red bold
+[diff]
+	tool = vimdiff
+[difftool]
+	prompt = false
+[alias]
+	## Programmatic aliases 
+	#----------------------
+
+	# commit with + push origin to current branch
+	acp = "!f() { \
+	   git add * && \
+  	   git status && \
+	   echo "+---------------------------+" && \
+	   echo "  Press any key to continue" && \
+	   echo "+---------------------------+" && \
+	   read c && \
+	   if [ -f CHANGELOG.md ]; then emacs CHANGELOG.md; git add *; fi && \
+	   git commit && \
+ 	   git push origin $(git rev-parse --abbrev-ref HEAD 2> /dev/null); \
+	   }; f"
+
+	# commit w/ turbo + push to current branch (programmatic)
+	c = "!f() { \
+	   git add * && \
+	   git status && \
+	   echo "+---------------------------+" && \
+	   echo "  Press any key to continue" && \
+	   echo "+---------------------------+" && \
+	   read c && \
+	   if [ -f CHANGELOG.md ]; then emacs CHANGELOG.md; git add *; fi && \
+	   git tc && \
+	   git push origin $(git rev-parse --abbrev-ref HEAD 2> /dev/null); \
+	   }; f"
+
+	# commit add w/o push
+	ca = "!git add * && git commit -a"
+
+	#-------------------
+	a = add --all
+	ai = add -i
+
+	#-------------------
+	b = branch
+	ba = branch -a
+	bd = branch -d
+	br = branch -r
+
+	#-------------------
+	cnb = checkout -b 
+	cm = checkout master
+	cmp = "!git checkout master && git pull"
+
+	#-------------------
+	d = diff
+	dt = difftool
+
+	#-------------------
+	f = fetch
+	fo = fetch origin
+	fu = fetch upstream
+
+	#-------------------
+	fk = fsck
+
+	#-------------------
+	g = grep -p
+
+	#-------------------
+	l = "!f() { git tl; }; f"
+	ll = log --oneline --graph --decorate	
+
+	#-------------------
+	ls = ls-files
+	lsf = "!git ls-files | grep -i"
+
+	#-------------------
+	m = merge
+
+	#-------------------
+	o = checkout
+	ob = checkout -b
+
+	#-------------------
+	ps = push
+	psom = push origin master
+
+	#-------------------
+	p = pull
+	pom = pull origin master
+	por = pull --rebase
+
+	#-------------------
+	s = status
+
+	#-------------------
+	whois = "!sh -c 'git log -i -1 --pretty=\"format:%an <%ae>\n\" --author=\"$1\"' -"
+	whatis = show -s --pretty='tformat:%h (%s, %ad)' --date=short
+
+	#-------------------
+	human = name-rev --name-only --refs=refs/heads/*
+	snapshot = !git stash save "snapshot: $(date)" && git stash apply "stash@{0}"
+
+
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f

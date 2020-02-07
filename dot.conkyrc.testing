@@ -1,0 +1,94 @@
+-- Name     : .conkyrc
+-- Purpose  : Config file for Conky app
+-- Author   : EM Winterschon
+-- Repo     : https://github.com/em-winterschon/dotfiles
+-- Requires : Conky installed
+-- Date     : 2019-10-30
+-- Version  : 1.0
+
+conky.config = {
+	use_spacer = 'left',
+	pad_percents = 3,
+	background = false,
+	double_buffer = true,
+	font = 'DejaVu Sans Mono:size=10',
+	use_xft = true,
+	alignment = 'top_right',
+	gap_x = 10,
+	gap_y = 40,
+	own_window_argb_visual = true,
+	own_window_argb_value = 0,
+	own_window_type = 'normal',
+	own_window_hints = 'undecorated,below,skip_taskbar,skip_pager,sticky',
+	own_window = true,
+	update_interval = 5.0,
+
+};
+
+conky.text = [[
+
+${color magenta}Hostname: ${color}${nodename}
+${color magenta}Kernel:   ${color}${sysname} ${kernel} on ${machine}
+${color magenta}Uptime:   ${color}${uptime}
+${hr}
+${color magenta}CPU:${color} ${freq_g} GHz
+${color magenta}1:${color} ${cpu cpu1}% ${cpubar cpu1}
+${color magenta}2:${color} ${cpu cpu2}% ${cpubar cpu2}
+${color magenta}3:${color} ${cpu cpu3}% ${cpubar cpu3}
+${color magenta}4:${color} ${cpu cpu4}% ${cpubar cpu4}
+${cpugraph}
+${color magenta}Process           PID     CPU%   MEM%
+${color lightgrey} ${top name 1} ${top pid 1} ${top cpu 1} ${top mem 1}
+${color lightgrey} ${top name 2} ${top pid 2} ${top cpu 2} ${top mem 2}
+${color lightgrey} ${top name 3} ${top pid 3} ${top cpu 3} ${top mem 3}
+${color lightgrey} ${top name 4} ${top pid 4} ${top cpu 4} ${top mem 4}
+${color lightgrey} ${top name 5} ${top pid 5} ${top cpu 5} ${top mem 5}
+${color lightgrey} ${top name 6} ${top pid 6} ${top cpu 6} ${top mem 6}
+${color lightgrey} ${top name 7} ${top pid 7} ${top cpu 7} ${top mem 7}
+${color lightgrey} ${top name 8} ${top pid 8} ${top cpu 8} ${top mem 8}
+
+${color magenta}Load average: ${color}${loadavg}
+${color magenta}Processes: ${color}${processes} ${color magenta}Running:${color} ${running_processes}
+${hr}
+${color magenta}Entropy   Free/Total        Avail%
+${color magenta}          ${color}${entropy_avail}/${entropy_poolsize}        ${entropy_perc}  
+${hr}
+${color magenta}RAM       Used/Total        Cached  Free
+${color magenta}           ${color}${mem}/${memmax}  ${memeasyfree}  ${memfree}
+${memperc}% ${membar 4}
+${memgraph}
+${color magenta}Swap: ${color}${swap}/${swapmax}
+${swapperc}% ${swapbar 4}
+${hr}
+${color magenta}Mount   Used / Total
+${color magenta}/ ${color}${fs_used /}/${fs_size /} ${fs_bar 6 /}
+${color magenta}/home ${color}${fs_used /home}/${fs_size /home} ${fs_bar 6 /home}
+${hr}
+${color magenta}I/O Read
+${color lightgrey}${diskiograph_read}
+${color magenta}I/O Write
+${color lightgrey}${diskiograph_read}
+${hr}
+${color magenta}IPaddr [wifi]:   ${color lightgrey}${addr wlp4s0}
+${color magenta}Up:   ${color lightgrey}${upspeed wlp4s0} ${upspeedgraph}
+${color magenta}Down: ${color lightgrey}${downspeed wlp4s0} ${downspeedgraph}
+${color magenta}IPaddr [wired]:   ${color lightgrey}${addr enp0s31f6}
+${color magenta}Up:   ${color lightgrey}${upspeed enp0s31f6} ${upspeedgraph}
+${color magenta}Down: ${color lightgrey}${downspeed enp0s31f6} ${downspeedgraph}
+${hr}
+${color magenta}Batteries: ${color lightgrey}${battery_percent}%
+${color lightgrey}${battery_bar}
+${hr}
+${color magenta}TimeZones
+${color magenta}Brussels: ${color lightgrey}${tztime Europe/Brussels}
+${color magenta}Eastern:  ${color lightgrey}${tztime America/New_York}
+${color magenta}London:   ${color lightgrey}${tztime Europe/London}
+${color magenta}Pacific:  ${color lightgrey}${tztime America/Los_Angeles}
+${color magenta}Paris:    ${color lightgrey}${tztime Europe/Paris}
+${color magenta}Sydney:   ${color lightgrey}${tztime Australia/Sydney}
+${color magenta}Tokyo:    ${color lightgrey}${tztime Asia/Tokyo}
+${color magenta}UTC+0:    ${color lightgrey}${tztime UTC}
+${hr}
+
+
+]];

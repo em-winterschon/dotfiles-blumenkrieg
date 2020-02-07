@@ -1,0 +1,118 @@
+#!/bin/bash
+################################################################################
+## Name: action.install-to-local
+## Purpose: copies relevant files into place according to rules/logic
+## Author: EM Winterschon
+## Date: 2015-10-28
+################################################################################
+
+DATE=`date +'%s'`
+CURRENT=`pwd`
+
+SYMS="dot.bash_darwin
+dot.bash_linux
+dot.bash_grc
+dot.conkyrc
+dot.conkyrc.testing
+dot.emacs
+dot.emacs.d
+dot.emacs.d-simple
+dot.emacs.minimal
+dot.emacs.simple
+dot.gconf
+dot.gitconfig
+dot.gitignore
+dot.grc
+dot.iterm2
+dot.itermocil
+dot.local
+dot.my.cnf
+dot.ping.lua
+dot.pingtest.sh
+dot.profile
+dot.screenrc
+dot.tmux
+dot.tmux.conf
+dot.tmuxp
+dot.xprofile"
+
+DIRS="bin docs etc"
+LINUX="gnome3"
+
+## record dotfiles version to file
+head -n 1 CHANGELOG.md > $HOME/.dotfiles.ver
+
+## Dot files
+echo -e "\nSymlinking files into [Home][$HOME/]"
+for sym in $SYMS; do
+    per=`echo $sym | awk -Fdot. '{print $2}'`
+    if [ -h $HOME/.$per ]; then
+	echo "[notice][.$per] existing symlink detected... removing."
+	/bin/rm -f $HOME/.$per
+    elif [ -d $HOME/.$per ]; then
+	echo "[notice][.$per] existing directory detected... renaming $HOME/.$per.orig.${DATE}"
+	mv $HOME/.$per $HOME/.$per.orig.${DATE}
+    elif [ -r $HOME/.$per ]; then
+	echo "[notice][.$per] existing file detected... renaming $HOME/.$per.orig.${DATE}"
+	mv $HOME/.$per $HOME/.$per.orig.${DATE}
+    fi
+    echo "[notice][.$per] symlinking into place."
+    /bin/ln -s $CURRENT/$sym $HOME/.$per
+done
+
+## Home dirs
+echo -e "\nMoving directories into $HOME/"
+for dir in $DIRS; do
+    if [ -h $HOME/$dir ]; then
+	echo "[notice][$dir] existing symlink detected... removing."
+	/bin/rm -f $HOME/$dir
+    elif [ -d $HOME/$dir ]; then
+	echo "[notice][$dir] existing directory detected... renaming $HOME/.$dir.orig.${DATE}"
+	mv $HOME/$dir $HOME/.$dir.orig.${DATE}
+    fi
+    echo "[notice][$dir] symlinking into place."
+    /bin/ln -s $CURRENT/$dir $HOME/$dir
+done
+
+## Linux specific files
+OS=`uname -o`
+if [ $OS != "GNU/Linux" ]; then
+echo -e "\nMoving Linux specific directories into $HOME/"
+    for dir in $LINUX; do
+	if [ -h $HOME/$dir ]; then
+	    echo "[notice][$dir] existing symlink detected... removing."
+	    /bin/rm -f $HOME/$dir
+	elif [ -d $HOME/$dir ]; then
+	    echo "[notice][$dir] existing directory detected... renaming $HOME/.$dir.orig.${DATE}"
+	    mv $HOME/$dir $HOME/.$dir.orig.${DATE}
+	fi
+	echo "[notice][$dir] symlinking into place."
+	/bin/ln -s $CURRENT/$dir $HOME/$dir
+    done
+fi
+
+## GRC handling
+echo "[notice][grc] symlinking grc config file and share dir"
+if [ -h /etc/grc.conf ]; then
+    echo "[notice][grc:conf] existing symlink detected... removing."
+    sudo /bin/rm -f /etc/grc.conf
+elif [ -f /etc/grc.conf ]; then
+    echo "[notice][grc:conf] existing file detected... renaming /etc/grc.conf.orig.${DATE}"
+    sudo mv /etc/grc.conf /etc/grc.conf.orig.${DATE}
+fi
+sudo ln -s $HOME/etc/grc.conf /etc/grc.conf
+#>/dev/null 2>&1
+
+
+if [ -h /usr/local/share/grc ]; then
+    echo "[notice][grc:share] existing symlink detected... removing."
+    sudo /bin/rm -f /usr/local/share/grc
+elif [ -d /usr/local/share/grc ]; then
+	echo "[notice][grc:share] existing dir detected... renaming /usr/local/share/grc.orig.${DATE}"
+	sudo mv /usr/local/share/grc /usr/local/share/grc.orig.${DATE}
+fi
+echo "[notice][grc:share] creating new dir and copying config files to /usr/local/share/grc"
+sudo mkdir /usr/local/share/grc && sudo /bin/cp $CURRENT/dot.grc/* /usr/local/share/grc/ >/dev/null 2>&1
+echo "[notice][grc] config file and share dir setupcomplete"
+
+echo "[notice] complete!"

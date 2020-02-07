@@ -1,0 +1,16 @@
+session_name: sample
+windows:
+- window_name: sample
+  layout: tiled
+  shell_command_before:
+    - cd ~/ 
+  panes:
+  - shell_command:
+    - sudo iotop -o
+  - shell_command:
+    - sudo ~/bin/binaries/nethogs
+  - shell_command:
+    - glances
+  - shell_command:
+    - htop
+    

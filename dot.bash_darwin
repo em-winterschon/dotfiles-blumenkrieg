@@ -1,0 +1,50 @@
+## iTerm Integration
+## note: this action must be in .profile or .bash_profile - so it is not here
+
+## Java Version
+## to load a specific JVM version, configure the following line
+#test -e /usr/libexec/java_home && export JAVA_HOME=$(/usr/libexec/java_home -v 1.6)
+
+## Something to do with Chef for work
+eval "$(hub alias -s)"
+eval "$(chef shell-init bash)"
+
+## PATH Additions
+PATH=$PATH:$HOME/.chefdk/gem/ruby/2.4.0/bin
+PATH=$PATH:$HOME/Projects/docker-fastly-chef/hostbin
+PATH=/opt/local/libexec/gnubin:$PATH
+PATH=$HOME/.cabal/bin:$PATH
+export PATH=$PATH
+export AUTOSSH_LOGFILE="$HOME/.autossh.log"
+
+## Git Repository Viewer: https://github.com/rgburke/grv/blob/master/doc/documentation.md
+## - installed via Homebrew
+alias git-view='/usr/local/bin/grv'
+
+## ProxyChains Aliases
+alias proxy-ping='proxychains4 -f $HOME/.proxychains.conf tcping'
+alias proxy-ssh='proxychains4 -f $HOME/.proxychains.conf ssh'
+alias proxy-scp='proxychains4 -f $HOME/.proxychains.conf scp'
+alias proxy-rsync='proxychains4 -f $HOME/.proxychains.conf rsync'
+alias proxy-resolv='proxyresolv -f $HOME/.proxychains.conf'
+
+#-- Block: dict()
+#-- Purpose: searches ARGV1
+#--------------------------------------------------------------------------------------------------#
+function dict() {
+    if [ $# -eq 0 ]; then echo "Usage:\n ARGV1 = word to query in dictionaries";
+    else
+	echo "#-- Searching dictionary for: ${1}"
+	echo "#--------------------------------------------------------------------------------------------------#"
+	curl dict://dict.org/d:"${1}";
+	echo -e  "#--------------------------------------------------------------------------------------------------#"
+	
+	echo "#-- Searching Wikipedia for: ${1}"
+	echo "#--------------------------------------------------------------------------------------------------#"
+	wikit "${1}";
+	echo "#--------------------------------------------------------------------------------------------------#"
+    fi
+}
+#-- END BLOCK
+#--------------------------------------------------------------------------------------------------#
+
