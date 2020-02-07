@@ -34,21 +34,25 @@ ${color magenta}Kernel:   ${color}${sysname} ${kernel}
 ${color magenta}Uptime:   ${color}${uptime}
 ${hr}
 ${color magenta}CPU Frequency:${color} ${freq_g} GHz
-${color magenta}01:${color} ${cpu cpu1}% ${cpubar cpu1}
-${color magenta}02:${color} ${cpu cpu2}% ${cpubar cpu2}
-${color magenta}03:${color} ${cpu cpu3}% ${cpubar cpu3}
-${color magenta}04:${color} ${cpu cpu4}% ${cpubar cpu4}
-${color magenta}05:${color} ${cpu cpu5}% ${cpubar cpu5}
-${color magenta}06:${color} ${cpu cpu6}% ${cpubar cpu6}
-${color magenta}07:${color} ${cpu cpu7}% ${cpubar cpu7}
-${color magenta}08:${color} ${cpu cpu8}% ${cpubar cpu8}
-${color magenta}09:${color} ${cpu cpu9}% ${cpubar cpu9}
-${color magenta}10:${color} ${cpu cpu10}% ${cpubar cpu10}
-${color magenta}11:${color} ${cpu cpu11}% ${cpubar cpu11}
-${color magenta}12:${color} ${cpu cpu12}% ${cpubar cpu12}
-${color magenta}13:${color} ${cpu cpu13}% ${cpubar cpu13}
-${color magenta}14:${color} ${cpu cpu14}% ${cpubar cpu14}
+${color magenta}SUM${color}${cpu cpu0}% ${cpubar cpu0 6}
+${color magenta}01:${color}${cpu cpu1}% ${cpubar cpu1 6,200} ${color magenta}15:${color}${cpu cpu15}% ${cpubar cpu15 6,200}
+${color magenta}02:${color}${cpu cpu2}% ${cpubar cpu2 6,200} ${color magenta}16:${color}${cpu cpu16}% ${cpubar cpu16 6,200}
+${color magenta}03:${color}${cpu cpu3}% ${cpubar cpu3 6,200} ${color magenta}17:${color}${cpu cpu17}% ${cpubar cpu17 6,200}
+${color magenta}04:${color}${cpu cpu4}% ${cpubar cpu4 6,200} ${color magenta}18:${color}${cpu cpu18}% ${cpubar cpu18 6,200}
+${color magenta}05:${color}${cpu cpu5}% ${cpubar cpu5 6,200} ${color magenta}19:${color}${cpu cpu19}% ${cpubar cpu19 6,200}
+${color magenta}06:${color}${cpu cpu6}% ${cpubar cpu6 6,200} ${color magenta}20:${color}${cpu cpu20}% ${cpubar cpu20 6,200}
+${color magenta}07:${color}${cpu cpu7}% ${cpubar cpu7 6,200} ${color magenta}21:${color}${cpu cpu21}% ${cpubar cpu21 6,200}
+${color magenta}08:${color}${cpu cpu8}% ${cpubar cpu8 6,200} ${color magenta}22:${color}${cpu cpu22}% ${cpubar cpu22 6,200}
+${color magenta}09:${color}${cpu cpu9}% ${cpubar cpu9 6,200} ${color magenta}23:${color}${cpu cpu23}% ${cpubar cpu23 6,200}
+${color magenta}10:${color}${cpu cpu10}% ${cpubar cpu10 6,200} ${color magenta}24:${color}${cpu cpu24}% ${cpubar cpu24 6,200}
+${color magenta}11:${color}${cpu cpu11}% ${cpubar cpu11 6,200} ${color magenta}25:${color}${cpu cpu25}% ${cpubar cpu25 6,200}
+${color magenta}12:${color}${cpu cpu12}% ${cpubar cpu12 6,200} ${color magenta}26:${color}${cpu cpu26}% ${cpubar cpu26 6,200}
+${color magenta}13:${color}${cpu cpu13}% ${cpubar cpu13 6,200} ${color magenta}27:${color}${cpu cpu27}% ${cpubar cpu27 6,200}
+${color magenta}14:${color}${cpu cpu14}% ${cpubar cpu14 6,200} ${color magenta}28:${color}${cpu cpu28}% ${cpubar cpu28 6,200}
 ${cpugraph}
+${color magenta}Load average: ${color}${loadavg}
+${color magenta}Processes: ${color}${processes} ${color magenta}Running:${color} ${running_processes}
+${hr}
 ${color magenta}Process           PID     CPU%   MEM%
 ${color lightgrey} ${top name 1} ${top pid 1} ${top cpu 1} ${top mem 1}
 ${color lightgrey} ${top name 2} ${top pid 2} ${top cpu 2} ${top mem 2}
@@ -58,12 +62,6 @@ ${color lightgrey} ${top name 5} ${top pid 5} ${top cpu 5} ${top mem 5}
 ${color lightgrey} ${top name 6} ${top pid 6} ${top cpu 6} ${top mem 6}
 ${color lightgrey} ${top name 7} ${top pid 7} ${top cpu 7} ${top mem 7}
 ${color lightgrey} ${top name 8} ${top pid 8} ${top cpu 8} ${top mem 8}
-
-${color magenta}Load average: ${color}${loadavg}
-${color magenta}Processes: ${color}${processes} ${color magenta}Running:${color} ${running_processes}
-${hr}
-${color magenta}Entropy   Free/Total        Avail%
-${color magenta}          ${color}${entropy_avail}/${entropy_poolsize}        ${entropy_perc}
 ${hr}
 ${color magenta}RAM       Used/Total        Cached  Free
 ${color magenta}           ${color}${mem}/${memmax}  ${memeasyfree}  ${memfree}
@@ -74,15 +72,14 @@ ${swapperc}% ${swapbar 4}
 ${hr}
 ${color magenta}Mount   Used / Total
 ${color magenta}root-fs ${color}${fs_used /}/${fs_size /} ${fs_bar 6 /}
-${color magenta}home-fs ${color}${fs_used /home}/${fs_size /home} ${fs_bar 6 /home}
-${color magenta}einsraum  ${color}${fs_used /opt/storage/local/zfs/viergigs/einsraum}/${fs_size /opt/storage/local/zfs/viergigs/einsraum} ${fs_bar 6 /opt/storage/local/zfs/viergigs/einsraum}
 ${hr}
-${color magenta}Read IOPs:
-${color lightgrey}/: ${diskio_read dm-2}/s | /home: ${diskio_read dm-5}/s | swap: ${diskio_read dm-1}/s | nvme: ${diskio_read nvme0n1p1}/s
-${color lightgrey}${diskiograph_read}
-${color magenta}Write IOPs:
-${color lightgrey}/: ${diskio_write dm-2}/s | /home: ${diskio_write dm-5}/s | swap: ${diskio_write dm-1}/s | nvme: ${diskio_write nvme0n1p1}/s
-${color lightgrey}${diskiograph_write}
+${color magenta}Read IOPs                         Write IOPs
+${color lightgrey}${diskiograph_read 20,263} ${color lightgrey}${diskiograph_write 20,264}
+OSRAID: ${diskio_read dm-2}/s            ${diskio_write dm-2}/s
+NVMe0:  ${diskio_read nvme0n1}/s                 ${diskio_write nvme0n1}/s
+NVMe1:  ${diskio_read nvme1n1}/s                 ${diskio_write nvme1n1}/s
+NVMe3:  ${diskio_read nvme2n1}/s                 ${diskio_write nvme2n1}/s
+NVMe4:  ${diskio_read nvme3n1}/s                 ${diskio_write nvme3n1}/s
 ${hr}
 ${color magenta}IPaddr [wired]:   ${color lightgrey}${addr eno1}
 ${color magenta}Up:   ${color lightgrey}${upspeed eno1} ${upspeedgraph}
@@ -92,56 +89,35 @@ ${color magenta}LAN Router:      ${color lightgrey}${execi 10 ~/.pingtest.sh 172
 ${color magenta}Host 8.8.8.8:    ${color lightgrey}${execi 10 ~/.pingtest.sh 8.8.8.8}, ${tcp_ping 1.1.1.1} ms
 ${color magenta}Host google.com: ${color lightgrey}${execi 10 ~/.pingtest.sh google.com}, ${tcp_ping google.com} ms
 ${color magenta}DNS Latency:     ${color lightgrey}${lua_parse router_ping_string}
-${lua_graph router_ping 25,400 ff8c00 ff8c00}${color lightgrey}
+${lua_graph router_ping 20,535 ff8c00 ff8c00}${color lightgrey}
 ${hr}
-${color magenta}TimeZones
-${color magenta}Brussels: ${color lightgrey}${tztime Europe/Brussels}
-${color magenta}Eastern:  ${color lightgrey}${tztime America/New_York}
-${color magenta}London:   ${color lightgrey}${tztime Europe/London}
-${color magenta}Pacific:  ${color lightgrey}${tztime America/Los_Angeles}
-${color magenta}Paris:    ${color lightgrey}${tztime Europe/Paris}
-${color magenta}Sydney:   ${color lightgrey}${tztime Australia/Sydney}
-${color magenta}Tokyo:    ${color lightgrey}${tztime Asia/Tokyo}
-${color magenta}UTC+0:    ${color lightgrey}${tztime UTC}
+${color magenta}Eastern:  ${color lightgrey}${tztime America/New_York}    ${color magenta}Paris: ${color lightgrey}${tztime Europe/Paris}
+${color magenta}Sydney:   ${color lightgrey}${tztime Australia/Sydney}    ${color magenta}UTC+0: ${color lightgrey}${tztime UTC}
 ${hr}
-${color magenta}HBA Core Temp
-${color magenta}ASR71605:  ${color lightgrey}${execi 10 sudo arcconf getconfig 1 AD | grep "   Temperature" | awk -F: '{print $2}'}
+${color magenta}HBA Core Temp ${color magenta}ASR71605:${color lightgrey}${execi 10 sudo /usr/local/bin/arcconf getconfig 1 AD | grep "   Temperature" | awk -F: '{print $2}'}
 ${hr}
-${color magenta}OS-MD126 Temps
-${color magenta}disk-1:   ${color lightgrey}${execi 10 ~/bin/bash/smartctl.temps.sh wwn-0x5002538e70089ea5}
-${color magenta}disk-2:   ${color lightgrey}${execi 10 ~/bin/bash/smartctl.temps.sh wwn-0x5002538e70089eab}
-${color magenta}disk-3:   ${color lightgrey}${execi 10 ~/bin/bash/smartctl.temps.sh wwn-0x5002538e700fc4d6}
-${color magenta}disk-4:   ${color lightgrey}${execi 10 ~/bin/bash/smartctl.temps.sh wwn-0x5002538e700fc4d2}
-${hr}
-${color magenta}Ultra-II Temps
-${color magenta}/sda:     ${color lightgrey}${execi 10 ~/bin/bash/smartctl.temps.sh wwn-0x500117310089cd10}
-${color magenta}/sdb:     ${color lightgrey}${execi 10 ~/bin/bash/smartctl.temps.sh wwn-0x5001173100898170}
-${color magenta}/sdc:     ${color lightgrey}${execi 10 ~/bin/bash/smartctl.temps.sh wwn-0x500117310089b308}
-${color magenta}/sdd:     ${color lightgrey}${execi 10 ~/bin/bash/smartctl.temps.sh wwn-0x500117310089cbfc}
+${color magenta}OS-MDRAID Temps
+${color magenta}NVMe0n1:   ${color lightgrey}${execi 10 ~/bin/bash/smartctl.temps.sh nvme-eui.002538c27100a8b5} | ${color magenta}NVMe0n2: ${color lightgrey}${execi 10 ~/bin/bash/smartctl.temps.sh nvme-eui.002538c27100a8b7} | ${color magenta}NVMe0n3: ${color lightgrey}${execi 10 ~/bin/bash/smartctl.temps.sh nvme-eui.002538c27100a8c0} | ${color magenta}NVMe0n4: ${color lightgrey}${execi 10 ~/bin/bash/smartctl.temps.sh nvme-eui.002538c27100a8ef}
 ${hr}
 ${color magenta}ZFS Pool Temps
-${color magenta}/sde:     ${color lightgrey}${execi 10 ~/bin/bash/smartctl.temps.sh wwn-0x5002538e700962ec}
-${color magenta}/sdf:     ${color lightgrey}${execi 10 ~/bin/bash/smartctl.temps.sh wwn-0x5002538e700962e4}
-${color magenta}/sdg:     ${color lightgrey}${execi 10 ~/bin/bash/smartctl.temps.sh wwn-0x5002538e700cb7e1}
-${color magenta}/sdh:     ${color lightgrey}${execi 10 ~/bin/bash/smartctl.temps.sh wwn-0x5002538e700962e6}
-${color magenta}/sdi:     ${color lightgrey}${execi 10 ~/bin/bash/smartctl.temps.sh wwn-0x5002538e700cd609}
-${color magenta}/sdj:     ${color lightgrey}${execi 10 ~/bin/bash/smartctl.temps.sh wwn-0x5002538e700962df}
+${color magenta}/dev/sda: ${color lightgrey}${execi 10 ~/bin/bash/smartctl.temps.sh wwn-0x5002538e70089ea5}
+${color magenta}/dev/sdb: ${color lightgrey}${execi 10 ~/bin/bash/smartctl.temps.sh wwn-0x5002538e70089eab}
 ${hr}
-${color magenta}CPU Core Temps
-${color magenta}Core 01:   ${color lightgrey}${execi 10 /bin/sensors | grep 'Core 0:' | cut -c17-56 | sed '/^$/d'}
-${color magenta}Core 02:   ${color lightgrey}${execi 10 /bin/sensors | grep 'Core 1:' | cut -c17-56 | sed '/^$/d'}
-${color magenta}Core 03:   ${color lightgrey}${execi 10 /bin/sensors | grep 'Core 2:' | cut -c17-56 | sed '/^$/d'}
-${color magenta}Core 04:   ${color lightgrey}${execi 10 /bin/sensors | grep 'Core 3:' | cut -c17-56 | sed '/^$/d'}
-${color magenta}Core 05:   ${color lightgrey}${execi 10 /bin/sensors | grep 'Core 4:' | cut -c17-56 | sed '/^$/d'}
-${color magenta}Core 06:   ${color lightgrey}${execi 10 /bin/sensors | grep 'Core 5:' | cut -c17-56 | sed '/^$/d'}
-${color magenta}Core 07:   ${color lightgrey}${execi 10 /bin/sensors | grep 'Core 6:' | cut -c17-56 | sed '/^$/d'}
-${color magenta}Core 08:   ${color lightgrey}${execi 10 /bin/sensors | grep 'Core 8:' | cut -c17-56 | sed '/^$/d'}
-${color magenta}Core 09:   ${color lightgrey}${execi 10 /bin/sensors | grep 'Core 9:' | cut -c17-56 | sed '/^$/d'}
-${color magenta}Core 10:   ${color lightgrey}${execi 10 /bin/sensors | grep 'Core 10:' | cut -c17-56 | sed '/^$/d'}
-${color magenta}Core 11:   ${color lightgrey}${execi 10 /bin/sensors | grep 'Core 11:' | cut -c17-56 | sed '/^$/d'}
-${color magenta}Core 12:   ${color lightgrey}${execi 10 /bin/sensors | grep 'Core 12:' | cut -c17-56 | sed '/^$/d'}
-${color magenta}Core 13:   ${color lightgrey}${execi 10 /bin/sensors | grep 'Core 13:' | cut -c17-56 | sed '/^$/d'}
-${color magenta}Core 14:   ${color lightgrey}${execi 10 /bin/sensors | grep 'Core 14:' | cut -c17-56 | sed '/^$/d'}
+${color magenta}CPU Temp   LGA-0 ${color lightgrey} ${color magenta}  LGA-1
+${color magenta}Core 01:   ${color lightgrey}${execi 10 /bin/sensors | grep 'Core 0:' | cut -c17-23 | sed '/^$/d' | head -n 1}| ${color lightgrey}${execi 10 /bin/sensors | grep 'Core 0:' | cut -c17-23 | sed '/^$/d' | tail -n 1}
+${color magenta}Core 02:   ${color lightgrey}${execi 10 /bin/sensors | grep 'Core 1:' | cut -c17-23 | sed '/^$/d' | head -n 1}| ${color lightgrey}${execi 10 /bin/sensors | grep 'Core 1:' | cut -c17-23 | sed '/^$/d' | tail -n 1}
+${color magenta}Core 03:   ${color lightgrey}${execi 10 /bin/sensors | grep 'Core 2:' | cut -c17-23 | sed '/^$/d' | head -n 1}| ${color lightgrey}${execi 10 /bin/sensors | grep 'Core 2:' | cut -c17-23 | sed '/^$/d' | tail -n 1}
+${color magenta}Core 04:   ${color lightgrey}${execi 10 /bin/sensors | grep 'Core 3:' | cut -c17-23 | sed '/^$/d' | head -n 1}| ${color lightgrey}${execi 10 /bin/sensors | grep 'Core 3:' | cut -c17-23 | sed '/^$/d' | tail -n 1}
+${color magenta}Core 05:   ${color lightgrey}${execi 10 /bin/sensors | grep 'Core 4:' | cut -c17-23 | sed '/^$/d' | head -n 1}| ${color lightgrey}${execi 10 /bin/sensors | grep 'Core 4:' | cut -c17-23 | sed '/^$/d' | tail -n 1}
+${color magenta}Core 06:   ${color lightgrey}${execi 10 /bin/sensors | grep 'Core 5:' | cut -c17-23 | sed '/^$/d' | head -n 1}| ${color lightgrey}${execi 10 /bin/sensors | grep 'Core 5:' | cut -c17-23 | sed '/^$/d' | tail -n 1}
+${color magenta}Core 07:   ${color lightgrey}${execi 10 /bin/sensors | grep 'Core 6:' | cut -c17-23 | sed '/^$/d' | head -n 1}| ${color lightgrey}${execi 10 /bin/sensors | grep 'Core 6:' | cut -c17-23 | sed '/^$/d' | tail -n 1}
+${color magenta}Core 08:   ${color lightgrey}${execi 10 /bin/sensors | grep 'Core 8:' | cut -c17-23 | sed '/^$/d' | head -n 1}| ${color lightgrey}${execi 10 /bin/sensors | grep 'Core 8:' | cut -c17-23 | sed '/^$/d' | tail -n 1}
+${color magenta}Core 09:   ${color lightgrey}${execi 10 /bin/sensors | grep 'Core 9:' | cut -c17-23 | sed '/^$/d' | head -n 1}| ${color lightgrey}${execi 10 /bin/sensors | grep 'Core 9:' | cut -c17-23 | sed '/^$/d' | tail -n 1}
+${color magenta}Core 10:   ${color lightgrey}${execi 10 /bin/sensors | grep 'Core 10:' | cut -c17-23 | sed '/^$/d' | head -n 1}| ${color lightgrey}${execi 10 /bin/sensors | grep 'Core 10:' | cut -c17-23 | sed '/^$/d' | tail -n 1}
+${color magenta}Core 11:   ${color lightgrey}${execi 10 /bin/sensors | grep 'Core 11:' | cut -c17-23 | sed '/^$/d' | head -n 1}| ${color lightgrey}${execi 10 /bin/sensors | grep 'Core 11:' | cut -c17-23 | sed '/^$/d' | tail -n 1}
+${color magenta}Core 12:   ${color lightgrey}${execi 10 /bin/sensors | grep 'Core 12:' | cut -c17-23 | sed '/^$/d' | head -n 1}| ${color lightgrey}${execi 10 /bin/sensors | grep 'Core 12:' | cut -c17-23 | sed '/^$/d' | tail -n 1}
+${color magenta}Core 13:   ${color lightgrey}${execi 10 /bin/sensors | grep 'Core 13:' | cut -c17-23 | sed '/^$/d' | head -n 1}| ${color lightgrey}${execi 10 /bin/sensors | grep 'Core 13:' | cut -c17-23 | sed '/^$/d' | tail -n 1}
+${color magenta}Core 14:   ${color lightgrey}${execi 10 /bin/sensors | grep 'Core 14:' | cut -c17-23 | sed '/^$/d' | head -n 1}| ${color lightgrey}${execi 10 /bin/sensors | grep 'Core 14:' | cut -c17-23 | sed '/^$/d' | tail -n 1}
 ${hr}
 
 ]];

@@ -1,3 +1,6 @@
+# 2.8.6
+- updated conky + scripts to support dual socket CPU
+
 # 2.8.5
 - cleaning up gnome desktop symlinks
 
