@@ -1,8 +1,0 @@
-[Desktop Entry]
-Encoding=UTF-8
-Name=GoLand
-Comment=GoLand IDE
-Exec=/usr/local/bin/JetBrains/GoLand-2019.2.5/bin/goland.sh
-Icon=/usr/local/bin/JetBrains/GoLand-2019.2.5/bin/goland.svg
-Type=Application
-Categories=Development;

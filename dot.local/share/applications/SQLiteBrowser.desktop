@@ -1,7 +1,0 @@
-[Desktop Entry]
-Encoding=UTF-8
-Name=SQLiteBrowser
-Exec=/usr/local/bin/sqlitebrowser
-Icon=/usr/share/icons/hicolor/scalable/apps/xterm-color.svg
-Type=Application
-Categories=Development;

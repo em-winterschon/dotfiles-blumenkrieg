@@ -1,10 +1,1 @@
-[Desktop Entry]
-Version=1.0
-Type=Application
-Name=PyCharm Professional Edition
-Icon=/usr/local/bin/JetBrains/pycharm-2019.2.4/bin/pycharm.svg
-Exec="/usr/local/bin/JetBrains/pycharm-2019.2.4/bin/pycharm.sh" %f
-Comment=Python IDE for Professional Developers
-Categories=Development;IDE;
-Terminal=false
-StartupWMClass=jetbrains-pycharm
+/var/lib/snapd/desktop/applications/pycharm-professional_pycharm-professional.desktop

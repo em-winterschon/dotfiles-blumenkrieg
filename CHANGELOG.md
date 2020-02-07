@@ -1,3 +1,6 @@
+# 2.8.5
+- cleaning up gnome desktop symlinks
+
 # 2.8.4
 - moving to dedicated repo dotfiles-blumenkrieg
 
