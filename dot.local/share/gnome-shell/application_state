@@ -4,20 +4,20 @@
     <application id="gnome-control-center.desktop" score="48" last-seen="1581081210"/>
     <application id="SnapStore.desktop" score="4" last-seen="1581100155"/>
     <application id="vivaldi-stable.desktop" score="4578.25" last-seen="1581104129"/>
-    <application id="PyCharm.desktop" score="9" last-seen="1581099585"/>
+    <application id="PyCharm.desktop" score="7590" last-seen="1581160882"/>
     <application id="firefox.desktop" score="9.5" last-seen="1581023987"/>
-    <application id="slack.desktop" score="12222.25" last-seen="1581104128"/>
+    <application id="slack.desktop" score="12578.25" last-seen="1581161909"/>
     <application id="org.gnome.Calculator.desktop" score="4.25" last-seen="1580766627"/>
-    <application id="org.gnome.Nautilus.desktop" score="13.5" last-seen="1581024125"/>
+    <application id="org.gnome.Nautilus.desktop" score="44.5" last-seen="1581161946"/>
     <application id="eog.desktop" score="23.75" last-seen="1580766957"/>
-    <application id="chromium-browser.desktop" score="2129.25" last-seen="1581099458"/>
+    <application id="chromium-browser.desktop" score="2142.25" last-seen="1581161322"/>
     <application id="org.gnome.gedit.desktop" score="1578.5" last-seen="1581075170"/>
     <application id="spotify.desktop" score="0" last-seen="1581086721"/>
-    <application id="org.gnome.tweaks.desktop" score="30.75" last-seen="1581073851"/>
+    <application id="org.gnome.tweaks.desktop" score="30.75" last-seen="1581105508"/>
     <application id="gnome-shell-extension-prefs.desktop" score="0" last-seen="1581073847"/>
-    <application id="org.gnome.Terminal.desktop" score="15647.25" last-seen="1581104112"/>
+    <application id="org.gnome.Terminal.desktop" score="15903.25" last-seen="1581161507"/>
     <application id="start-tor-browser.desktop" score="8.25" last-seen="1581023738"/>
     <application id="evince.desktop" score="0.5" last-seen="1580766708"/>
-    <application id="org.gnome.Software.desktop" score="6.75" last-seen="1581098120"/>
+    <application id="org.gnome.Software.desktop" score="6.75" last-seen="1581160138"/>
   </context>
 </application-state>

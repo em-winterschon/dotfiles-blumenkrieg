@@ -1,3 +1,7 @@
+# 2.8.7
+- updating workstation bootstrap doc
+- updating config files
+
 # 2.8.6
 - updated conky + scripts to support dual socket CPU
 

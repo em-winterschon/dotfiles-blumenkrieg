@@ -88,8 +88,6 @@ systemctl enable --now snapd.socket
 systemctl restart snapd
 snap install snap-store
 snap install spotify
-snap install vlc
-snap install wickrme
 snap install pycharm-professional
 snap install datagrip
 ```
@@ -97,6 +95,24 @@ snap install datagrip
 ## Vivaldi
 - login to sync
 - upload stylish backup from dotfiles/etc/stylish
+- upload ublock backup from dotfiles/etc/ublock
 
 ## Chef Stuff
--
+```
+curl https://omnitruck.chef.io/install.sh > omnitruck_install
+sudo ./omnitruck_install -P chefdk -v 3.6.57
+chef gem install knife-block
+chef gem install fpm
+```
+
+## Etc Settings
+```
+sudo cp ~/bin/bash/one.sh /usr/local/bin/
+sudo cp ~/bin/bash/pingrate-dns /usr/local/bin/
+sudo cp ~/etc/blumenkrieg/etc/crontab /etc/crontab
+sudo cp ~/etc/blumenkrieg/etc/sysctl.d/idea.conf /etc/sysctl.d/
+sudo cp ~/etc/blumenkrieg/etc/X11/xorg.conf /etc/X11/
+sudo cp ~/etc/blumenkrieg/etc/grc.conf /etc/grc.conf
+sudo cp ~/bin/grc /usr/local/bin/
+sudo cp ~/bin/grcat /usr/local/bin/
+```
