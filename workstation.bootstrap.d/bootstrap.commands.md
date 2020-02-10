@@ -64,7 +64,7 @@ dconf load / < gnome3.desktop-init-prefs.conf
 yum update
 yum --enhancement --security distro-sync
 yum install -y tmux emacs-nox iotop nethogs htop snapd python3-devel NetworkManager-openvpn-gnome
-yum install -y gnome-tweaks libcurl-devel fio sysbench p7zip* mysql mysql-common
+yum install -y gnome-tweaks libcurl-devel fio sysbench p7zip* mysql mysql-common jq
 yum install -y slack google-chrome-stable chromium ImageMagick7
 yum install -y golang npm
 ```

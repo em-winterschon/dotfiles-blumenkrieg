@@ -546,7 +546,7 @@
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/mwinterschon/Desktop/root.txt" added="2020-01-29T15:54:37Z" modified="2020-02-09T19:42:05Z" visited="2020-01-29T15:54:37Z">
+  <bookmark href="file:///home/mwinterschon/Desktop/root.txt" added="2020-01-29T15:54:37Z" modified="2020-02-03T22:52:13Z" visited="2020-01-29T15:54:37Z">
     <info>
       <metadata owner="http://freedesktop.org">
         <mime:mime-type type="text/plain"/>
@@ -554,7 +554,7 @@
           <bookmark:group>gedit</bookmark:group>
         </bookmark:groups>
         <bookmark:applications>
-          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2020-02-09T19:42:05Z" count="11"/>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2020-02-03T22:52:13Z" count="8"/>
         </bookmark:applications>
       </metadata>
     </info>
@@ -1331,87 +1331,6 @@
         <mime:mime-type type="application/x-compressed-tar"/>
         <bookmark:applications>
           <bookmark:application name="slack" exec="&apos;slack %u&apos;" modified="2020-02-08T11:36:04Z" count="1"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///home/mwinterschon/Pictures/Screenshot%20from%202020-02-09%2003-13-37.png" added="2020-02-09T11:13:56Z" modified="2020-02-09T11:14:03Z" visited="2020-02-09T11:13:57Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="image/png"/>
-        <bookmark:applications>
-          <bookmark:application name="gsd-media-keys" exec="&apos;gsd-media-keys %u&apos;" modified="2020-02-09T11:13:56Z" count="1"/>
-          <bookmark:application name="slack" exec="&apos;slack %u&apos;" modified="2020-02-09T11:14:03Z" count="1"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///home/mwinterschon/Desktop/switch-sfo9902.20200208.arista-config" added="2020-02-09T11:55:46Z" modified="2020-02-09T11:55:46Z" visited="2020-02-09T11:55:47Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="text/plain"/>
-        <bookmark:groups>
-          <bookmark:group>gedit</bookmark:group>
-        </bookmark:groups>
-        <bookmark:applications>
-          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2020-02-09T11:55:46Z" count="1"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///home/mwinterschon/Desktop/switch-sfo9902.20200208.stripped-updated" added="2020-02-09T12:01:27Z" modified="2020-02-09T19:42:03Z" visited="2020-02-09T12:01:27Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="text/plain"/>
-        <bookmark:groups>
-          <bookmark:group>gedit</bookmark:group>
-        </bookmark:groups>
-        <bookmark:applications>
-          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2020-02-09T19:42:03Z" count="3"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///home/mwinterschon/Pictures/Screenshot%20from%202020-02-09%2005-35-38.png" added="2020-02-09T13:35:53Z" modified="2020-02-09T13:35:53Z" visited="2020-02-09T13:35:53Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="image/png"/>
-        <bookmark:applications>
-          <bookmark:application name="gsd-media-keys" exec="&apos;gsd-media-keys %u&apos;" modified="2020-02-09T13:35:53Z" count="1"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///home/mwinterschon/Pictures/Screenshot%20from%202020-02-09%2006-03-35.png" added="2020-02-09T14:03:38Z" modified="2020-02-09T14:04:09Z" visited="2020-02-09T14:03:38Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="image/png"/>
-        <bookmark:applications>
-          <bookmark:application name="gsd-media-keys" exec="&apos;gsd-media-keys %u&apos;" modified="2020-02-09T14:03:38Z" count="1"/>
-          <bookmark:application name="slack" exec="&apos;slack %u&apos;" modified="2020-02-09T14:04:09Z" count="1"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///home/mwinterschon/Desktop/Avatars/_home/2018-05-10.jpg" added="2020-02-09T15:25:58Z" modified="2020-02-09T15:25:58Z" visited="2020-02-09T15:25:59Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="image/jpeg"/>
-        <bookmark:applications>
-          <bookmark:application name="chromium-browser" exec="&apos;chromium-browser %u&apos;" modified="2020-02-09T15:25:58Z" count="1"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///home/mwinterschon/Desktop/test-sfo9961-IntelSSD-info.txt" added="2020-02-09T15:45:00Z" modified="2020-02-09T19:42:01Z" visited="2020-02-09T15:45:00Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="text/plain"/>
-        <bookmark:groups>
-          <bookmark:group>gedit</bookmark:group>
-        </bookmark:groups>
-        <bookmark:applications>
-          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2020-02-09T19:42:01Z" count="3"/>
         </bookmark:applications>
       </metadata>
     </info>

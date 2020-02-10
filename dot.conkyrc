@@ -50,10 +50,13 @@ ${color magenta}12:${color}${cpu cpu12}% ${cpubar cpu12 6,200} ${color magenta}2
 ${color magenta}13:${color}${cpu cpu13}% ${cpubar cpu13 6,200} ${color magenta}27:${color}${cpu cpu27}% ${cpubar cpu27 6,200}
 ${color magenta}14:${color}${cpu cpu14}% ${cpubar cpu14 6,200} ${color magenta}28:${color}${cpu cpu28}% ${cpubar cpu28 6,200}
 ${cpugraph}
+${color magenta}Memory:       Used/Total          Free              Swap Used/Total
+${color        }         ${mem}/${memmax}       ${memfree}              ${swap}/${swapmax}
+${memperc}% ${membar 4}
+${memgraph}
 ${color magenta}Load average: ${color}${loadavg}
-${color magenta}Processes: ${color}${processes} ${color magenta}Running:${color} ${running_processes}
-${hr}
-${color magenta}Process           PID     CPU%   MEM%
+${color magenta}Processes: ${color}${processes}   ${color magenta}Running:${color} ${running_processes}
+${color magenta}Name              PID     CPU%   MEM%
 ${color lightgrey} ${top name 1} ${top pid 1} ${top cpu 1} ${top mem 1}
 ${color lightgrey} ${top name 2} ${top pid 2} ${top cpu 2} ${top mem 2}
 ${color lightgrey} ${top name 3} ${top pid 3} ${top cpu 3} ${top mem 3}
@@ -63,36 +66,25 @@ ${color lightgrey} ${top name 6} ${top pid 6} ${top cpu 6} ${top mem 6}
 ${color lightgrey} ${top name 7} ${top pid 7} ${top cpu 7} ${top mem 7}
 ${color lightgrey} ${top name 8} ${top pid 8} ${top cpu 8} ${top mem 8}
 ${hr}
-${color magenta}RAM       Used/Total        Cached  Free
-${color magenta}           ${color}${mem}/${memmax}  ${memeasyfree}  ${memfree}
-${memperc}% ${membar 4}
-${memgraph}
-${color magenta}Swap: ${color}${swap}/${swapmax}
-${swapperc}% ${swapbar 4}
-${hr}
+${color magenta}IPaddr [wired]:   ${color lightgrey}${addr eno1}
+${color magenta}Up:   ${color lightgrey}${upspeed eno1}/s ${upspeedgraph}
+${color magenta}Down: ${color lightgrey}${downspeed eno1/s} ${downspeedgraph}
+${color magenta}LAN Gateway:     ${color lightgrey}${execi 10 ~/.pingtest.sh 172.16.40.1}, ${tcp_ping 172.16.40.1} ms
+${color magenta}SSH SFO-R101:    ${color lightgrey}${execi 10 ~/.pingtest.sh 8.18.217.142}, ${tcp_ping 8.18.217.142} ms
+${color magenta}Host 1.1.1.1:    ${color lightgrey}${execi 10 ~/.pingtest.sh 1.1.1.1}, ${tcp_ping 1.1.1.1} ms
+${color magenta}Host google.com: ${color lightgrey}${execi 10 ~/.pingtest.sh google.com}, ${tcp_ping google.com} ms
+${color magenta}DNS Latency:     ${color lightgrey}${lua_parse router_ping_string}
+${lua_graph router_ping 20,535 ff8c00 ff8c00}${color lightgrey}
 ${color magenta}Mount   Used / Total
 ${color magenta}root-fs ${color}${fs_used /}/${fs_size /} ${fs_bar 6 /}
 ${hr}
 ${color magenta}Read IOPs                         Write IOPs
 ${color lightgrey}${diskiograph_read 20,263} ${color lightgrey}${diskiograph_write 20,264}
-OSRAID: ${diskio_read dm-2}/s            ${diskio_write dm-2}/s
+OSRAID: ${diskio_read md127  }/s                 ${diskio_write md127}/s
 NVMe0:  ${diskio_read nvme0n1}/s                 ${diskio_write nvme0n1}/s
 NVMe1:  ${diskio_read nvme1n1}/s                 ${diskio_write nvme1n1}/s
 NVMe3:  ${diskio_read nvme2n1}/s                 ${diskio_write nvme2n1}/s
 NVMe4:  ${diskio_read nvme3n1}/s                 ${diskio_write nvme3n1}/s
-${hr}
-${color magenta}IPaddr [wired]:   ${color lightgrey}${addr eno1}
-${color magenta}Up:   ${color lightgrey}${upspeed eno1} ${upspeedgraph}
-${color magenta}Down: ${color lightgrey}${downspeed eno1} ${downspeedgraph}
-${hr}
-${color magenta}LAN Router:      ${color lightgrey}${execi 10 ~/.pingtest.sh 172.16.40.1}, ${tcp_ping 172.16.40.1} ms
-${color magenta}Host 8.8.8.8:    ${color lightgrey}${execi 10 ~/.pingtest.sh 8.8.8.8}, ${tcp_ping 1.1.1.1} ms
-${color magenta}Host google.com: ${color lightgrey}${execi 10 ~/.pingtest.sh google.com}, ${tcp_ping google.com} ms
-${color magenta}DNS Latency:     ${color lightgrey}${lua_parse router_ping_string}
-${lua_graph router_ping 20,535 ff8c00 ff8c00}${color lightgrey}
-${hr}
-${color magenta}Eastern:  ${color lightgrey}${tztime America/New_York}    ${color magenta}Paris: ${color lightgrey}${tztime Europe/Paris}
-${color magenta}Sydney:   ${color lightgrey}${tztime Australia/Sydney}    ${color magenta}UTC+0: ${color lightgrey}${tztime UTC}
 ${hr}
 ${color magenta}HBA Core Temp ${color magenta}ASR71605:${color lightgrey}${execi 10 sudo /usr/local/bin/arcconf getconfig 1 AD | grep "   Temperature" | awk -F: '{print $2}'}
 ${hr}
@@ -118,6 +110,9 @@ ${color magenta}Core 11:   ${color lightgrey}${execi 10 /bin/sensors | grep 'Cor
 ${color magenta}Core 12:   ${color lightgrey}${execi 10 /bin/sensors | grep 'Core 12:' | cut -c17-23 | sed '/^$/d' | head -n 1}| ${color lightgrey}${execi 10 /bin/sensors | grep 'Core 12:' | cut -c17-23 | sed '/^$/d' | tail -n 1}
 ${color magenta}Core 13:   ${color lightgrey}${execi 10 /bin/sensors | grep 'Core 13:' | cut -c17-23 | sed '/^$/d' | head -n 1}| ${color lightgrey}${execi 10 /bin/sensors | grep 'Core 13:' | cut -c17-23 | sed '/^$/d' | tail -n 1}
 ${color magenta}Core 14:   ${color lightgrey}${execi 10 /bin/sensors | grep 'Core 14:' | cut -c17-23 | sed '/^$/d' | head -n 1}| ${color lightgrey}${execi 10 /bin/sensors | grep 'Core 14:' | cut -c17-23 | sed '/^$/d' | tail -n 1}
+${hr}
+${color magenta}Eastern:  ${color lightgrey}${tztime America/New_York}    ${color magenta}Paris: ${color lightgrey}${tztime Europe/Paris}
+${color magenta}Sydney:   ${color lightgrey}${tztime Australia/Sydney}    ${color magenta}UTC+0: ${color lightgrey}${tztime UTC}
 ${hr}
 
 ]];

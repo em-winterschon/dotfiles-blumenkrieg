@@ -1,3 +1,6 @@
+# 2.8.8
+- updating grc and conky + others
+
 # 2.8.7
 - updating workstation bootstrap doc
 - updating config files
