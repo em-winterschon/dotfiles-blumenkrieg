@@ -51,7 +51,7 @@ ${color magenta}13:${color}${cpu cpu13}% ${cpubar cpu13 6,200} ${color magenta}2
 ${color magenta}14:${color}${cpu cpu14}% ${cpubar cpu14 6,200} ${color magenta}28:${color}${cpu cpu28}% ${cpubar cpu28 6,200}
 ${cpugraph}
 ${color magenta}Memory:       Used/Total          Free              Swap Used/Total
-${color        }         ${mem}/${memmax}       ${memfree}              ${swap}/${swapmax}
+${color        }         ${mem}/${memmax}       ${memfree}            ${swap}/${swapmax}
 ${memperc}% ${membar 4}
 ${memgraph}
 ${color magenta}Load average: ${color}${loadavg}
@@ -67,7 +67,7 @@ ${color lightgrey} ${top name 7} ${top pid 7} ${top cpu 7} ${top mem 7}
 ${color lightgrey} ${top name 8} ${top pid 8} ${top cpu 8} ${top mem 8}
 ${hr}
 ${color magenta}IPaddr [wired]:   ${color lightgrey}${addr eno1}
-${color magenta}Up:   ${color lightgrey}${upspeed eno1}/s ${upspeedgraph}
+${color magenta}Up: ${color lightgrey}${upspeed eno1}/s ${upspeedgraph}
 ${color magenta}Down: ${color lightgrey}${downspeed eno1/s} ${downspeedgraph}
 ${color magenta}LAN Gateway:     ${color lightgrey}${execi 10 ~/.pingtest.sh 172.16.40.1}, ${tcp_ping 172.16.40.1} ms
 ${color magenta}SSH SFO-R101:    ${color lightgrey}${execi 10 ~/.pingtest.sh 8.18.217.142}, ${tcp_ping 8.18.217.142} ms
