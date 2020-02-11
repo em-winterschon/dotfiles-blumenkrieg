@@ -1,0 +1,20 @@
+# lsblk
+# list="c d e f g h i j k l m n o p q r"
+# for e in `echo $list`; do l /dev/disk/by-id/ | egrep sd${e} | egrep wwn | grep -v part | awk '{print $8}' >> wwn-list.intel-s3510.txt; done
+
+wwn-0x55cd2e404c6d54ba
+wwn-0x55cd2e404c6d54e8
+wwn-0x55cd2e414d429f18
+wwn-0x55cd2e414d85ca38
+wwn-0x55cd2e404c6d54b9
+wwn-0x55cd2e404c6d5557
+wwn-0x55cd2e414d8870fc
+wwn-0x55cd2e414d8871a7
+wwn-0x55cd2e414d887289
+wwn-0x55cd2e414d886f4a
+wwn-0x55cd2e414d85c182
+wwn-0x55cd2e414d88728d
+wwn-0x55cd2e414d886f80
+wwn-0x55cd2e414d887294
+wwn-0x55cd2e414d886fca
+wwn-0x55cd2e414d887303

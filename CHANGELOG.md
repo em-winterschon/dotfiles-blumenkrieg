@@ -1,3 +1,6 @@
+# 2.8.9
+- updated conky for ZFS and new IO output
+
 # 2.8.8
 - updating grc and conky + others
 

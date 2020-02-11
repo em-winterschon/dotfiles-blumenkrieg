@@ -25,15 +25,18 @@ function print_one() {
     echo $wwn | grep nvme > /dev/null
     if [ $? -eq 0 ]; then
 	temp=`sudo smartctl --info --all $dev | grep "Temperature:" | awk '{print $2"C"}'`
+	output=$temp
     fi
 
     # check if drive is sata/sas (matches wwn-xxxxxxxx)
     echo $wwn | grep wwn > /dev/null
     if [ $? -eq 0 ]; then
-	temp=`sudo smartctl --info --all $dev | grep Temperature_Celsius | awk '{print " " $10"C",$11,$12}'`
+	temp=`sudo smartctl --info --all $dev | grep "194 Temperature" | awk '{print " " $10"C",$11,$12}' | awk '{print $1}'`
+	value=`sudo smartctl --info --all $dev | grep "194 Temperature" | awk '{print $4}'`
+	health=`expr 100 - $value`
+	output="$temp, $health% max"
     fi
-
-    printf "$temp"
+    echo "$output"
 }
 
 print_one $1

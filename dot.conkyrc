@@ -77,22 +77,44 @@ ${lua_graph router_ping 20,535 ff8c00 ff8c00}${color lightgrey}
 ${color magenta}Mount   Used / Total
 ${color magenta}root-fs ${color}${fs_used /}/${fs_size /} ${fs_bar 6 /}
 ${hr}
-${color magenta}Read IOPs                         Write IOPs
+${color magenta}I/O Read                          I/O Write
 ${color lightgrey}${diskiograph_read 20,263} ${color lightgrey}${diskiograph_write 20,264}
-OSRAID: ${diskio_read md127  }/s                 ${diskio_write md127}/s
-NVMe0:  ${diskio_read nvme0n1}/s                 ${diskio_write nvme0n1}/s
-NVMe1:  ${diskio_read nvme1n1}/s                 ${diskio_write nvme1n1}/s
-NVMe3:  ${diskio_read nvme2n1}/s                 ${diskio_write nvme2n1}/s
-NVMe4:  ${diskio_read nvme3n1}/s                 ${diskio_write nvme3n1}/s
 ${hr}
 ${color magenta}HBA Core Temp ${color magenta}ASR71605:${color lightgrey}${execi 10 sudo /usr/local/bin/arcconf getconfig 1 AD | grep "   Temperature" | awk -F: '{print $2}'}
 ${hr}
-${color magenta}OS-MDRAID Temps
-${color magenta}NVMe0n1:   ${color lightgrey}${execi 10 ~/bin/bash/smartctl.temps.sh nvme-eui.002538c27100a8b5} | ${color magenta}NVMe0n2: ${color lightgrey}${execi 10 ~/bin/bash/smartctl.temps.sh nvme-eui.002538c27100a8b7} | ${color magenta}NVMe0n3: ${color lightgrey}${execi 10 ~/bin/bash/smartctl.temps.sh nvme-eui.002538c27100a8c0} | ${color magenta}NVMe0n4: ${color lightgrey}${execi 10 ~/bin/bash/smartctl.temps.sh nvme-eui.002538c27100a8ef}
+${color magenta}Device       Read IOPs           Write IOPs         ${color magenta}Temp
+${color magenta}OSRAID: ${color}${diskio_read md126  }/s                 ${diskio_write md126}/s
+${color magenta}NVMe0   ${color}${diskio_read nvme0n1}/s                 ${diskio_write nvme0n1}/s         ${execi 10 ~/bin/bash/smartctl.temps.sh nvme-eui.002538c27100a8b5}
+${color magenta}NVMe1   ${color}${diskio_read nvme1n1}/s                 ${diskio_write nvme1n1}/s         ${execi 10 ~/bin/bash/smartctl.temps.sh nvme-eui.002538c27100a8b7}
+${color magenta}NVMe3   ${color}${diskio_read nvme2n1}/s                 ${diskio_write nvme2n1}/s         ${execi 10 ~/bin/bash/smartctl.temps.sh nvme-eui.002538c27100a8c0}
+${color magenta}NVMe4   ${color}${diskio_read nvme3n1}/s                 ${diskio_write nvme3n1}/s         ${execi 10 ~/bin/bash/smartctl.temps.sh nvme-eui.002538c27100a8ef}
 ${hr}
-${color magenta}ZFS Pool Temps
-${color magenta}/dev/sda: ${color lightgrey}${execi 10 ~/bin/bash/smartctl.temps.sh wwn-0x5002538e70089ea5}
-${color magenta}/dev/sdb: ${color lightgrey}${execi 10 ~/bin/bash/smartctl.temps.sh wwn-0x5002538e70089eab}
+${color magenta}Backups
+${color magenta}Device       Read IOPs           Write IOPs         ${color magenta}Temp
+${color magenta}/dev/sda${color}${diskio_read sda}/s                 ${diskio_write sda}/s         ${execi 10 ~/bin/bash/smartctl.temps.sh wwn-0x5002538e70089ea5}
+${color magenta}/dev/sdb${color}${diskio_read sdb}/s                 ${diskio_write sdb}/s         ${execi 10 ~/bin/bash/smartctl.temps.sh wwn-0x5002538e70089eab}
+${hr}
+${color magenta}ZFS Pool Sechszehn
+${color}${execi 10 /sbin/zpool list | head -n 1 | awk '{print $1"\t\t"$2"\t"$3"\t"$4"\t"$7"\t"$9}'}
+${color}${execi 10 /sbin/zpool list | tail -n 1 | awk '{print $1"\t"$2"\t"$3"\t"$4"\t"$7"\t"$9}'}
+
+${color magenta}Device       Read IOPs           Write IOPs         ${color magenta}Temp
+${color magenta}/dev/sdc${color}${diskio_read sdc}/s                 ${diskio_write sdc}/s         ${execi 10 ~/bin/bash/smartctl.temps.sh wwn-0x55cd2e404c6d54ba}
+${color magenta}/dev/sdd${color}${diskio_read sdd}/s                 ${diskio_write sdd}/s         ${execi 10 ~/bin/bash/smartctl.temps.sh wwn-0x55cd2e404c6d54e8}
+${color magenta}/dev/sde${color}${diskio_read sde}/s                 ${diskio_write sde}/s         ${execi 10 ~/bin/bash/smartctl.temps.sh wwn-0x55cd2e414d429f18}
+${color magenta}/dev/sdf${color}${diskio_read sdf}/s                 ${diskio_write sdf}/s         ${execi 10 ~/bin/bash/smartctl.temps.sh wwn-0x55cd2e414d85ca38}
+${color magenta}/dev/sdg${color}${diskio_read sdg}/s                 ${diskio_write sdg}/s         ${execi 10 ~/bin/bash/smartctl.temps.sh wwn-0x55cd2e404c6d54b9}
+${color magenta}/dev/sdh${color}${diskio_read sdh}/s                 ${diskio_write sdh}/s         ${execi 10 ~/bin/bash/smartctl.temps.sh wwn-0x55cd2e404c6d5557}
+${color magenta}/dev/sdi${color}${diskio_read sdi}/s                 ${diskio_write sdi}/s         ${execi 10 ~/bin/bash/smartctl.temps.sh wwn-0x55cd2e414d8870fc}
+${color magenta}/dev/sdj${color}${diskio_read sdj}/s                 ${diskio_write sdj}/s         ${execi 10 ~/bin/bash/smartctl.temps.sh wwn-0x55cd2e414d8871a7}
+${color magenta}/dev/sdk${color}${diskio_read sdk}/s                 ${diskio_write sdk}/s         ${execi 10 ~/bin/bash/smartctl.temps.sh wwn-0x55cd2e414d887289}
+${color magenta}/dev/sdl${color}${diskio_read sdl}/s                 ${diskio_write sdl}/s         ${execi 10 ~/bin/bash/smartctl.temps.sh wwn-0x55cd2e414d886f4a}
+${color magenta}/dev/sdm${color}${diskio_read sdm}/s                 ${diskio_write sdm}/s         ${execi 10 ~/bin/bash/smartctl.temps.sh wwn-0x55cd2e414d85c182}
+${color magenta}/dev/sdn${color}${diskio_read sdn}/s                 ${diskio_write sdn}/s         ${execi 10 ~/bin/bash/smartctl.temps.sh wwn-0x55cd2e414d88728d}
+${color magenta}/dev/sdo${color}${diskio_read sdo}/s                 ${diskio_write sdo}/s         ${execi 10 ~/bin/bash/smartctl.temps.sh wwn-0x55cd2e414d886f80}
+${color magenta}/dev/sdp${color}${diskio_read sdp}/s                 ${diskio_write sdp}/s         ${execi 10 ~/bin/bash/smartctl.temps.sh wwn-0x55cd2e414d887294}
+${color magenta}/dev/sdq${color}${diskio_read sdq}/s                 ${diskio_write sdq}/s         ${execi 10 ~/bin/bash/smartctl.temps.sh wwn-0x55cd2e414d886fca}
+${color magenta}/dev/sdr${color}${diskio_read sdr}/s                 ${diskio_write sdr}/s         ${execi 10 ~/bin/bash/smartctl.temps.sh wwn-0x55cd2e414d887303}=
 ${hr}
 ${color magenta}CPU Temp   LGA-0 ${color lightgrey} ${color magenta}  LGA-1                LGA-0 ${color lightgrey} ${color magenta}  LGA-1
 ${color magenta}Core 01:   ${color lightgrey}${execi 10 /bin/sensors | grep 'Core 0:' | cut -c17-23 | sed '/^$/d' | head -n 1}| ${color lightgrey}${execi 10 /bin/sensors | grep 'Core 0:' | cut -c17-23 | sed '/^$/d' | tail -n 1} | ${color magenta}Core 08:   ${color lightgrey}${execi 10 /bin/sensors | grep 'Core 8:' | cut -c17-23 | sed '/^$/d' | head -n 1}| ${color lightgrey}${execi 10 /bin/sensors | grep 'Core 8:' | cut -c17-23 | sed '/^$/d' | tail -n 1}

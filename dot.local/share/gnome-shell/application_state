@@ -1,25 +1,21 @@
 <?xml version="1.0"?>
 <application-state>
   <context id="">
-    <application id="gnome-control-center.desktop" score="57" last-seen="1581287917"/>
     <application id="org.gnome.FileRoller.desktop" score="4" last-seen="1581367814"/>
-    <application id="vivaldi-stable.desktop" score="6154.25" last-seen="1581372601"/>
+    <application id="gnome-control-center.desktop" score="57" last-seen="1581287917"/>
+    <application id="vivaldi-stable.desktop" score="6157.25" last-seen="1581376623"/>
     <application id="PyCharm.desktop" score="7746" last-seen="1581372504"/>
-    <application id="SnapStore.desktop" score="4" last-seen="1581100155"/>
-    <application id="slack.desktop" score="19509.25" last-seen="1581372365"/>
-    <application id="org.gnome.Calculator.desktop" score="4.25" last-seen="1580766627"/>
     <application id="firefox.desktop" score="17.5" last-seen="1581362917"/>
+    <application id="slack.desktop" score="19512.25" last-seen="1581375187"/>
+    <application id="SnapStore.desktop" score="4" last-seen="1581100155"/>
     <application id="org.gnome.Nautilus.desktop" score="67.5" last-seen="1581367815"/>
-    <application id="eog.desktop" score="23.75" last-seen="1580766957"/>
     <application id="chromium-browser.desktop" score="2963.25" last-seen="1581372652"/>
-    <application id="keeperpasswordmanager.desktop" score="0" last-seen="0"/>
     <application id="org.gnome.gedit.desktop" score="1671.5" last-seen="1581367819"/>
     <application id="spotify.desktop" score="76" last-seen="1581372602"/>
     <application id="org.gnome.tweaks.desktop" score="34.75" last-seen="1581337281"/>
     <application id="gnome-shell-extension-prefs.desktop" score="0" last-seen="1581073847"/>
-    <application id="org.gnome.Terminal.desktop" score="25043.25" last-seen="1581372719"/>
+    <application id="org.gnome.Terminal.desktop" score="25245.25" last-seen="1581376622"/>
     <application id="start-tor-browser.desktop" score="8.25" last-seen="1581023738"/>
-    <application id="evince.desktop" score="0.5" last-seen="1580766708"/>
     <application id="org.gnome.Software.desktop" score="6.75" last-seen="1581160138"/>
   </context>
 </application-state>

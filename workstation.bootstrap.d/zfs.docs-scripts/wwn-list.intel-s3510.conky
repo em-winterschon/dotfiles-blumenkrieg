@@ -1,0 +1,16 @@
+${color magenta}/dev/sdc: ${color lightgrey}${execi 10 ~/bin/bash/smartctl.temps.sh wwn-0x55cd2e404c6d54ba}
+${color magenta}/dev/sdd: ${color lightgrey}${execi 10 ~/bin/bash/smartctl.temps.sh wwn-0x55cd2e404c6d54e8}
+${color magenta}/dev/sde: ${color lightgrey}${execi 10 ~/bin/bash/smartctl.temps.sh wwn-0x55cd2e414d429f18}
+${color magenta}/dev/sdf: ${color lightgrey}${execi 10 ~/bin/bash/smartctl.temps.sh wwn-0x55cd2e414d85ca38}
+${color magenta}/dev/sdg: ${color lightgrey}${execi 10 ~/bin/bash/smartctl.temps.sh wwn-0x55cd2e404c6d54b9}
+${color magenta}/dev/sdh: ${color lightgrey}${execi 10 ~/bin/bash/smartctl.temps.sh wwn-0x55cd2e404c6d5557}
+${color magenta}/dev/sdi: ${color lightgrey}${execi 10 ~/bin/bash/smartctl.temps.sh wwn-0x55cd2e414d8870fc}
+${color magenta}/dev/sdj: ${color lightgrey}${execi 10 ~/bin/bash/smartctl.temps.sh wwn-0x55cd2e414d8871a7}
+${color magenta}/dev/sdk: ${color lightgrey}${execi 10 ~/bin/bash/smartctl.temps.sh wwn-0x55cd2e414d887289}
+${color magenta}/dev/sdl: ${color lightgrey}${execi 10 ~/bin/bash/smartctl.temps.sh wwn-0x55cd2e414d886f4a}
+${color magenta}/dev/sdm: ${color lightgrey}${execi 10 ~/bin/bash/smartctl.temps.sh wwn-0x55cd2e414d85c182}
+${color magenta}/dev/sdn: ${color lightgrey}${execi 10 ~/bin/bash/smartctl.temps.sh wwn-0x55cd2e414d88728d}
+${color magenta}/dev/sdo: ${color lightgrey}${execi 10 ~/bin/bash/smartctl.temps.sh wwn-0x55cd2e414d886f80}
+${color magenta}/dev/sdp: ${color lightgrey}${execi 10 ~/bin/bash/smartctl.temps.sh wwn-0x55cd2e414d887294}
+${color magenta}/dev/sdq: ${color lightgrey}${execi 10 ~/bin/bash/smartctl.temps.sh wwn-0x55cd2e414d886fca}
+${color magenta}/dev/sdr: ${color lightgrey}${execi 10 ~/bin/bash/smartctl.temps.sh wwn-0x55cd2e414d887303}
