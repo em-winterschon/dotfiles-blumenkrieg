@@ -1,5 +1,6 @@
 # 2.8.9
 - updated conky for ZFS and new IO output
+- updated conky for dynamic mdraid mount point display
 
 # 2.8.8
 - updating grc and conky + others

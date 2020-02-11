@@ -3634,7 +3634,7 @@
       </screenshot>
     </screenshots>
     <releases>
-      <release version="39"/>
+      <release version="40"/>
     </releases>
     <metadata>
       <value key="GnomeSoftware::OriginHostnameUrl">https://extensions.gnome.org/</value>
@@ -10988,7 +10988,7 @@
       </screenshot>
     </screenshots>
     <releases>
-      <release version="12"/>
+      <release version="13"/>
     </releases>
     <metadata>
       <value key="GnomeSoftware::OriginHostnameUrl">https://extensions.gnome.org/</value>
