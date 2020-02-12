@@ -33,7 +33,7 @@ ${color magenta}Hostname: ${color}${nodename}
 ${color magenta}Kernel:   ${color}${sysname} ${kernel}
 ${color magenta}Uptime:   ${color}${uptime}
 ${hr}
-${color magenta}CPU Frequency:${color} ${freq_g} GHz
+${color magenta}CPU:${color} ${freq_g} GHz (${execi 2 ~/bin/bash/ghz-mon.sh}) | ${execi 300 lscpu | grep "Model name:" | awk '{print "Dual "$3,$4,$6$7,$9}' | tr -d '()' | sed 's/R//g'}
 ${color magenta}SUM${color}${cpu cpu0}% ${cpubar cpu0 6}
 ${color magenta}01:${color}${cpu cpu1}% ${cpubar cpu1 6,200} ${color magenta}15:${color}${cpu cpu15}% ${cpubar cpu15 6,200}
 ${color magenta}02:${color}${cpu cpu2}% ${cpubar cpu2 6,200} ${color magenta}16:${color}${cpu cpu16}% ${cpubar cpu16 6,200}
@@ -117,7 +117,7 @@ ${color magenta}/dev/sdn${color}${diskio_read sdn}/s                 ${diskio_wr
 ${color magenta}/dev/sdo${color}${diskio_read sdo}/s                 ${diskio_write sdo}/s         ${execi 10 ~/bin/bash/smartctl.temps.sh wwn-0x55cd2e414d886f80}
 ${color magenta}/dev/sdp${color}${diskio_read sdp}/s                 ${diskio_write sdp}/s         ${execi 10 ~/bin/bash/smartctl.temps.sh wwn-0x55cd2e414d887294}
 ${color magenta}/dev/sdq${color}${diskio_read sdq}/s                 ${diskio_write sdq}/s         ${execi 10 ~/bin/bash/smartctl.temps.sh wwn-0x55cd2e414d886fca}
-${color magenta}/dev/sdr${color}${diskio_read sdr}/s                 ${diskio_write sdr}/s         ${execi 10 ~/bin/bash/smartctl.temps.sh wwn-0x55cd2e414d887303}=
+${color magenta}/dev/sdr${color}${diskio_read sdr}/s                 ${diskio_write sdr}/s         ${execi 10 ~/bin/bash/smartctl.temps.sh wwn-0x55cd2e414d887303}
 ${hr}
 ${color magenta}CPU Temp   LGA-0 ${color lightgrey} ${color magenta}  LGA-1                LGA-0 ${color lightgrey} ${color magenta}  LGA-1
 ${color magenta}Core 01:   ${color lightgrey}${execi 10 /bin/sensors | grep 'Core 0:' | cut -c17-23 | sed '/^$/d' | head -n 1}| ${color lightgrey}${execi 10 /bin/sensors | grep 'Core 0:' | cut -c17-23 | sed '/^$/d' | tail -n 1} | ${color magenta}Core 08:   ${color lightgrey}${execi 10 /bin/sensors | grep 'Core 8:' | cut -c17-23 | sed '/^$/d' | head -n 1}| ${color lightgrey}${execi 10 /bin/sensors | grep 'Core 8:' | cut -c17-23 | sed '/^$/d' | tail -n 1}

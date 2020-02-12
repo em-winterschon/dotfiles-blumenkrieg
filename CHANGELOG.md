@@ -1,3 +1,7 @@
+# 2.9.0
+- updated conky for cpu-monitor script
+- re-built globalworkspace venv
+
 # 2.8.9
 - updated conky for ZFS and new IO output
 - updated conky for dynamic mdraid mount point display
