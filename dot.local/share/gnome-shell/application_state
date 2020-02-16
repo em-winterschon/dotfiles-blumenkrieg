@@ -1,23 +1,24 @@
 <?xml version="1.0"?>
 <application-state>
   <context id="">
-    <application id="org.gnome.FileRoller.desktop" score="2" last-seen="1581367814"/>
-    <application id="gnome-control-center.desktop" score="43.5" last-seen="1581381492"/>
-    <application id="vivaldi-stable.desktop" score="3919.625" last-seen="1581541843"/>
-    <application id="PyCharm.desktop" score="4629" last-seen="1581541857"/>
-    <application id="SnapStore.desktop" score="2" last-seen="1581100155"/>
-    <application id="slack.desktop" score="19868.625" last-seen="1581542136"/>
-    <application id="firefox.desktop" score="8.75" last-seen="1581362917"/>
-    <application id="org.gnome.Nautilus.desktop" score="33.75" last-seen="1581542086"/>
-    <application id="eog.desktop" score="4" last-seen="1581541958"/>
-    <application id="chromium-browser.desktop" score="2001.625" last-seen="1581538421"/>
-    <application id="org.gnome.gedit.desktop" score="868.75" last-seen="1581542088"/>
-    <application id="spotify.desktop" score="246" last-seen="1581518865"/>
-    <application id="org.gnome.tweaks.desktop" score="18.375" last-seen="1581427254"/>
+    <application id="org.gnome.FileRoller.desktop" score="0.5" last-seen="1581367814"/>
+    <application id="gnome-control-center.desktop" score="14.375" last-seen="1581605770"/>
+    <application id="vivaldi-stable.desktop" score="3205.40625" last-seen="1581803291"/>
+    <application id="PyCharm.desktop" score="2239.25" last-seen="1581854509"/>
+    <application id="SnapStore.desktop" score="0.5" last-seen="1581100155"/>
+    <application id="slack.desktop" score="19311.15625" last-seen="1581850680"/>
+    <application id="firefox.desktop" score="2.1875" last-seen="1581362917"/>
+    <application id="org.gnome.Nautilus.desktop" score="10.4375" last-seen="1581779442"/>
+    <application id="eog.desktop" score="2" last-seen="1581779359"/>
+    <application id="vncviewer.desktop" score="7.5" last-seen="1581605682"/>
+    <application id="chromium-browser.desktop" score="816.40625" last-seen="1581853496"/>
+    <application id="org.gnome.gedit.desktop" score="3095.1875" last-seen="1581778114"/>
+    <application id="spotify.desktop" score="162.5" last-seen="1581854506"/>
+    <application id="org.gnome.tweaks.desktop" score="4.59375" last-seen="1581427254"/>
     <application id="gnome-shell-extension-prefs.desktop" score="0" last-seen="1581073847"/>
-    <application id="org.gnome.Terminal.desktop" score="17217.125" last-seen="1581542143"/>
-    <application id="start-tor-browser.desktop" score="4.125" last-seen="1581023738"/>
-    <application id="org.gnome.Software.desktop" score="3.375" last-seen="1581160138"/>
-    <application id="gnome-system-monitor.desktop" score="3.5" last-seen="1581381405"/>
+    <application id="org.gnome.Terminal.desktop" score="8517.53125" last-seen="1581854167"/>
+    <application id="start-tor-browser.desktop" score="1.03125" last-seen="1581023738"/>
+    <application id="org.gnome.Software.desktop" score="0.84375" last-seen="1581160138"/>
+    <application id="gnome-system-monitor.desktop" score="0.875" last-seen="1581381405"/>
   </context>
 </application-state>

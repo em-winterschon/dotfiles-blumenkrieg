@@ -1,3 +1,10 @@
+# 2.9.1
+- sr-iov check script
+- workstation build updates
+- tmux configs for Set D
+- tmux lab-connect expanded
+- configs
+
 # 2.9.0
 - updated conky for cpu-monitor script
 - re-built globalworkspace venv

@@ -116,3 +116,14 @@ sudo cp ~/etc/blumenkrieg/etc/grc.conf /etc/grc.conf
 sudo cp ~/bin/grc /usr/local/bin/
 sudo cp ~/bin/grcat /usr/local/bin/
 ```
+
+## Create perfadmin user for Perf-Test builds
+```
+sudo groupadd --gid 32768 perfadmin
+sudo useradd --uid 32768 --gid 32768 -c "perfadmin user for dpkg builds" --shell /sbin/nologin perfadmin
+sudo mkdir -p /opt/lnx-perf-iteration-ansible/ansible
+sudo mkdir -p /opt/lnx-perf-iteration-py-dev.virtualenvs/lnx_perftest/virtualenvs
+sudo mkdir -p /opt/lnx-perf-iteration-py-dev.virtualenvs/lnx_queueExecSSH/virtualenvs
+sudo chown -R perfadmin: /opt/lnx*
+sudo -u perfadmin ln -s /opt/lnx-perf-iteration-ansible/ansible /home/perfadmin/ansible
+```
