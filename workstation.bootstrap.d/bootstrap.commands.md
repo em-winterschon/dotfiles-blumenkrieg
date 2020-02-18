@@ -66,12 +66,18 @@ yum --enhancement --security distro-sync
 yum install -y tmux emacs-nox iotop nethogs htop snapd python3-devel NetworkManager-openvpn-gnome
 yum install -y gnome-tweaks libcurl-devel fio sysbench p7zip* mysql mysql-common mysql-devel
 yum install -y slack google-chrome-stable chromium ImageMagick7 jq python3-virtualenv
-yum install -y golang npm dpkg-dev
+yum install -y golang npm dpkg-dev ansible
 ```
 
 ## Python module installs
 ```
 sudo pip3 install glances tmuxp
+```
+
+## PIA OpenVPN Profiles Installer
+```
+cd dotfiles-blumenkrieg/workstation.bootstrap.d/installers/
+./pia-nm.centos8.sh
 ```
 
 ## NPM Installs
@@ -125,5 +131,6 @@ sudo mkdir -p /opt/lnx-perf-iteration-ansible/ansible
 sudo mkdir -p /opt/lnx-perf-iteration-py-dev.virtualenvs/lnx_perftest/virtualenvs
 sudo mkdir -p /opt/lnx-perf-iteration-py-dev.virtualenvs/lnx_queueExecSSH/virtualenvs
 sudo chown -R perfadmin: /opt/lnx*
-sudo -u perfadmin ln -s /opt/lnx-perf-iteration-ansible/ansible /home/perfadmin/ansible
+sudo chmod 750 /home/perfadmin
+sudo usermod --append --groups perfadmin mwinterschon
 ```

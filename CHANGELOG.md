@@ -1,3 +1,7 @@
+# 2.9.3
+- updated tmuxp profiles
+- updated workstation bootstrap doc
+
 # 2.9.2
 - updating bootstrap doc for dpkg-dev and perfadmin commands
 - updating yum.repos.d for sync

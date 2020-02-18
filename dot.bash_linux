@@ -99,9 +99,12 @@ if [ $HOSTNAME = "fraulein" ] || [ $HOSTNAME = "flowers" ] || [ $HOSTNAME = "blu
     # load-test infra
     alias tmuxSetAdminA='tmuxp load setAdminA'
     alias tmuxSetAdminB='tmuxp load setAdminB'
+    alias tmuxSetAdminC='tmuxp load setAdminC'
+    alias tmuxSetAdminD='tmuxp load setAdminD'
     alias tmuxSetDevA='tmuxp load setDevA'
     alias tmuxSetDevB='tmuxp load setDevB'
     alias tmuxSetDevC='tmuxp load setDevC'
+    alias tmuxSetDevD='tmuxp load setDevD'
 fi
 
 ## sed colorization

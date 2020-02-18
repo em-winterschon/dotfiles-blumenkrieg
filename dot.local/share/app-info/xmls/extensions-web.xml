@@ -2064,7 +2064,7 @@
       </screenshot>
     </screenshots>
     <releases>
-      <release version="61"/>
+      <release version="62"/>
     </releases>
     <metadata>
       <value key="GnomeSoftware::OriginHostnameUrl">https://extensions.gnome.org/</value>

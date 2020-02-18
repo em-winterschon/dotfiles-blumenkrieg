@@ -3,66 +3,6 @@
       xmlns:bookmark="http://www.freedesktop.org/standards/desktop-bookmarks"
       xmlns:mime="http://www.freedesktop.org/standards/shared-mime-info"
 >
-  <bookmark href="file:///home/mwinterschon/Pictures/Screenshot%20from%202020-01-15%2007-55-15.png" added="2020-01-15T16:02:07Z" modified="2020-01-15T16:02:07Z" visited="2020-01-25T11:52:50Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="image/png"/>
-        <bookmark:applications>
-          <bookmark:application name="slack" exec="&apos;slack %u&apos;" modified="2020-01-15T16:02:07Z" count="1"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///home/mwinterschon/Pictures/Screenshot%20from%202020-01-15%2013-51-37.png" added="2020-01-15T21:53:44Z" modified="2020-01-15T21:53:44Z" visited="2020-01-25T11:52:50Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="image/png"/>
-        <bookmark:applications>
-          <bookmark:application name="slack" exec="&apos;slack %u&apos;" modified="2020-01-15T21:53:44Z" count="1"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///home/mwinterschon/Desktop/test-sfo9990_chef-client_why-run.txt" added="2020-01-16T12:05:54Z" modified="2020-01-16T12:05:54Z" visited="2020-01-25T11:52:50Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="text/plain"/>
-        <bookmark:applications>
-          <bookmark:application name="slack" exec="&apos;slack %u&apos;" modified="2020-01-16T12:05:54Z" count="1"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///home/mwinterschon/Pictures/perf-test-elastic-django-apm.png" added="2020-01-17T13:22:25Z" modified="2020-01-17T13:22:25Z" visited="2020-01-25T11:52:50Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="image/png"/>
-        <bookmark:applications>
-          <bookmark:application name="slack" exec="&apos;slack %u&apos;" modified="2020-01-17T13:22:25Z" count="1"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///home/mwinterschon/Pictures/Screenshot%20from%202020-01-17%2005-24-13.png" added="2020-01-17T13:25:21Z" modified="2020-01-17T13:25:21Z" visited="2020-01-25T11:52:50Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="image/png"/>
-        <bookmark:applications>
-          <bookmark:application name="slack" exec="&apos;slack %u&apos;" modified="2020-01-17T13:25:21Z" count="1"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///home/mwinterschon/Pictures/Screenshot%20from%202020-01-17%2005-24-53.png" added="2020-01-17T13:25:21Z" modified="2020-01-17T13:25:21Z" visited="2020-01-25T11:52:50Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="image/png"/>
-        <bookmark:applications>
-          <bookmark:application name="slack" exec="&apos;slack %u&apos;" modified="2020-01-17T13:25:21Z" count="1"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
   <bookmark href="file:///home/mwinterschon/Desktop/config" added="2020-01-17T17:06:49Z" modified="2020-01-17T17:06:49Z" visited="2020-01-25T11:52:50Z">
     <info>
       <metadata owner="http://freedesktop.org">
@@ -516,7 +456,7 @@
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/mwinterschon/Desktop/root.txt" added="2020-01-29T15:54:37Z" modified="2020-02-12T20:36:21Z" visited="2020-01-29T15:54:37Z">
+  <bookmark href="file:///home/mwinterschon/Desktop/root.txt" added="2020-01-29T15:54:37Z" modified="2020-02-17T12:44:36Z" visited="2020-01-29T15:54:37Z">
     <info>
       <metadata owner="http://freedesktop.org">
         <mime:mime-type type="text/plain"/>
@@ -524,7 +464,7 @@
           <bookmark:group>gedit</bookmark:group>
         </bookmark:groups>
         <bookmark:applications>
-          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2020-02-12T20:36:21Z" count="16"/>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2020-02-17T12:44:36Z" count="17"/>
         </bookmark:applications>
       </metadata>
     </info>
@@ -1705,12 +1645,70 @@
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/mwinterschon/Pictures/dyn.dns-zone.perftest.png" added="2020-02-15T15:10:36Z" modified="2020-02-15T15:10:36Z" visited="2020-02-15T15:10:36.904208Z">
+  <bookmark href="file:///home/mwinterschon/Pictures/dyn.dns-zone.perftest.png" added="2020-02-15T15:10:36Z" modified="2020-02-15T15:10:36Z" visited="2020-02-15T15:10:36Z">
     <info>
       <metadata owner="http://freedesktop.org">
         <mime:mime-type type="image/png"/>
         <bookmark:applications>
           <bookmark:application name="slack" exec="&apos;slack %u&apos;" modified="2020-02-15T15:10:36Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/mwinterschon/Pictures/Screenshot%20from%202020-02-17%2005-45-51.png" added="2020-02-17T13:46:04Z" modified="2020-02-17T13:46:04Z" visited="2020-02-17T13:46:04Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="gsd-media-keys" exec="&apos;gsd-media-keys %u&apos;" modified="2020-02-17T13:46:04Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/mwinterschon/Pictures/Screenshot%20from%202020-02-17%2006-55-45.png" added="2020-02-17T14:56:01Z" modified="2020-02-17T14:58:15Z" visited="2020-02-17T14:56:01Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gsd-media-keys" exec="&apos;gsd-media-keys %u&apos;" modified="2020-02-17T14:56:01Z" count="1"/>
+          <bookmark:application name="Image Viewer" exec="&apos;eog %u&apos;" modified="2020-02-17T14:58:15Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/mwinterschon/Pictures/CI-Validation-Batch-Test-Execute.png" added="2020-02-17T14:58:50Z" modified="2020-02-17T14:58:50Z" visited="2020-02-17T14:58:50Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="slack" exec="&apos;slack %u&apos;" modified="2020-02-17T14:58:50Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/mwinterschon/Desktop/test-sfo9970.grub-boot-failure-fastly-kernels.md" added="2020-02-17T15:52:43Z" modified="2020-02-17T15:53:52Z" visited="2020-02-17T15:52:44Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/markdown"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2020-02-17T15:52:43Z" count="2"/>
+          <bookmark:application name="slack" exec="&apos;slack %u&apos;" modified="2020-02-17T15:53:52Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/mwinterschon/Desktop/test-sfo9970.dmesg.20200217.4.15.0-76-generic.txt" added="2020-02-17T15:53:57Z" modified="2020-02-17T15:53:57Z" visited="2020-02-17T15:53:57.710226Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:applications>
+          <bookmark:application name="slack" exec="&apos;slack %u&apos;" modified="2020-02-17T15:53:57Z" count="1"/>
         </bookmark:applications>
       </metadata>
     </info>
