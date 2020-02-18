@@ -3,16 +3,6 @@
       xmlns:bookmark="http://www.freedesktop.org/standards/desktop-bookmarks"
       xmlns:mime="http://www.freedesktop.org/standards/shared-mime-info"
 >
-  <bookmark href="file:///home/mwinterschon/Desktop/config" added="2020-01-17T17:06:49Z" modified="2020-01-17T17:06:49Z" visited="2020-01-25T11:52:50Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="application/octet-stream"/>
-        <bookmark:applications>
-          <bookmark:application name="slack" exec="&apos;slack %u&apos;" modified="2020-01-17T17:06:49Z" count="1"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
   <bookmark href="file:///home/mwinterschon/Pictures/Screenshot%20from%202020-01-18%2012-07-35.png" added="2020-01-18T20:07:54Z" modified="2020-01-18T20:07:54Z" visited="2020-01-25T11:52:50Z">
     <info>
       <metadata owner="http://freedesktop.org">
@@ -1703,12 +1693,23 @@
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/mwinterschon/Desktop/test-sfo9970.dmesg.20200217.4.15.0-76-generic.txt" added="2020-02-17T15:53:57Z" modified="2020-02-17T15:53:57Z" visited="2020-02-17T15:53:57.710226Z">
+  <bookmark href="file:///home/mwinterschon/Desktop/test-sfo9970.dmesg.20200217.4.15.0-76-generic.txt" added="2020-02-17T15:53:57Z" modified="2020-02-17T15:53:57Z" visited="2020-02-17T15:53:57Z">
     <info>
       <metadata owner="http://freedesktop.org">
         <mime:mime-type type="text/plain"/>
         <bookmark:applications>
           <bookmark:application name="slack" exec="&apos;slack %u&apos;" modified="2020-02-17T15:53:57Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/mwinterschon/Pictures/Screenshot%20from%202020-02-18%2003-12-38.png" added="2020-02-18T11:12:45Z" modified="2020-02-18T11:19:42Z" visited="2020-02-18T11:12:46Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="gsd-media-keys" exec="&apos;gsd-media-keys %u&apos;" modified="2020-02-18T11:12:45Z" count="1"/>
+          <bookmark:application name="slack" exec="&apos;slack %u&apos;" modified="2020-02-18T11:19:42Z" count="1"/>
         </bookmark:applications>
       </metadata>
     </info>

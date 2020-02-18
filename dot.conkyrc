@@ -100,8 +100,8 @@ ${color}${execi 10 /sbin/zpool list | head -n 1 | awk '{print $1"\t\t"$2"\t"$3"\
 ${color}${execi 10 /sbin/zpool list | tail -n 1 | awk '{print $1"\t"$2"\t"$3"\t"$4"\t"$7"\t"$9}'}
 
 ${color magenta}Device       Read IOPs           Write IOPs         ${color magenta}Temp
-${color magenta}L2ARC   ${color}${diskio_read nvme2n1}/s                 ${diskio_write nvme2n1}/s         ${execi 10 ~/bin/bash/smartctl.temps.sh nvme-eui.002538c27100a8c0}, NVMe3
-${color magenta}ZIL     ${color}${diskio_read nvme3n1}/s                 ${diskio_write nvme3n1}/s         ${execi 10 ~/bin/bash/smartctl.temps.sh nvme-eui.002538c27100a8ef}, NVMe4
+${color magenta}L2ARC   ${color}${diskio_read nvme2n1}/s                 ${diskio_write nvme2n1}/s         ${execi 10 ~/bin/bash/smartctl.temps.sh nvme-eui.002538c27100a8c0}, NVMe2
+${color magenta}ZIL     ${color}${diskio_read nvme3n1}/s                 ${diskio_write nvme3n1}/s         ${execi 10 ~/bin/bash/smartctl.temps.sh nvme-eui.002538c27100a8ef}, NVMe3
 ${color magenta}/dev/sdc${color}${diskio_read sdc}/s                 ${diskio_write sdc}/s         ${execi 10 ~/bin/bash/smartctl.temps.sh wwn-0x55cd2e404c6d54ba}
 ${color magenta}/dev/sdd${color}${diskio_read sdd}/s                 ${diskio_write sdd}/s         ${execi 10 ~/bin/bash/smartctl.temps.sh wwn-0x55cd2e404c6d54e8}
 ${color magenta}/dev/sde${color}${diskio_read sde}/s                 ${diskio_write sde}/s         ${execi 10 ~/bin/bash/smartctl.temps.sh wwn-0x55cd2e414d429f18}

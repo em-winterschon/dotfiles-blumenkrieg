@@ -2,24 +2,17 @@
 # options zfs zfs_arc_min=
 
 # ARC maximum size (set to 8GB)
-#options zfs zfs_arc_max=8589934592
-
-# ARC maximum size (set to 32GB)
-options zfs zfs_arc_max=34359738368
+options zfs zfs_arc_max=8589934592
 
 # max write speed to l2arc
 # tradeoff between write/read and durability of ssd
 # default : 8 * 1024 * 1024 = 8388608 (8Mb/sec)
-# 512Mb/sec
-options zfs l2arc_write_max=524288000
-# 700 Mb/sec
-#options zfs l2arc_write_max=734003200
-# 1000 Mb/sec
-#options zfs l2arc_write_max=1048576000
+# options zfs l2arc_write_max=524288000
+options zfs l2arc_write_max=1048576000
 
 # number of max device writes to precache
 # default : 2
-options zfs l2arc_headroom=16
+options zfs l2arc_headroom=12
 
 # increase read record size (128k)
 options zfs zfs_read_chunk_size=1310720
@@ -45,4 +38,4 @@ options zfs zfs_vdev_async_write_min_active=8
 options zfs zfs_vdev_async_write_max_active=32
 
 # how much dirty data are allowed to be non-sync writes
-options zfs zfs_dirty_data_max_percent=10
+options zfs zfs_dirty_data_max_percent=25

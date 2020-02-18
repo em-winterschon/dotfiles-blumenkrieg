@@ -1,3 +1,9 @@
+# 2.9.4
+- zfs modprobe updated for additional RAM + L2ARC
+- bootstrap doc/script for zfs updated for cache + log
+- conky update for nvme naming
+- scripts configs etc
+
 # 2.9.3
 - updated tmuxp profiles
 - updated workstation bootstrap doc

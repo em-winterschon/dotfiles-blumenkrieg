@@ -28,3 +28,7 @@ MAILTO=root
 07 * * * *       mwinterschon   dconf dump /org/gnome/settings-daemon/plugins/media-keys/ > /home/mwinterschon/Projects/dotfiles/gnome3/gnome3.keyboard-remapping-media-keys.conf
 07 * * * *       mwinterschon   dconf dump /org/gnome/desktop/wm/keybindings/ > /home/mwinterschon/Projects/dotfiles/gnome3/gnome3.keyboard-remapping-generic-keys.conf
 07 * * * *       mwinterschon   dconf dump /org/gnome/terminal/ > /home/mwinterschon/Projects/dotfiles/gnome3/gnome3.terminal.$HOSTNAME.conf
+
+## ZFS Scrubbing
+#--------------------------------------------------------------------------------
+0 0 * * 7 root  /sbin/zpool scrub sechszehn >/dev/null 2>&1

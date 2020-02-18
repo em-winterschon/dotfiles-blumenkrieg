@@ -7,3 +7,6 @@ mirror wwn-0x55cd2e414d887289 wwn-0x55cd2e414d886f4a \
 mirror wwn-0x55cd2e414d85c182 wwn-0x55cd2e414d88728d \
 mirror wwn-0x55cd2e414d886f80 wwn-0x55cd2e414d887294 \
 mirror wwn-0x55cd2e414d886fca wwn-0x55cd2e414d887303
+
+zpool add sechszehn cache nvme-eui.002538c27100a8ef
+zpool add sechszehn log nvme-eui.002538c27100a8b7
