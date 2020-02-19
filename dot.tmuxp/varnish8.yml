@@ -1,13 +1,14 @@
-session_name: varnish6
+session_name: varnish8
 windows:
-- window_name: varnish6
-  layout: fbf1,273x79,0,0{90x79,0,0[90x51,0,0,18,90x27,0,52,41],90x79,91,0[90x51,91,0,21,90x27,91,52,42],91x79,182,0[91x51,182,0,40,91x27,182,52,43]}
+- window_name: varnish8
+  layout: ec17,259x88,0,0{64x88,0,0[64x44,0,0,94,64x43,0,45,98],64x88,65,0[64x44,65,0,97,64x43,65,45,99],64x88,130,0[64x44,130,0,95,64x43,130,45,100],64x88,195,0[64x44,195,0,96,64x43,195,45,101]}
   options_after:
       synchronize-panes: on
   panes:
   - shell_command:
       - ssh perfadmin@test-sfo9940
       - clear
+    focus: true
   - shell_command:
       - ssh perfadmin@test-sfo9940
       - clear
@@ -23,7 +24,12 @@ windows:
   - shell_command:
       - ssh perfadmin@test-sfo9960
       - clear
-    focus: true
+  - shell_command:
+      - ssh perfadmin@test-sfo9970
+      - clear
+  - shell_command:
+      - ssh perfadmin@test-sfo9970
+      - clear
 
 # Layout Notes
 # run to display active tmux session layout:

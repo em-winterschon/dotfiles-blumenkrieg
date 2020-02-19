@@ -1,3 +1,6 @@
+# 2.9.5
+- adding additional tmuxp profiles
+
 # 2.9.4
 - zfs modprobe updated for additional RAM + L2ARC
 - bootstrap doc/script for zfs updated for cache + log

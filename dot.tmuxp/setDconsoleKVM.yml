@@ -1,0 +1,30 @@
+session_name: setD-console-KVM
+windows:
+- window_name: setD-console-KVM
+  layout: 6d45,259x88,0,0{129x88,0,0[129x30,0,0,18,129x30,0,31,22,129x26,0,62,19],129x88,130,0[129x44,130,0,11,129x43,130,45,12]}
+  panes:
+  - shell_command:
+      - ssh perfadmin@test-sfo9980
+      - clear
+      - sudo virsh console set-d-varnish-vm.test-sfo9970
+    - shell_command:
+      - ssh perfadmin@test-sfo9980
+      - clear
+      - sudo virsh console set-d-loadgen-vm.test-sfo9971
+  - shell_command:
+      - ssh perfadmin@test-sfo9980
+      - clear
+      - sudo virsh console set-d-origin-vm.test-sfo9972
+  - shell_command:
+      - ssh perfadmin@test-sfo9980
+      - clear
+      - sudo virsh list --all
+  - shell_command:
+      - ssh oob-sfo9908
+      - clear
+      - sleep 2
+      - ipmitool -e . -H 172.16.254.180 -U root -I lanplus sol activate
+
+# Layout Notes
+# run to display active tmux session layout:
+# $> tmux list-windows -F "#{window_active} #{window_layout}" | grep "^1" | cut -d " " -f 2

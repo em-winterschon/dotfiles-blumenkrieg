@@ -69,6 +69,13 @@ yum install -y slack google-chrome-stable chromium ImageMagick7 jq python3-virtu
 yum install -y golang npm dpkg-dev ansible ansible-doc
 ```
 
+## Virtualization
+```
+yum groupinstall -y "Virtualization Host" virt-install virt-manager
+sudo usermod -aG libvirt $(whoami)
+sudo chown -R root:libvirt /etc/libvirt
+```
+
 ## Python module installs
 ```
 sudo pip3 install glances tmuxp
