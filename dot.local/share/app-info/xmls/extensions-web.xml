@@ -849,7 +849,7 @@
   <component type="shell-extension">
     <id>GoogleEarthWallpaper_neffo.github.com</id>
     <name>Google Earth Wallpaper</name>
-    <description><p>Lightweight GNOME shell extension to set your wallpaper to a random photo from the curated Google Earth collection (1500 photos).</p><p>*Disclaimer*: this extension is unofficial and not affiliated with Google in any way. Images are protected by copyright and are licensed only for use as wallpapers.</p><p>See also my other extension, Bing Wallpaper Changer (https://github.com/neffo/bing-wallpaper-gnome-extension) which was itself based on the NASA APOD extension by Elinvention (https://github.com/Elinvention).</p><p>Features: * Fetches a random Google Earth wallpaper and sets as both lock screen and desktop wallpaper * User selectable refresh intervals (default is once per day) * Optional: keep images or clean up after (later is default) * View location on Google Maps, Bing Maps, Gnome Maps, OpenStreetMaps (in v2+) * In-extension map view (in v3+ - note this needs WebKitGTK+ GIR packages installed to function - gir1.2-webkit-3.0 in Ubuntu) *  German, Dutch and Chinese translations</p><p>Please report any bugs or suggestions to extension GitHub page below.</p></description>
+    <description><p>Lightweight GNOME shell extension to set your wallpaper to a random photo from the curated Google Earth collection (2500 photos).</p><p>*Disclaimer*: this extension is unofficial and not affiliated with Google in any way. Images are protected by copyright and are licensed only for use as wallpapers.</p><p>See also my other extension, Bing Wallpaper Changer (https://github.com/neffo/bing-wallpaper-gnome-extension) which was itself based on the NASA APOD extension by Elinvention (https://github.com/Elinvention).</p><p>Features: * Fetches a random Google Earth wallpaper and sets as both lock screen and desktop wallpaper * User selectable refresh intervals (default is once per day) * Optional: keep images or clean up after (later is default) * View location on Google Maps, Bing Maps, Gnome Maps, OpenStreetMaps (in v2+) * In-extension map view (in v3+ - note this needs WebKitGTK+ GIR packages installed to function - gir1.2-webkit-3.0 in Ubuntu) *  German, Dutch and Chinese translations</p><p>Please report any bugs or suggestions to extension GitHub page below.</p></description>
     <icon type="stock">application-x-addon-symbolic</icon>
     <project_license>GPL-2.0+</project_license>
     <url type="homepage">https://extensions.gnome.org/extension/1295/google-earth-wallpaper/</url>
@@ -859,7 +859,7 @@
       </screenshot>
     </screenshots>
     <releases>
-      <release version="9"/>
+      <release version="10"/>
     </releases>
     <metadata>
       <value key="GnomeSoftware::OriginHostnameUrl">https://extensions.gnome.org/</value>
@@ -10988,7 +10988,7 @@
       </screenshot>
     </screenshots>
     <releases>
-      <release version="13"/>
+      <release version="14"/>
     </releases>
     <metadata>
       <value key="GnomeSoftware::OriginHostnameUrl">https://extensions.gnome.org/</value>
@@ -11413,7 +11413,7 @@
       </screenshot>
     </screenshots>
     <releases>
-      <release version="19"/>
+      <release version="20"/>
     </releases>
     <metadata>
       <value key="GnomeSoftware::OriginHostnameUrl">https://extensions.gnome.org/</value>

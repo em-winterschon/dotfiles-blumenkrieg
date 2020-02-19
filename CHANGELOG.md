@@ -1,3 +1,7 @@
+# 2.9.6
+- updated tmux.conf to support C-s toggle for synchronize-panes command
+- increased message display time for tmux
+
 # 2.9.5
 - adding additional tmuxp profiles
 

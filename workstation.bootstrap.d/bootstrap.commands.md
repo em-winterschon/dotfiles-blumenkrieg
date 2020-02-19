@@ -66,7 +66,7 @@ yum --enhancement --security distro-sync
 yum install -y tmux emacs-nox iotop nethogs htop snapd python3-devel NetworkManager-openvpn-gnome
 yum install -y gnome-tweaks libcurl-devel fio sysbench p7zip* mysql mysql-common mysql-devel
 yum install -y slack google-chrome-stable chromium ImageMagick7 jq python3-virtualenv
-yum install -y golang npm dpkg-dev ansible ansible-doc
+yum install -y golang npm dpkg-dev ansible ansible-doc xclip
 ```
 
 ## Virtualization
