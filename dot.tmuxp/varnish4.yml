@@ -1,0 +1,23 @@
+session_name: varnish4
+windows:
+- window_name: varnish4
+  layout: 5c4f,259x88,0,0{64x88,0,0,103,64x88,65,0,105,64x88,130,0,107,64x88,195,0,109}
+  options_after:
+      synchronize-panes: on
+  panes:
+  - shell_command:
+      - ssh perfadmin@test-sfo9940
+      - clear
+  - shell_command:
+      - ssh perfadmin@test-sfo9941
+      - clear
+  - shell_command:
+      - ssh perfadmin@test-sfo9960
+      - clear
+  - shell_command:
+      - ssh perfadmin@test-sfo9970
+      - clear
+
+# Layout Notes
+# run to display active tmux session layout:
+# $> tmux list-windows -F "#{window_active} #{window_layout}" | grep "^1" | cut -d " " -f 2

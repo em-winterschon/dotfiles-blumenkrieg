@@ -1,3 +1,6 @@
+# 2.9.7
+- updated tmux.conf to support pane border info
+
 # 2.9.6
 - updated tmux.conf to support C-s toggle for synchronize-panes command
 - increased message display time for tmux

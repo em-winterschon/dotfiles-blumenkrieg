@@ -2,23 +2,23 @@
 <application-state>
   <context id="">
     <application id="org.gnome.FileRoller.desktop" score="0.25" last-seen="1581367814"/>
-    <application id="gnome-control-center.desktop" score="7.1875" last-seen="1581605770"/>
-    <application id="vivaldi-stable.desktop" score="3230.703125" last-seen="1582120843"/>
-    <application id="PyCharm.desktop" score="1391.125" last-seen="1582121428"/>
+    <application id="gnome-control-center.desktop" score="8.1875" last-seen="1582212828"/>
+    <application id="vivaldi-stable.desktop" score="4239.703125" last-seen="1582215655"/>
+    <application id="PyCharm.desktop" score="1536.125" last-seen="1582205018"/>
     <application id="SnapStore.desktop" score="0.25" last-seen="1581100155"/>
-    <application id="slack.desktop" score="17790.078125" last-seen="1582119101"/>
+    <application id="slack.desktop" score="25045.078125" last-seen="1582215199"/>
     <application id="org.gnome.Calculator.desktop" score="8" last-seen="1582022538"/>
     <application id="firefox.desktop" score="17.09375" last-seen="1582064662"/>
     <application id="org.gnome.Nautilus.desktop" score="14.71875" last-seen="1582064595"/>
     <application id="eog.desktop" score="4" last-seen="1582064396"/>
     <application id="DataGrip.desktop" score="64" last-seen="1582029459"/>
     <application id="vncviewer.desktop" score="3.75" last-seen="1581605682"/>
-    <application id="chromium-browser.desktop" score="810.203125" last-seen="1582116151"/>
-    <application id="org.gnome.gedit.desktop" score="1644.59375" last-seen="1582121885"/>
-    <application id="spotify.desktop" score="143.75" last-seen="1582116628"/>
-    <application id="org.gnome.tweaks.desktop" score="2.296875" last-seen="1582028963"/>
+    <application id="chromium-browser.desktop" score="1080.203125" last-seen="1582206328"/>
+    <application id="org.gnome.gedit.desktop" score="1657.59375" last-seen="1582206195"/>
+    <application id="spotify.desktop" score="144.75" last-seen="1582215336"/>
+    <application id="org.gnome.tweaks.desktop" score="2.296875" last-seen="1582145830"/>
     <application id="gnome-shell-extension-prefs.desktop" score="0" last-seen="1581073847"/>
-    <application id="org.gnome.Terminal.desktop" score="19186.765625" last-seen="1582121876"/>
+    <application id="org.gnome.Terminal.desktop" score="23705.765625" last-seen="1582215897"/>
     <application id="start-tor-browser.desktop" score="0.515625" last-seen="1581023738"/>
     <application id="virt-manager.desktop" score="295" last-seen="1582042179"/>
     <application id="org.gnome.Software.desktop" score="0.421875" last-seen="1581160138"/>
