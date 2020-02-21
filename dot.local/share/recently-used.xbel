@@ -436,7 +436,7 @@
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/mwinterschon/Desktop/root.txt" added="2020-01-29T15:54:37Z" modified="2020-02-17T12:44:36Z" visited="2020-01-29T15:54:37Z">
+  <bookmark href="file:///home/mwinterschon/Desktop/root.txt" added="2020-01-29T15:54:37Z" modified="2020-02-21T14:02:04Z" visited="2020-01-29T15:54:37Z">
     <info>
       <metadata owner="http://freedesktop.org">
         <mime:mime-type type="text/plain"/>
@@ -444,7 +444,7 @@
           <bookmark:group>gedit</bookmark:group>
         </bookmark:groups>
         <bookmark:applications>
-          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2020-02-17T12:44:36Z" count="17"/>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2020-02-21T14:02:04Z" count="20"/>
         </bookmark:applications>
       </metadata>
     </info>
@@ -1800,6 +1800,37 @@
         <bookmark:applications>
           <bookmark:application name="gsd-media-keys" exec="&apos;gsd-media-keys %u&apos;" modified="2020-02-20T15:26:31Z" count="1"/>
           <bookmark:application name="slack" exec="&apos;slack %u&apos;" modified="2020-02-20T15:26:40Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/mwinterschon/Pictures/Screenshot%20from%202020-02-20%2009-06-54.png" added="2020-02-20T17:07:02Z" modified="2020-02-20T17:07:24Z" visited="2020-02-20T17:07:02Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="gsd-media-keys" exec="&apos;gsd-media-keys %u&apos;" modified="2020-02-20T17:07:02Z" count="1"/>
+          <bookmark:application name="slack" exec="&apos;slack %u&apos;" modified="2020-02-20T17:07:24Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/mwinterschon/Desktop/screenrc" added="2020-02-20T17:12:08Z" modified="2020-02-20T17:12:44Z" visited="2020-02-20T17:12:09Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="slack" exec="&apos;slack %u&apos;" modified="2020-02-20T17:12:44Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/mwinterschon/lnx/lnx-perf-iteration-monorepo/lnx-perf-iteration-arch/firmware-drivers/X710/Firmware/f25info64e" added="2020-02-20T22:38:45Z" modified="2020-02-20T22:38:45Z" visited="2020-02-20T22:38:45Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="slack" exec="&apos;slack %u&apos;" modified="2020-02-20T22:38:45Z" count="1"/>
         </bookmark:applications>
       </metadata>
     </info>

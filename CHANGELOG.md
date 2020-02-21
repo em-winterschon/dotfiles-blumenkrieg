@@ -1,3 +1,6 @@
+# 2.9.8
+- updated tmux config and plugins
+
 # 2.9.7
 - updated tmux.conf to support pane border info
 
