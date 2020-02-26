@@ -305,7 +305,7 @@
   <component type="shell-extension">
     <id>BingWallpaper_ineffable-gmail.com</id>
     <name>Bing Wallpaper Changer</name>
-    <description><p>Lightweight GNOME shell extension to change your wallpaper every day to Microsoft Bing&apos;s wallpaper (the image you see when you visit Bing.com). It will also show a notification containing the title and the explanation of the image.</p><p> *Disclaimer*: this extension is unofficial and not affiliated with Bing or Microsoft in any way. Images are protected by copyright and are licensed only for use as wallpapers.</p><p>This extension is based extensively on the NASA APOD extension by Elinvention (https://github.com/Elinvention) and inspired by Bing Desktop Wallpaper Changer by Utkarsh Gupta (https://github.com/UtkarshGpta).</p><p>Features: * Fetches the Bing wallpaper of the day and sets as both lock screen and desktop wallpaper (these are both user selectable) * Optionally force a specific region (i.e. locale) * Automatically selects the highest resolution (and most appropriate wallpaper) in multiple monitor setups * Optionally clean up Wallpaper directory after between 1 and 7 days (delete oldest first) * Only attempts to download wallpapers when they have been updated * Doesn&apos;t poll continuously - only once per day and on startup (schedules a refresh when Bing is due to update) * German, Dutch, Italian, Polish and Chinese translations</p><p>Please report bugs to the GitHub page below</p></description>
+    <description><p>Lightweight GNOME shell extension to set your wallpaper once per day to today&apos;s Microsoft Bing image of the day (the image you see when you visit Bing.com).</p><p> *Disclaimer*: this extension is unofficial and not affiliated with Bing or Microsoft in any way. Images are protected by copyright and are licensed only for use as wallpapers.</p><p>This extension is based extensively on the NASA APOD extension by Elinvention (https://github.com/Elinvention) and inspired by Bing Desktop Wallpaper Changer by Utkarsh Gupta (https://github.com/UtkarshGpta).</p><p>Features: * Fetches the Bing wallpaper of the day and sets as both lock screen and desktop wallpaper (these are both user selectable) * Optionally force a specific region (i.e. locale) * Automatically selects the highest resolution (and most appropriate wallpaper) in multiple monitor setups * Optionally clean up Wallpaper directory after between 1 and 7 days (delete oldest first) * Only attempts to download wallpapers when they have been updated * Doesn&apos;t poll continuously - only once per day and on startup (schedules a refresh when Bing is due to update) * English (en), German (de), Dutch (nl), Italian (it), Polish (pl), Chinese (zh_CN), French (fr_FR), Portugeuse (pt, pt_BR), Russian (ru_RU), Spanish (es), Korean (ko, ko_KR, ko_KP), Indonesian (id), Catalan (ca) and Norwegian Bokmål &amp; Nynorsk - a HUGE thanks to the translators</p><p>Please report bugs to the GitHub page below</p></description>
     <icon type="stock">application-x-addon-symbolic</icon>
     <project_license>GPL-2.0+</project_license>
     <url type="homepage">https://extensions.gnome.org/extension/1262/bing-wallpaper-changer/</url>
@@ -315,7 +315,7 @@
       </screenshot>
     </screenshots>
     <releases>
-      <release version="24"/>
+      <release version="25"/>
     </releases>
     <metadata>
       <value key="GnomeSoftware::OriginHostnameUrl">https://extensions.gnome.org/</value>
@@ -346,8 +346,8 @@
   </component>
   <component type="shell-extension">
     <id>BrightnessXrandr_jabi.irontec.com</id>
-    <name>Brightness Control (Xrandr)</name>
-    <description><p>Control display(s) brightness using xrandr (software).</p></description>
+    <name>[DO NOT USE] Brightness Control (Xrandr)</name>
+    <description><p>Control display(s) brightness using xrandr (software).</p><p>It use to work without wayland, wrapping the xrand command. It is not working anymore.</p></description>
     <icon type="stock">application-x-addon-symbolic</icon>
     <project_license>GPL-2.0+</project_license>
     <url type="homepage">https://extensions.gnome.org/extension/1374/brightness-control-xranr/</url>
@@ -4579,7 +4579,7 @@
       </screenshot>
     </screenshots>
     <releases>
-      <release version="33"/>
+      <release version="34"/>
     </releases>
     <metadata>
       <value key="GnomeSoftware::OriginHostnameUrl">https://extensions.gnome.org/</value>
@@ -10978,7 +10978,7 @@
   <component type="shell-extension">
     <id>new-mail-indicator_fthx</id>
     <name>New Mail Indicator</name>
-    <description><p>An icon beside the date in the topbar to show if there are unread emails when running your email client.</p><p> It checks the notifications in the message tray related to a new mail, no extra configuration needed, very light extension. Do not disable the notifications of your default email client !</p><p> *** It is not a standalone mail checker, you need your email client to be running. *** Please check that the xdg-utils package is installed.</p><p>  Email clients supported at the moment are : Thunderbird, Evolution, Geary, Mailspring. Please ask here to add the client you need. If you report an error, please provide at least the distro &amp; the email client you use.</p><p> Versions 13 and 14 : GNOME 3.36 added, default icons changed to match more themes like Yaru, orange new mail color. Some simple indications are given in the extension.js code if you want to change read/unread icons.</p><p> Includes some code from https://extensions.gnome.org/extension/1386/notification-counter/ .</p></description>
+    <description><p>An icon beside the date in the topbar to show if there are unread emails when running your email client.</p><p> It checks the notifications in the message tray related to a new mail, no extra configuration needed, very light extension. Do not disable the notifications of your default email client !</p><p> *** It is not a standalone mail checker, you need your email client to be running. *** Please check that the xdg-utils package is installed.</p><p>  Email clients supported at the moment are : Thunderbird, Evolution, Geary, Mailspring. Please ask here to add the client you need. If you report an error, please provide at least the distro &amp;amp; the email client you use.</p><p> Versions 13 and 14 : GNOME 3.36 added, default icons changed to match more themes like Yaru, orange new mail color. Some simple indications are given in the extension.js code if you want to change read/unread icons.</p><p> Includes some code from https://extensions.gnome.org/extension/1386/notification-counter/ .</p></description>
     <icon type="stock">application-x-addon-symbolic</icon>
     <project_license>GPL-2.0+</project_license>
     <url type="homepage">https://extensions.gnome.org/extension/1505/new-mail-indicator/</url>
@@ -13478,7 +13478,7 @@
       </screenshot>
     </screenshots>
     <releases>
-      <release version="8"/>
+      <release version="9"/>
     </releases>
     <metadata>
       <value key="GnomeSoftware::OriginHostnameUrl">https://extensions.gnome.org/</value>

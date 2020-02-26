@@ -1,27 +1,22 @@
 <?xml version="1.0"?>
 <application-state>
   <context id="">
-    <application id="org.gnome.FileRoller.desktop" score="0.125" last-seen="1581367814"/>
-    <application id="gnome-control-center.desktop" score="4.09375" last-seen="1582212828"/>
-    <application id="vivaldi-stable.desktop" score="2244.8515625" last-seen="1582297965"/>
-    <application id="PyCharm.desktop" score="860.5625" last-seen="1582298608"/>
-    <application id="SnapStore.desktop" score="0.125" last-seen="1581100155"/>
-    <application id="slack.desktop" score="14485.5390625" last-seen="1582297982"/>
-    <application id="org.gnome.Calculator.desktop" score="4" last-seen="1582022538"/>
-    <application id="firefox.desktop" score="8.546875" last-seen="1582236342"/>
-    <application id="org.gnome.Nautilus.desktop" score="7.359375" last-seen="1582064595"/>
-    <application id="eog.desktop" score="2" last-seen="1582064396"/>
-    <application id="DataGrip.desktop" score="32" last-seen="1582029459"/>
-    <application id="vncviewer.desktop" score="1.875" last-seen="1581605682"/>
-    <application id="chromium-browser.desktop" score="984.1015625" last-seen="1582239727"/>
-    <application id="org.gnome.gedit.desktop" score="838.796875" last-seen="1582296110"/>
-    <application id="spotify.desktop" score="75.375" last-seen="1582298209"/>
-    <application id="org.gnome.tweaks.desktop" score="1.1484375" last-seen="1582145830"/>
-    <application id="gnome-shell-extension-prefs.desktop" score="0" last-seen="1581073847"/>
-    <application id="org.gnome.Terminal.desktop" score="13093.8828125" last-seen="1582298509"/>
-    <application id="start-tor-browser.desktop" score="0.2578125" last-seen="1581023738"/>
-    <application id="virt-manager.desktop" score="147.5" last-seen="1582042179"/>
-    <application id="org.gnome.Software.desktop" score="0.2109375" last-seen="1581160138"/>
-    <application id="gnome-system-monitor.desktop" score="0.21875" last-seen="1581381405"/>
+    <application id="org.gnome.FileRoller.desktop" score="1.0625" last-seen="1582327006"/>
+    <application id="vivaldi-stable.desktop" score="2224.92578125" last-seen="1582731092"/>
+    <application id="gnome-control-center.desktop" score="11.046875" last-seen="1582729030"/>
+    <application id="firefox.desktop" score="4.2734375" last-seen="1582236342"/>
+    <application id="slack.desktop" score="19745.26953125" last-seen="1582728175"/>
+    <application id="org.gnome.Calculator.desktop" score="9.5" last-seen="1582378229"/>
+    <application id="PyCharm.desktop" score="1111.78125" last-seen="1582636391"/>
+    <application id="org.gnome.Nautilus.desktop" score="14.6796875" last-seen="1582578045"/>
+    <application id="eog.desktop" score="8" last-seen="1582327002"/>
+    <application id="keeperpasswordmanager.desktop" score="0" last-seen="0"/>
+    <application id="chromium-browser.desktop" score="9682.05078125" last-seen="1582637198"/>
+    <application id="org.gnome.gedit.desktop" score="516.8984375" last-seen="1582637213"/>
+    <application id="spotify.desktop" score="50.1875" last-seen="1582562927"/>
+    <application id="org.gnome.tweaks.desktop" score="0.57421875" last-seen="1582145830"/>
+    <application id="org.gnome.Terminal.desktop" score="13627.44140625" last-seen="1582731075"/>
+    <application id="evince.desktop" score="9" last-seen="1582326898"/>
+    <application id="org.gnome.Totem.desktop" score="3.5" last-seen="1582577960"/>
   </context>
 </application-state>
