@@ -1,3 +1,8 @@
+# 2.9.9
+- adding tmux (v3.1-rc) compiled for CentOS 8.1
+- adding tmux-3.0a.xenial for Xenial native
+- updated tmux.conf
+
 # 2.9.8
 - updated tmux config and plugins
 

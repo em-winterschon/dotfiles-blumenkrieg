@@ -120,3 +120,6 @@ function sedcolor(){
 
 ## import grc bash completions [DEPRECTED]
 #[[ -s "/etc/grc.bashrc" ]] && (echo "loading grc aliases" && source /etc/grc.bashrc)
+
+## import tmux bash completions
+#[[ -f "~/.bash_tmux" ]] && (echo "loading tmux functions" && source ~/.bash_tmux)
