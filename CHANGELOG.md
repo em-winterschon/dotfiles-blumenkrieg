@@ -1,3 +1,7 @@
+# 3.0.0
+- added tmux 3.0a for CentOS8 (required for tmuxp 1.5.4)
+- renamed tmux binaries for consistency
+
 # 2.9.9
 - adding tmux (v3.1-rc) compiled for CentOS 8.1
 - adding tmux-3.0a.xenial for Xenial native

@@ -3,27 +3,6 @@
       xmlns:bookmark="http://www.freedesktop.org/standards/desktop-bookmarks"
       xmlns:mime="http://www.freedesktop.org/standards/shared-mime-info"
 >
-  <bookmark href="file:///home/mwinterschon/Downloads/Screenshot%20from%202020-01-23%2007-46-30.png" added="2020-01-27T14:16:51Z" modified="2020-01-27T14:16:51Z" visited="2020-01-27T14:16:51Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="image/png"/>
-        <bookmark:applications>
-          <bookmark:application name="slack" exec="&apos;slack %u&apos;" modified="2020-01-27T14:16:51Z" count="1"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///home/mwinterschon/Pictures/Screenshot%20from%202020-01-27%2006-25-37.png" added="2020-01-27T14:25:46Z" modified="2020-01-27T14:27:32Z" visited="2020-01-27T14:25:46Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="image/png"/>
-        <bookmark:applications>
-          <bookmark:application name="gsd-media-keys" exec="&apos;gsd-media-keys %u&apos;" modified="2020-01-27T14:25:46Z" count="1"/>
-          <bookmark:application name="slack" exec="&apos;slack %u&apos;" modified="2020-01-27T14:27:32Z" count="1"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
   <bookmark href="file:///home/mwinterschon/Downloads/Image%20from%20iOS.jpg" added="2020-01-27T21:12:26Z" modified="2020-01-27T21:12:26Z" visited="2020-01-27T21:12:27Z">
     <info>
       <metadata owner="http://freedesktop.org">
