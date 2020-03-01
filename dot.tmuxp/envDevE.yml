@@ -1,0 +1,62 @@
+session_name: env-set-dev-E
+windows:
+- window_name: env-set-dev-E
+  layout: 473e,261x88,0,0[261x24,0,0{130x24,0,0[130x12,0,0,146,130x11,0,13,161],130x24,131,0[130x12,131,0,159,130x11,131,13,160]},261x63,0,25{86x63,0,25[86x31,0,25,147,86x22,0,57,152,86x8,0,80,153],86x63,87,25[86x31,87,25,151,86x22,87,57,154,86x8,87,80,155],87x63,174,25[87x31,174,25,148,87x22,174,57,156,87x8,174,80,157]}]
+  panes:
+  - shell_command:
+      - ssh perfadmin@test-sfo9990
+      - clear
+      - watch date
+    focus: true
+  - shell_command:
+      - ssh perfadmin@test-sfo9990
+      - clear
+      - tail -f /tmp/queueExecSSH-loadgen9931.log | grcat conf.log
+  - shell_command:
+      - ssh perfadmin@test-sfo9990
+      - clear
+      - tail -f /var/log/mysql/general.log | grcat conf.sql
+  - shell_command:
+      - ssh perfadmin@test-sfo9990
+      - clear
+      - tail -f /var/log/ansible.log | grcat conf.log
+  - shell_command:
+      - ssh perfadmin@test-sfo9930
+      - clear
+      - glances
+  - shell_command:
+      - ssh perfadmin@test-sfo9930
+      - clear
+      - htop
+  - shell_command:
+      - ssh perfadmin@test-sfo9930
+      - clear
+      - sudo tail -f /var/log/syslog | grep ansible
+  - shell_command:
+      - ssh perfadmin@test-sfo9931
+      - clear
+      - glances
+  - shell_command:
+      - ssh perfadmin@test-sfo9931
+      - clear
+      - htop
+  - shell_command:
+      - ssh perfadmin@test-sfo9931
+      - clear
+      - sudo tail -f /var/log/syslog | grep ansible
+  - shell_command:
+      - ssh perfadmin@test-sfo9932
+      - clear
+      - glances
+  - shell_command:
+      - ssh perfadmin@test-sfo9932
+      - clear
+      - htop
+  - shell_command:
+      - ssh perfadmin@test-sfo9932
+      - clear
+      - sudo tail -f /var/log/syslog | grep ansible
+
+ # Layout Notes
+ # run to display active tmux session layout:
+ # $> tmux list-windows -F "#{window_active} #{window_layout}" | grep "^1" | cut -d " " -f 2

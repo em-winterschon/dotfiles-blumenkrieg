@@ -1,0 +1,24 @@
+session_name: generic6
+windows:
+- window_name: generic6
+  layout: tiled
+  options_after:
+      synchronize-panes: on
+  panes:
+  - shell_command:
+      - clear
+  - shell_command:
+      - clear
+  - shell_command:
+      - clear
+  - shell_command:
+      - clear
+  - shell_command:
+      - clear
+  - shell_command:
+      - clear
+    focus: true
+
+# Layout Notes
+# run to display active tmux session layout:
+# $> tmux list-windows -F "#{window_active} #{window_layout}" | grep "^1" | cut -d " " -f 2

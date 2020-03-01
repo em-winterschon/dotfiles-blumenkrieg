@@ -37,6 +37,9 @@ function iostat-all-active() {
 }
 
 ## Virsh shortcuts
+alias v-console='sudo virsh console'
+alias v-list='sudo virsh list'
+alias v-list-all='sudo virsh list --all'
 function virsh-start-console() {
     sudo virsh start $1 && \
 	sleep 2 && \

@@ -1,3 +1,7 @@
+# 3.0.1
+- more tmuxp configs
+- sr-iov mapping script
+
 # 3.0.0
 - added tmux 3.0a for CentOS8 (required for tmuxp 1.5.4)
 - renamed tmux binaries for consistency

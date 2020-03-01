@@ -1,0 +1,30 @@
+session_name: sets-D-E-F
+windows:
+- window_name: sets-D-E-F
+  layout: fbf1,273x79,0,0{90x79,0,0[90x51,0,0,18,90x27,0,52,41],90x79,91,0[90x51,91,0,21,90x27,91,52,42],91x79,182,0[91x51,182,0,40,91x27,182,52,43]}
+  options_after:
+      synchronize-panes: on
+  panes:
+  - shell_command:
+      - ssh test-sfo9930
+      - clear
+  - shell_command:
+      - ssh test-sfo9931
+      - clear
+  - shell_command:
+      - ssh test-sfo9932
+      - clear
+  - shell_command:
+      - ssh test-sfo9950
+      - clear
+  - shell_command:
+      - ssh test-sfo9951
+      - clear
+  - shell_command:
+      - ssh test-sfo9952
+      - clear
+    focus: true
+
+# Layout Notes
+# run to display active tmux session layout:
+# $> tmux list-windows -F "#{window_active} #{window_layout}" | grep "^1" | cut -d " " -f 2
