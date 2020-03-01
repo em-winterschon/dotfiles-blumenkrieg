@@ -6,7 +6,7 @@ windows:
   - shell_command:
       - ssh perfadmin@test-sfo9990
       - clear
-      - watch date
+      - glances
     focus: true
   - shell_command:
       - ssh perfadmin@test-sfo9990
@@ -27,33 +27,32 @@ windows:
   - shell_command:
       - ssh perfadmin@test-sfo9950
       - clear
-      - htop
+      - sudo systemctl status varnish --no-pager
   - shell_command:
       - ssh perfadmin@test-sfo9950
       - clear
       - sudo tail -f /var/log/syslog | grep ansible
   - shell_command:
-      - ssh perfadmin@test-sfo9951
+      - ssh perfadmin@test-sfo9950
       - clear
+      - varnishstat
+  - shell_command:
+      - ssh perfadmin@test-sfo9950
+      - clear
+      - varnishtop
+  - shell_command:
+      - ssh perfadmin@test-sfo9950
+      - clear
+      - alias lognow='tail -f /var/log/syslog | egrep -v filebeat\|ganglia\|ntpd\|CRON\|chef-client\|timer\|dbus\|"Hostname Service"\|cron\|freedesktop\|Chef\|exporter'
+      - lognow
+  - shell_command:
+      - ssh perfadmin@test-sfo9951
       - glances
   - shell_command:
       - ssh perfadmin@test-sfo9951
-      - clear
       - htop
   - shell_command:
       - ssh perfadmin@test-sfo9951
-      - clear
-      - sudo tail -f /var/log/syslog | grep ansible
-  - shell_command:
-      - ssh perfadmin@test-sfo9952
-      - clear
-      - glances
-  - shell_command:
-      - ssh perfadmin@test-sfo9952
-      - clear
-      - htop
-  - shell_command:
-      - ssh perfadmin@test-sfo9952
       - clear
       - sudo tail -f /var/log/syslog | grep ansible
 

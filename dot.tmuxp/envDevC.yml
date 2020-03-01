@@ -6,7 +6,7 @@ windows:
   - shell_command:
       - ssh perfadmin@test-sfo9990
       - clear
-      - watch date
+      - glances
     focus: true
   - shell_command:
       - ssh perfadmin@test-sfo9990
@@ -27,32 +27,34 @@ windows:
   - shell_command:
       - ssh perfadmin@test-sfo9960
       - clear
-      - htop
+      - sudo systemctl status varnish --no-pager
   - shell_command:
       - ssh perfadmin@test-sfo9960
       - clear
       - sudo tail -f /var/log/syslog | grep ansible
   - shell_command:
-      - ssh perfadmin@test-sfo9961
+      - ssh perfadmin@test-sfo9960
       - clear
+      - varnishstat
+  - shell_command:
+      - ssh perfadmin@test-sfo9960
+      - clear
+      - varnishtop
+  - shell_command:
+      - ssh perfadmin@test-sfo9960
+      - clear
+      - alias lognow='tail -f /var/log/syslog | egrep -v filebeat\|ganglia\|ntpd\|CRON\|chef-client\|timer\|dbus\|"Hostname Service"\|cron\|freedesktop\|Chef\|exporter'
+      - lognow
+  - shell_command:
+      - ssh perfadmin@test-sfo9961
       - glances
   - shell_command:
       - ssh perfadmin@test-sfo9961
-      - clear
       - htop
   - shell_command:
       - ssh perfadmin@test-sfo9961
       - clear
       - sudo tail -f /var/log/syslog | grep ansible
-  - shell_command:
-      - ssh perfadmin@test-sfo9961
-      - clear
-  - shell_command:
-      - ssh perfadmin@test-sfo9961
-      - clear
-  - shell_command:
-      - ssh perfadmin@test-sfo9961
-      - clear
 
  # Layout Notes
  # run to display active tmux session layout:

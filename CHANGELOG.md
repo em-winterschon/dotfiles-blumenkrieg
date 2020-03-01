@@ -1,3 +1,6 @@
+# 3.0.2
+- updating tmuxp configs
+
 # 3.0.1
 - more tmuxp configs
 - sr-iov mapping script

@@ -1,22 +1,18 @@
 <?xml version="1.0"?>
 <application-state>
   <context id="">
-    <application id="org.gnome.FileRoller.desktop" score="0.53125" last-seen="1582327006"/>
-    <application id="vivaldi-stable.desktop" score="3155.462890625" last-seen="1583028747"/>
     <application id="gnome-control-center.desktop" score="5.5234375" last-seen="1582846783"/>
-    <application id="firefox.desktop" score="2.13671875" last-seen="1582236342"/>
-    <application id="slack.desktop" score="23203.634765625" last-seen="1583028810"/>
+    <application id="vivaldi-stable.desktop" score="3315.462890625" last-seen="1583076660"/>
+    <application id="PyCharm.desktop" score="2353.890625" last-seen="1583079403"/>
+    <application id="slack.desktop" score="23338.634765625" last-seen="1583080362"/>
     <application id="org.gnome.Calculator.desktop" score="4.75" last-seen="1582754354"/>
-    <application id="PyCharm.desktop" score="1693.890625" last-seen="1583027271"/>
     <application id="org.gnome.Nautilus.desktop" score="12.33984375" last-seen="1582852314"/>
-    <application id="eog.desktop" score="4" last-seen="1582327002"/>
-    <application id="keeperpasswordmanager.desktop" score="0" last-seen="0"/>
-    <application id="chromium-browser.desktop" score="5635.025390625" last-seen="1583025504"/>
-    <application id="org.gnome.gedit.desktop" score="323.44921875" last-seen="1583025658"/>
-    <application id="spotify.desktop" score="105.09375" last-seen="1583009538"/>
+    <application id="DataGrip.desktop" score="10" last-seen="1583079319"/>
+    <application id="chromium-browser.desktop" score="5786.025390625" last-seen="1583080401"/>
+    <application id="org.gnome.gedit.desktop" score="339.44921875" last-seen="1583077793"/>
+    <application id="spotify.desktop" score="131.09375" last-seen="1583071609"/>
     <application id="org.gnome.tweaks.desktop" score="0.287109375" last-seen="1582821019"/>
-    <application id="org.gnome.Terminal.desktop" score="20518.720703125" last-seen="1583028857"/>
-    <application id="evince.desktop" score="4.5" last-seen="1582326898"/>
+    <application id="org.gnome.Terminal.desktop" score="22104.720703125" last-seen="1583080402"/>
     <application id="org.gnome.Totem.desktop" score="1.75" last-seen="1582577960"/>
   </context>
 </application-state>

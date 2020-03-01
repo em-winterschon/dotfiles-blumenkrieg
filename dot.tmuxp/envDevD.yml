@@ -1,6 +1,6 @@
-session_name: env-set-dev-E
+session_name: env-set-dev-D
 windows:
-- window_name: env-set-dev-E
+- window_name: env-set-dev-D
   layout: 473e,261x88,0,0[261x24,0,0{130x24,0,0[130x12,0,0,146,130x11,0,13,161],130x24,131,0[130x12,131,0,159,130x11,131,13,160]},261x63,0,25{86x63,0,25[86x31,0,25,147,86x22,0,57,152,86x8,0,80,153],86x63,87,25[86x31,87,25,151,86x22,87,57,154,86x8,87,80,155],87x63,174,25[87x31,174,25,148,87x22,174,57,156,87x8,174,80,157]}]
   panes:
   - shell_command:
@@ -11,7 +11,7 @@ windows:
   - shell_command:
       - ssh perfadmin@test-sfo9990
       - clear
-      - tail -f /tmp/queueExecSSH-loadgen9931.log | grcat conf.log
+      - tail -f /tmp/queueExecSSH-loadgen9961.log | grcat conf.log
   - shell_command:
       - ssh perfadmin@test-sfo9990
       - clear
@@ -21,38 +21,38 @@ windows:
       - clear
       - tail -f /var/log/ansible.log | grcat conf.log
   - shell_command:
-      - ssh perfadmin@test-sfo9930
+      - ssh perfadmin@test-sfo9970
       - clear
       - glances
   - shell_command:
-      - ssh perfadmin@test-sfo9930
+      - ssh perfadmin@test-sfo9970
       - clear
       - sudo systemctl status varnish --no-pager
   - shell_command:
-      - ssh perfadmin@test-sfo9930
+      - ssh perfadmin@test-sfo9970
       - clear
       - sudo tail -f /var/log/syslog | grep ansible
   - shell_command:
-      - ssh perfadmin@test-sfo9930
+      - ssh perfadmin@test-sfo9970
       - clear
       - varnishstat
   - shell_command:
-      - ssh perfadmin@test-sfo9930
+      - ssh perfadmin@test-sfo9970
       - clear
       - varnishtop
   - shell_command:
-      - ssh perfadmin@test-sfo9930
+      - ssh perfadmin@test-sfo9970
       - clear
       - alias lognow='tail -f /var/log/syslog | egrep -v filebeat\|ganglia\|ntpd\|CRON\|chef-client\|timer\|dbus\|"Hostname Service"\|cron\|freedesktop\|Chef\|exporter'
       - lognow
   - shell_command:
-      - ssh perfadmin@test-sfo9931
+      - ssh perfadmin@test-sfo9971
       - glances
   - shell_command:
-      - ssh perfadmin@test-sfo9931
+      - ssh perfadmin@test-sfo9971
       - htop
   - shell_command:
-      - ssh perfadmin@test-sfo9931
+      - ssh perfadmin@test-sfo9971
       - clear
       - sudo tail -f /var/log/syslog | grep ansible
 
