@@ -4,7 +4,7 @@
     <application id="gnome-control-center.desktop" score="4.76171875" last-seen="1583108168"/>
     <application id="vivaldi-stable.desktop" score="2386.2314453125" last-seen="1583190484"/>
     <application id="PyCharm.desktop" score="1259.4453125" last-seen="1583181989"/>
-    <application id="slack.desktop" score="12097.3173828125" last-seen="1583188844"/>
+    <application id="slack.desktop" score="12097.3173828125" last-seen="1583192060"/>
     <application id="org.gnome.Calculator.desktop" score="8.875" last-seen="1583162989"/>
     <application id="org.gnome.Nautilus.desktop" score="7.169921875" last-seen="1583150715"/>
     <application id="DataGrip.desktop" score="5" last-seen="1583081027"/>
@@ -13,7 +13,7 @@
     <application id="org.gnome.gedit.desktop" score="192.224609375" last-seen="1583187932"/>
     <application id="spotify.desktop" score="66.546875" last-seen="1583162991"/>
     <application id="org.gnome.tweaks.desktop" score="0.1435546875" last-seen="1582821019"/>
-    <application id="org.gnome.Terminal.desktop" score="13104.3603515625" last-seen="1583190447"/>
+    <application id="org.gnome.Terminal.desktop" score="13328.3603515625" last-seen="1583192058"/>
     <application id="evince.desktop" score="2.5" last-seen="1583116235"/>
     <application id="org.gnome.Totem.desktop" score="0.875" last-seen="1582577960"/>
   </context>

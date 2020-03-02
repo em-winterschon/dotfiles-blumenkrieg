@@ -1,3 +1,7 @@
+# 3.0.4
+- updated perfarch host file
+- added cruft remover script
+
 # 3.0.3
 - rather many emacs changes
 
