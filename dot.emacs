@@ -1,3 +1,10 @@
+;; UTF-8 support
+(prefer-coding-system       'utf-8)
+(set-default-coding-systems 'utf-8)
+(set-terminal-coding-system 'utf-8)
+(set-keyboard-coding-system 'utf-8)
+(setq x-select-request-type '(UTF8_STRING COMPOUND_TEXT TEXT STRING))
+
 ;; Init
 ;;----------------------------------------------------------------------------------------
 (require 'cl) ;; (loop for ...)
@@ -147,9 +154,9 @@ prefix argument."
 
 ;; Customize Backup Files
 ;;----------------------------------------------------------------------------------------
-;;(setq backup-inhibited t)
-;;(setq make-backup-files nil)
-(setq make-backup-files t)
+(setq backup-inhibited t)
+(setq make-backup-files nil)
+;(setq make-backup-files t)
 (setq auto-save-default nil)
 (setq backup-directory-alist '(("." . "~/.emacs.d/backup"))
  backup-by-copying t    ; Don't delink hardlinks
@@ -182,31 +189,27 @@ prefix argument."
 (let ((package-list '(ace-window
 		      ag
 		      aggressive-indent
-      		      anaconda-mode
 		      async
 		      avy
 		      crontab-mode
 		      dash
-		      docker-compose-mode
-		      dockerfile-mode
+		      enh-ruby-mode
 		      epl
 		      exec-path-from-shell
 		      expand-region
 		      git-gutter
 		      go-mode
 		      ht
-		      hydra
-		      ivy-hydra
 		      json-mode
 		      lua-mode
 		      markdown-mode
 		      multiple-cursors
 		      neotree
 		      org-bullets
-		      org-super-agenda
 		      php-mode
 		      pkg-info
 		      puppet-mode
+		      python-mode
 		      ruby-mode
 		      smartparens
 		      smex
@@ -238,10 +241,10 @@ prefix argument."
 ;;----------------------------------------------------------------------------------------
 (column-number-mode t)
 
-(when (version<= "26.0.50" emacs-version )
-  (global-display-line-numbers-mode))
+(add-hook 'prog-mode-hook 'global-linum-mode)
 (custom-set-faces
- '(line-number ((t (:background "black" :foreground "cyan" :slant oblique :weight thin)))))
+ '(linum ((t (:background "black" :foreground "cyan" :slant oblique :weight thin)))))
+(setq linum-format "%4d \u2502 ")
 
 ;; Always ask for y/n keypress instead of typing out 'yes' or 'no'
 (defalias 'yes-or-no-p 'y-or-n-p)
@@ -290,52 +293,9 @@ prefix argument."
 (use-package smex
     :ensure t)
 
-(use-package ivy
-    :ensure t
-    :diminish ivy-mode
-    :config
-    (ivy-mode t))
-
-;; Remove default ^ char filter start for Ivy
-(setq ivy-initial-inputs-alist nil)
-
 (use-package use-package-chords
   :ensure t
   :config (key-chord-mode 1))
-
-(use-package counsel
-    :ensure t
-    :bind (("M-x" . counsel-M-x))
-    :chords (("yy" . counsel-yank-pop)))
-
-(use-package counsel
-  :pin "melpa" ;; FIXME: temporary fix for https://github.com/ericdanan/counsel-projectile/issues/118
-  :after ivy
-  :ensure t
-  :init
-  (setq counsel-grep-base-command "grep -P -n -i -e %s %s")
-  (setq counsel-git-grep-cmd-function #'counsel-git-grep-cmd-function-ignore-order)
-  :config
-  (counsel-mode t)
-  :bind (("M-x" . counsel-M-x)
-	 ("C-x C-f" . counsel-find-file)
-	 ("C-c j" . counsel-git-grep)
-	 ("C-x l" . counsel-locate)
-	 :map help-map
-	 ("f" . counsel-describe-function)
-	 ("v" . counsel-describe-variable)
-	 ("l" . counsel-find-library)
-	 ("i" . counsel-info-lookup-symbol)
-	 ("u" . counsel-unicode-char)
-	 :map minibuffer-local-map
-	 ("C-r" . counsel-minibuffer-history)))
-
-(use-package swiper
-    :ensure t
-    :bind (("M-s" . swiper)))
-
-(use-package ivy-hydra
-    :ensure t)
 
 (use-package which-key
     :ensure t
@@ -360,13 +320,6 @@ prefix argument."
 (setq neo-smart-open t)
 (setq neo-theme 'arrow)
 
-;; Powerline
-(use-package powerline
-;    :disabled
-    :ensure t
-    :config
-    (setq powerline-default-separator 'utf-8))
-
 ;; Delimiters
 (use-package rainbow-delimiters
     :ensure t
@@ -387,36 +340,17 @@ prefix argument."
     (setq org-bullets-bullet-list '("∙"))
     (add-hook 'org-mode-hook 'org-bullets-mode))
 
+;; Attempt to get the following from elpa intead of melpa
+(use-package vcl-mode
+    :pin gnu
+    :ensure t)
+
+
+
 ;; Packages not managed by elpa/melpa located in .emacs.d/lisp
 ;;----------------------------------------------------------------------------------------
 (add-to-list 'load-path "~/.emacs.d/lisp")
 
-(autoload 'crontab-mode "crontab-mode" "Major mode for editing crontab files")
-(add-to-list 'auto-mode-alist '("cron\\(tab\\)?\\." . crontab-mode))
-(add-to-list 'auto-mode-alist '("\\crontab\\'" . crontab-mode))
-
-(autoload 'markdown-mode "markdown-mode"
-  "Major mode for editing Markdown files" t)
-(add-to-list 'auto-mode-alist '("\\.text\\'" . markdown-mode))
-(add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode))
-(add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
-(add-hook 'markdown-mode-hook (lambda () (define-key markdown-mode-map (kbd "<tab>") 'markdown-insert-pre)))
-
-(autoload 'ruby-mode "ruby-mode" "Major mode for ruby files" t)
-    (add-to-list 'auto-mode-alist '("\\.rb$" . ruby-mode))
-    (add-to-list 'interpreter-mode-alist '("ruby" . ruby-mode))
-
-(autoload 'vcl-mode "vcl-mode" "Major mode for vcl files" t)
-    (add-to-list 'auto-mode-alist '("\\.vcl$" . vcl-mode))
-    (add-to-list 'interpreter-mode-alist '("vcl" . vcl-mode))
 
 ;; Custom set variabes - autogenerated
 ;;----------------------------------------------------------------------------------------
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(package-selected-packages
-   (quote
-    (rainbow-delimiters powerline counsel which-key use-package-chords use-package smex smartparens puppet-mode php-mode org-super-agenda org-bullets neotree multiple-cursors markdown-mode lua-mode json-mode ivy-hydra go-mode git-gutter expand-region exec-path-from-shell dockerfile-mode docker-compose-mode crontab-mode async anaconda-mode aggressive-indent ag ace-window))))

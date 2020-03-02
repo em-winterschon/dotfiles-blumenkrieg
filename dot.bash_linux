@@ -75,6 +75,10 @@ if [ $HOSTNAME = "fraulein" ] || [ $HOSTNAME = "flowers" ] || [ $HOSTNAME = "blu
     alias xrandr-connected='xrandr | grep -e " connected [^(]" | sed -e "s/\([A-Z0-9]\+\) connected.*/\1/"'
     alias xrandr-profile='cat ~/.xprofile'
 
+    ## Fuzzy Finder
+    FZF_DEFAULT_OPTS="--layout=reverse --inline-info"
+    FZF_DEFAULT_COMMAND='fd --type f'
+
     ## Start unique ssh-agent per shell instance
     eval "$(ssh-agent)"
 

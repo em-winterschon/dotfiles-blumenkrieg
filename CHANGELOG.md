@@ -1,3 +1,6 @@
+# 3.0.3
+- rather many emacs changes
+
 # 3.0.2
 - updating tmuxp configs
 

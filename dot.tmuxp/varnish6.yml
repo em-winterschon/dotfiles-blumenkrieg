@@ -1,12 +1,16 @@
 session_name: varnish6
 windows:
 - window_name: varnish6
-  layout: fbf1,273x79,0,0{90x79,0,0[90x51,0,0,18,90x27,0,52,41],90x79,91,0[90x51,91,0,21,90x27,91,52,42],91x79,182,0[91x51,182,0,40,91x27,182,52,43]}
+  #layout: fbf1,273x79,0,0{90x79,0,0[90x51,0,0,18,90x27,0,52,41],90x79,91,0[90x51,91,0,21,90x27,91,52,42],91x79,182,0[91x51,182,0,40,91x27,182,52,43]}
+  layout: tiled
   options_after:
       synchronize-panes: on
   panes:
   - shell_command:
-      - ssh perfadmin@test-sfo9940
+      - ssh perfadmin@test-sfo9930
+      - clear
+  - shell_command:
+      - ssh perfadmin@test-sfo9950
       - clear
   - shell_command:
       - ssh perfadmin@test-sfo9940
@@ -15,13 +19,10 @@ windows:
       - ssh perfadmin@test-sfo9941
       - clear
   - shell_command:
-      - ssh perfadmin@test-sfo9941
-      - clear
-  - shell_command:
       - ssh perfadmin@test-sfo9960
       - clear
   - shell_command:
-      - ssh perfadmin@test-sfo9960
+      - ssh perfadmin@test-sfo9970
       - clear
     focus: true
 

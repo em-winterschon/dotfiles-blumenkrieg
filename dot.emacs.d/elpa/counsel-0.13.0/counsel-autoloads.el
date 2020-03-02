@@ -6,9 +6,8 @@
                          (or (file-name-directory #$) (car load-path))))
 
 
-;;;### (autoloads nil "counsel" "../../../../../.emacs.d/elpa/counsel-0.13.0/counsel.el"
-;;;;;;  "0a6857a0c2c3415a87ad049203a2907a")
-;;; Generated autoloads from ../../../../../.emacs.d/elpa/counsel-0.13.0/counsel.el
+;;;### (autoloads nil "counsel" "counsel.el" (0 0 0 0))
+;;; Generated autoloads from counsel.el
 
 (autoload 'counsel-el "counsel" "\
 Elisp completion at point.
@@ -592,20 +591,8 @@ Local bindings (`counsel-mode-map'):
 \\{counsel-mode-map}
 
 \(fn &optional ARG)" t nil)
-
-;;;### (autoloads "actual autoloads are elsewhere" "counsel" "../../../../../.emacs.d/elpa/counsel-0.13.0/counsel.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../.emacs.d/elpa/counsel-0.13.0/counsel.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "counsel" '("counsel-" "tmm-km-list" "ivy-function-called-at-point")))
-
-;;;***
-
-;;;***
-
-;;;### (autoloads nil nil ("../../../../../.emacs.d/elpa/counsel-0.13.0/counsel-autoloads.el"
-;;;;;;  "../../../../../.emacs.d/elpa/counsel-0.13.0/counsel.el")
-;;;;;;  (0 0 0 0))
 
 ;;;***
 

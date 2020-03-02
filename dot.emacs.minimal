@@ -1,3 +1,10 @@
+;; UTF-8 support
+(prefer-coding-system       'utf-8)
+(set-default-coding-systems 'utf-8)
+(set-terminal-coding-system 'utf-8)
+(set-keyboard-coding-system 'utf-8)
+(setq x-select-request-type '(UTF8_STRING COMPOUND_TEXT TEXT STRING))
+
 (global-unset-key (kbd "C-z"))
 (setq make-backup-files nil)
 (setq backup-inhibited t)

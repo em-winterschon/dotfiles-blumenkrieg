@@ -67,7 +67,7 @@ ${color lightgrey} ${top name 8} ${top pid 8} ${top cpu 8} ${top mem 8}
 ${hr}
 ${color magenta}IPaddr [wired]:   ${color lightgrey}${addr eno1}
 ${color magenta}Up: ${color lightgrey}${upspeed eno1}/s ${upspeedgraph}
-${color magenta}Down: ${color lightgrey}${downspeed eno1/s} ${downspeedgraph}
+${color magenta}Down: ${color lightgrey}${downspeed eno1}/s ${downspeedgraph}
 ${color magenta}LAN Gateway:     ${color lightgrey}${execi 10 ~/.pingtest.sh 172.16.40.1}, ${tcp_ping 172.16.40.1} ms
 ${color magenta}SSH SFO-R101:    ${color lightgrey}${execi 10 ~/.pingtest.sh 8.18.217.142}, ${tcp_ping 8.18.217.142} ms
 ${color magenta}Host 1.1.1.1:    ${color lightgrey}${execi 10 ~/.pingtest.sh 1.1.1.1}, ${tcp_ping 1.1.1.1} ms

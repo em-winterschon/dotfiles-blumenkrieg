@@ -39,7 +39,7 @@ windows:
   - shell_command:
       - ssh perfadmin@test-sfo9930
       - clear
-      - varnishtop
+      - nicstat 2 -M -U -n
   - shell_command:
       - ssh perfadmin@test-sfo9930
       - clear

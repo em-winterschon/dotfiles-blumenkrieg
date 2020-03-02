@@ -6,17 +6,10 @@
                          (or (file-name-directory #$) (car load-path))))
 
 
-;;;### (autoloads "actual autoloads are elsewhere" "ivy-hydra" "../../../../../.emacs.d/elpa/ivy-hydra-0.13.0/ivy-hydra.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../.emacs.d/elpa/ivy-hydra-0.13.0/ivy-hydra.el
+;;;### (autoloads nil "ivy-hydra" "ivy-hydra.el" (0 0 0 0))
+;;; Generated autoloads from ivy-hydra.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ivy-hydra" '("ivy-" "hydra-ivy")))
-
-;;;***
-
-;;;### (autoloads nil nil ("../../../../../.emacs.d/elpa/ivy-hydra-0.13.0/ivy-hydra-autoloads.el"
-;;;;;;  "../../../../../.emacs.d/elpa/ivy-hydra-0.13.0/ivy-hydra.el")
-;;;;;;  (0 0 0 0))
 
 ;;;***
 

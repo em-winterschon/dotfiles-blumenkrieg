@@ -6,9 +6,8 @@
                          (or (file-name-directory #$) (car load-path))))
 
 
-;;;### (autoloads nil "hydra" "../../../../../.emacs.d/elpa/hydra-0.15.0/hydra.el"
-;;;;;;  "56e2dcbab97861c1f5ca98a5bb07dc0d")
-;;; Generated autoloads from ../../../../../.emacs.d/elpa/hydra-0.15.0/hydra.el
+;;;### (autoloads nil "hydra" "hydra.el" (0 0 0 0))
+;;; Generated autoloads from hydra.el
 
 (autoload 'defhydra "hydra" "\
 Create a Hydra - a family of functions with prefix NAME.
@@ -67,39 +66,27 @@ result of `defhydra'.
 (function-put 'defhydra 'lisp-indent-function 'defun)
 
 (function-put 'defhydra 'doc-string-elt '3)
-
-;;;### (autoloads "actual autoloads are elsewhere" "hydra" "../../../../../.emacs.d/elpa/hydra-0.15.0/hydra.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../.emacs.d/elpa/hydra-0.15.0/hydra.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "hydra" '("hydra-" "defhydra")))
 
 ;;;***
-
-;;;***
 
-;;;### (autoloads "actual autoloads are elsewhere" "hydra-examples"
-;;;;;;  "../../../../../.emacs.d/elpa/hydra-0.15.0/hydra-examples.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../.emacs.d/elpa/hydra-0.15.0/hydra-examples.el
+;;;### (autoloads nil "hydra-examples" "hydra-examples.el" (0 0 0
+;;;;;;  0))
+;;; Generated autoloads from hydra-examples.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "hydra-examples" '("hydra-" "org-agenda-cts" "whitespace-mode")))
 
 ;;;***
 
-;;;### (autoloads "actual autoloads are elsewhere" "hydra-ox" "../../../../../.emacs.d/elpa/hydra-0.15.0/hydra-ox.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../.emacs.d/elpa/hydra-0.15.0/hydra-ox.el
+;;;### (autoloads nil "hydra-ox" "hydra-ox.el" (0 0 0 0))
+;;; Generated autoloads from hydra-ox.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "hydra-ox" '("hydra-ox")))
 
 ;;;***
 
-;;;### (autoloads nil nil ("../../../../../.emacs.d/elpa/hydra-0.15.0/hydra-autoloads.el"
-;;;;;;  "../../../../../.emacs.d/elpa/hydra-0.15.0/hydra-examples.el"
-;;;;;;  "../../../../../.emacs.d/elpa/hydra-0.15.0/hydra-ox.el" "../../../../../.emacs.d/elpa/hydra-0.15.0/hydra-pkg.el"
-;;;;;;  "../../../../../.emacs.d/elpa/hydra-0.15.0/hydra.el") (0
-;;;;;;  0 0 0))
+;;;### (autoloads nil nil ("hydra-pkg.el") (0 0 0 0))
 
 ;;;***
 
