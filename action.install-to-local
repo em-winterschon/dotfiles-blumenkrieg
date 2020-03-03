@@ -3,7 +3,7 @@
 ## Name: action.install-to-local
 ## Purpose: copies relevant files into place according to rules/logic
 ## Author: EM Winterschon
-## Date: 2015-10-28
+## Date: 2020-03-02
 ################################################################################
 
 DATE=`date +'%s'`
@@ -19,6 +19,7 @@ dot.emacs.d
 dot.emacs.d-simple
 dot.emacs.minimal
 dot.emacs.simple
+dot.fzf
 dot.gconf
 dot.gitconfig
 dot.gitignore

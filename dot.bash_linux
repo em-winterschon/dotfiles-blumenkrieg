@@ -75,10 +75,6 @@ if [ $HOSTNAME = "fraulein" ] || [ $HOSTNAME = "flowers" ] || [ $HOSTNAME = "blu
     alias xrandr-connected='xrandr | grep -e " connected [^(]" | sed -e "s/\([A-Z0-9]\+\) connected.*/\1/"'
     alias xrandr-profile='cat ~/.xprofile'
 
-    ## Fuzzy Finder
-    FZF_DEFAULT_OPTS="--layout=reverse --inline-info"
-    FZF_DEFAULT_COMMAND='fd --type f'
-
     ## Start unique ssh-agent per shell instance
     eval "$(ssh-agent)"
 
@@ -125,8 +121,18 @@ function sedcolor(){
 	-e 's/\(.*[Ee]xception.*\)/\o033[1;39m\1\o033[0;39m/'
 }
 
-## import grc bash completions [DEPRECTED]
-#[[ -s "/etc/grc.bashrc" ]] && (echo "loading grc aliases" && source /etc/grc.bashrc)
-
 ## import tmux bash completions
 #[[ -f "~/.bash_tmux" ]] && (echo "loading tmux functions" && source ~/.bash_tmux)
+
+## Fuzzy Finder Environment
+if [[ ! "$PATH" == *$HOME/.fzf/bin* ]]; then
+  export PATH="${PATH:+${PATH}:}$HOME/.fzf/bin"
+fi
+
+# auto-completion + key bindings
+[[ $- == *i* ]] && source "$HOME/.fzf/shell/completion.bash" 2> /dev/null
+source "$HOME/.fzf/shell/key-bindings.bash"
+
+# customizations
+export FZF_DEFAULT_OPTS="--layout=reverse --inline-info"
+#FZF_DEFAULT_COMMAND='find -t f'
