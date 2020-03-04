@@ -1,6 +1,9 @@
+# 3.0.6
+- updated tmuxp envDev dashboards
+
 # 3.0.5
 - adding FZF support
-- adding updated envDevSet tmuxp dashboards
+- adding updated envDev tmuxp dashboards
 
 # 3.0.4
 - updated perfarch host file

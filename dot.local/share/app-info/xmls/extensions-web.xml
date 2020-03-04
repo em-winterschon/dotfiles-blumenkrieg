@@ -2716,7 +2716,7 @@
       </screenshot>
     </screenshots>
     <releases>
-      <release version="26"/>
+      <release version="27"/>
     </releases>
     <metadata>
       <value key="GnomeSoftware::OriginHostnameUrl">https://extensions.gnome.org/</value>
@@ -15223,7 +15223,7 @@
   <component type="shell-extension">
     <id>tint-all_amarovita.github.com</id>
     <name>Tint All</name>
-    <description><p>Colorize the entire gnome workspace. Amber, green, cyan, sepia and grayscale - just keep clicking extension icon. Scroll over extension icon to change fx level.</p></description>
+    <description><p>Colorize the entire gnome workspace. Amber, green, cyan, sepia and grayscale - just keep clicking extension icon. Scroll over extension icon to change fx level.</p><p>https://github.com/amarovita/tint-all/</p></description>
     <icon type="stock">application-x-addon-symbolic</icon>
     <project_license>GPL-2.0+</project_license>
     <url type="homepage">https://extensions.gnome.org/extension/1471/tint-all/</url>

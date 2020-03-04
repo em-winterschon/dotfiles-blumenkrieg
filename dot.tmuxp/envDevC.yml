@@ -13,9 +13,9 @@ windows:
       - clear
       - tail -f /tmp/queueExecSSH-loadgen9961.log | grcat conf.log
   - shell_command:
-      - ssh ux-dev-00.perftest.secretcdn.net
+      - ssh set-c-origin.perftest.secretcdn.net
       - clear
-      - follow /var/log/nginx/access.log | grep -v healthcheck | lnav
+      - follow /var/log/nginx/access.log | lnav
   - shell_command:
       - ssh ux-dev-00.perftest.secretcdn.net
       - clear
