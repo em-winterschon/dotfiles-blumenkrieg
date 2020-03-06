@@ -1,0 +1,61 @@
+session_name: env-set-stage-D
+windows:
+- window_name: env-set-stage-D
+  layout: 875f,264x97,0,0[264x29,0,0{132x29,0,0[132x17,0,0,106,132x11,0,18,107],131x29,133,0[131x17,133,0,108,131x11,133,18,109]},264x67,0,30{87x67,0,30[87x35,0,30,110,87x22,0,66,111,87x8,0,89,112],87x67,88,30[87x50,88,30,113,87x7,88,81,114,87x8,88,89,115],88x67,176,30[88x35,176,30,116,88x22,176,66,117,88x8,176,89,118]}]
+  panes:
+  - shell_command:
+      - ssh set-d-origin.perftest.secretcdn.net
+      - clear
+      - glances
+    focus: true
+  - shell_command:
+      - ssh ux-stage-00.perftest.secretcdn.net
+      - clear
+      - tail -f /tmp/queueExecSSH-loadgen9971.release-validation.log | grcat conf.log
+  - shell_command:
+      - ssh set-d-origin.perftest.secretcdn.net
+      - clear
+      - follow /var/log/nginx/access.log | lnav
+  - shell_command:
+      - ssh ux-stage-00.perftest.secretcdn.net
+      - clear
+      - tail -f /var/log/ansible.log | grcat conf.log
+  - shell_command:
+      - ssh set-d-varnish.perftest.secretcdn.net
+      - clear
+      - glances
+  - shell_command:
+      - ssh set-d-varnish.perftest.secretcdn.net
+      - clear
+      - htop
+  - shell_command:
+      - ssh set-d-varnish.perftest.secretcdn.net
+      - clear
+      - sudo tail -f /var/log/syslog | grep ansible
+  - shell_command:
+      - ssh set-d-varnish.perftest.secretcdn.net
+      - clear
+      - varnishstat
+  - shell_command:
+      - ssh set-d-varnish.perftest.secretcdn.net
+      - clear
+      - nicstat 2 -M -U -n
+  - shell_command:
+      - ssh set-d-varnish.perftest.secretcdn.net
+      - clear
+      - alias lognow='tail -f /var/log/syslog | egrep -v filebeat\|ganglia\|ntpd\|CRON\|chef-client\|timer\|dbus\|"Hostname Service"\|cron\|freedesktop\|Chef\|exporter'
+      - lognow
+  - shell_command:
+      - ssh set-d-loadgen.perftest.secretcdn.net
+      - glances
+  - shell_command:
+      - ssh set-d-loadgen.perftest.secretcdn.net
+      - htop
+  - shell_command:
+      - ssh set-d-loadgen.perftest.secretcdn.net
+      - clear
+      - sudo tail -f /var/log/syslog | grep ansible
+
+ # Layout Notes
+ # run to display active tmux session layout:
+ # $> tmux list-windows -F "#{window_active} #{window_layout}" | grep "^1" | cut -d " " -f 2

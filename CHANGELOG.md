@@ -1,3 +1,6 @@
+# 3.0.7
+- added tmux dashboards for envStage
+
 # 3.0.6
 - updated tmuxp envDev dashboards
 

@@ -1594,7 +1594,7 @@
       </screenshot>
     </screenshots>
     <releases>
-      <release version="64"/>
+      <release version="65"/>
     </releases>
     <metadata>
       <value key="GnomeSoftware::OriginHostnameUrl">https://extensions.gnome.org/</value>
@@ -3634,7 +3634,7 @@
       </screenshot>
     </screenshots>
     <releases>
-      <release version="40"/>
+      <release version="42"/>
     </releases>
     <metadata>
       <value key="GnomeSoftware::OriginHostnameUrl">https://extensions.gnome.org/</value>
@@ -3798,7 +3798,7 @@
       </screenshot>
     </screenshots>
     <releases>
-      <release version="3"/>
+      <release version="4"/>
     </releases>
     <metadata>
       <value key="GnomeSoftware::OriginHostnameUrl">https://extensions.gnome.org/</value>
@@ -13481,7 +13481,7 @@
       </screenshot>
     </screenshots>
     <releases>
-      <release version="9"/>
+      <release version="10"/>
     </releases>
     <metadata>
       <value key="GnomeSoftware::OriginHostnameUrl">https://extensions.gnome.org/</value>

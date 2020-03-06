@@ -39,7 +39,7 @@ windows:
       - ssh set-e-varnish.perftest.secretcdn.net
       - clear
   - shell_command:
-      - ssh set-f-origin.perftest.secretcdn.net
+      - ssh set-e-origin.perftest.secretcdn.net
       - clear
   - shell_command:
       - ssh set-f-loadgen.perftest.secretcdn.net
