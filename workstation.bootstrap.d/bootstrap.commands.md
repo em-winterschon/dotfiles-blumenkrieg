@@ -63,10 +63,12 @@ dconf load / < gnome3.desktop-init-prefs.conf
 ```
 yum update
 yum --enhancement --security distro-sync
-yum install -y tmux emacs-nox iotop nethogs htop snapd python3-devel NetworkManager-openvpn-gnome
-yum install -y gnome-tweaks libcurl-devel fio sysbench p7zip* mysql mysql-common mysql-devel
-yum install -y slack google-chrome-stable chromium ImageMagick7 jq python3-virtualenv
-yum install -y golang npm dpkg-dev ansible ansible-doc xclip
+yum install -y ansible ansible-doc
+yum install -y tmux emacs-nox iotop nethogs htop fio sysbench sysstat iperf3
+yum install -y gnome-tweaks NetworkManager-openvpn-gnome snapd xclip
+yum install -y libcurl-devel python3-devel python3-virtualenv python3-perf perf
+yum install -y p7zip* mysql mysql-common mysql-devel ImageMagick7 jq golang npm dpkg-dev
+yum install -y slack google-chrome-stable chromium
 ```
 
 ## Virtualization

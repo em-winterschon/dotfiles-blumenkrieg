@@ -1,0 +1,8 @@
+GRUB_TIMEOUT=5
+GRUB_DISTRIBUTOR="$(sed 's, release .*$,,g' /etc/system-release)"
+GRUB_DEFAULT=saved
+GRUB_DISABLE_SUBMENU=true
+GRUB_TERMINAL_OUTPUT="console"
+GRUB_CMDLINE_LINUX="crashkernel=auto resume=/dev/mapper/luks-1ee3a8c6-6d39-454e-8dba-e38404b976fc rd.luks.uuid=luks-6e852891-ef5b-4a2b-b023-653a8131ca2e rd.md.uuid=b6f33288:74c6035f:ded34248:110ce7ea rd.md.uuid=7b566e3c:d3639604:664add45:321ddc40 rd.luks.uuid=luks-1ee3a8c6-6d39-454e-8dba-e38404b976fc rd.md.uuid=b4394778:cd584942:7215e018:5c688bf0 rd.luks.uuid=luks-dfc9c64f-2e5a-4600-87ee-c41a70374f86 rd.md.uuid=2fa872e4:e7c0d0ce:03b710a6:080d871e intel_iommu=on iommu=pt rhgb quiet rd.driver.blacklist=nouveau nouveau.modeset=0 "
+GRUB_DISABLE_RECOVERY="true"
+GRUB_ENABLE_BLSCFG=true
