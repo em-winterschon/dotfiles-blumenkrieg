@@ -1,0 +1,7 @@
+#bintray--ookla-rhel - packages by  from Bintray
+[bintray--ookla-rhel]
+name=bintray--ookla-rhel
+baseurl=https://ookla.bintray.com/rhel
+gpgcheck=0
+repo_gpgcheck=0
+enabled=1

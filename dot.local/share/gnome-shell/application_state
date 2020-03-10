@@ -2,20 +2,22 @@
 <application-state>
   <context id="">
     <application id="org.gnome.FileRoller.desktop" score="1.5" last-seen="1583636530"/>
-    <application id="gnome-control-center.desktop" score="73.6904296875" last-seen="1583754523"/>
-    <application id="vivaldi-stable.desktop" score="6428.557861328125" last-seen="1583762798"/>
-    <application id="PyCharm.desktop" score="952.611328125" last-seen="1583715809"/>
-    <application id="slack.desktop" score="17760.079345703125" last-seen="1583760306"/>
+    <application id="gnome-control-center.desktop" score="123.6904296875" last-seen="1583870205"/>
+    <application id="vivaldi-stable.desktop" score="9237.557861328125" last-seen="1583870335"/>
+    <application id="PyCharm.desktop" score="2775.611328125" last-seen="1583866719"/>
+    <application id="firefox.desktop" score="10" last-seen="1583852941"/>
+    <application id="slack.desktop" score="24684.079345703125" last-seen="1583870287"/>
     <application id="org.gnome.Calculator.desktop" score="27.21875" last-seen="1583464016"/>
-    <application id="org.gnome.Nautilus.desktop" score="91.29248046875" last-seen="1583717035"/>
+    <application id="org.gnome.Nautilus.desktop" score="91.29248046875" last-seen="1583850070"/>
     <application id="eog.desktop" score="0.5" last-seen="1583714850"/>
     <application id="DataGrip.desktop" score="19.25" last-seen="1583533230"/>
-    <application id="chromium-browser.desktop" score="2476.753173828125" last-seen="1583754122"/>
-    <application id="org.gnome.gedit.desktop" score="64.30615234375" last-seen="1583636528"/>
-    <application id="spotify.desktop" score="204.13671875" last-seen="1583759716"/>
-    <application id="org.gnome.tweaks.desktop" score="11.285888671875" last-seen="1583589511"/>
+    <application id="keeperpasswordmanager.desktop" score="0" last-seen="0"/>
+    <application id="chromium-browser.desktop" score="3047.753173828125" last-seen="1583869319"/>
+    <application id="org.gnome.gedit.desktop" score="72.30615234375" last-seen="1583853158"/>
+    <application id="spotify.desktop" score="215.13671875" last-seen="1583847781"/>
+    <application id="org.gnome.tweaks.desktop" score="11.285888671875" last-seen="1583868021"/>
     <application id="virt-manager.desktop" score="3" last-seen="1583412466"/>
-    <application id="org.gnome.Terminal.desktop" score="19423.590087890625" last-seen="1583762797"/>
+    <application id="org.gnome.Terminal.desktop" score="22259.590087890625" last-seen="1583870286"/>
     <application id="evince.desktop" score="28.125" last-seen="1583716550"/>
   </context>
 </application-state>

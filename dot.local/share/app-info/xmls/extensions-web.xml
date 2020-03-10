@@ -315,7 +315,7 @@
       </screenshot>
     </screenshots>
     <releases>
-      <release version="25"/>
+      <release version="26"/>
     </releases>
     <metadata>
       <value key="GnomeSoftware::OriginHostnameUrl">https://extensions.gnome.org/</value>

@@ -1,3 +1,8 @@
+# 3.0.9
+- added utf-8 to locale settings in bash_linux
+- added speedtest repo for yum
+- updated configs for hotkeys
+
 # 3.0.8
 - updates... many
 

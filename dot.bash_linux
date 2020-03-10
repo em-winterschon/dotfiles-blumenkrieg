@@ -6,6 +6,23 @@ function tzone() {
     TZ="$1"/"$2" date;
 }
 
+## Use UTF-8 everywhere
+export LANG=en_US.utf8
+export LANGUAGE=en_US.utf8
+export LC_CTYPE="en_US.utf8"
+export LC_NUMERIC="en_US.utf8"
+export LC_TIME="en_US.utf8"
+export LC_COLLATE="en_US.utf8"
+export LC_MONETARY="en_US.utf8"
+export LC_MESSAGES="en_US.utf8"
+export LC_PAPER="en_US.utf8"
+export LC_NAME="en_US.utf8"
+export LC_ADDRESS="en_US.utf8"
+export LC_TELEPHONE="en_US.utf8"
+export LC_MEASUREMENT="en_US.utf8"
+export LC_IDENTIFICATION="en_US.utf8"
+export LC_ALL=en_US.utf8
+
 ## CentOS / RHEL specific
 alias y='sudo /bin/yum'
 alias yum='sudo /bin/yum'
@@ -98,17 +115,33 @@ if [ $HOSTNAME = "fraulein" ] || [ $HOSTNAME = "flowers" ] || [ $HOSTNAME = "blu
 
     # sfodev general
     alias tmuxLab='tmuxp load lab-connect'
-
-    # load-test infra
-    alias tmuxSetAdminA='tmuxp load setAdminA'
-    alias tmuxSetAdminB='tmuxp load setAdminB'
-    alias tmuxSetAdminC='tmuxp load setAdminC'
-    alias tmuxSetAdminD='tmuxp load setAdminD'
-    alias tmuxSetDevA='tmuxp load setDevA'
-    alias tmuxSetDevB='tmuxp load setDevB'
-    alias tmuxSetDevC='tmuxp load setDevC'
-    alias tmuxSetDevD='tmuxp load setDevD'
 fi
+
+## Tmux profiles for perf-test platform
+#
+# perfdev connections
+alias tmuxEnvDevA='tmuxp load envDevA'
+alias tmuxEnvDevB='tmuxp load envDevB'
+alias tmuxEnvDevC='tmuxp load envDevC'
+alias tmuxEnvDevD='tmuxp load envDevD'
+alias tmuxEnvDevE='tmuxp load envDevE'
+alias tmuxEnvDevF='tmuxp load envDevF'
+#
+# perfstage connections
+alias tmuxEnvStageA='tmuxp load envStageA'
+alias tmuxEnvStageB='tmuxp load envStageB'
+alias tmuxEnvStageC='tmuxp load envStageC'
+alias tmuxEnvStageD='tmuxp load envStageD'
+alias tmuxEnvStageE='tmuxp load envStageE'
+alias tmuxEnvStageF='tmuxp load envStageF'
+#
+# perfadmin connections
+alias tmuxEnvAdminA='tmuxp load envAdminA'
+alias tmuxEnvAdminB='tmuxp load envAdminB'
+alias tmuxEnvAdminC='tmuxp load envAdminC'
+alias tmuxEnvAdminD='tmuxp load envAdminD'
+alias tmuxEnvAdminE='tmuxp load envAdminE'
+alias tmuxEnvAdminF='tmuxp load envAdminF'
 
 ## sed colorization
 function sedcolor(){
@@ -135,4 +168,3 @@ source "$HOME/.fzf/shell/key-bindings.bash"
 
 # customizations
 export FZF_DEFAULT_OPTS="--layout=reverse --inline-info"
-#FZF_DEFAULT_COMMAND='find -t f'
