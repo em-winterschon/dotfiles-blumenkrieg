@@ -1,3 +1,6 @@
+# 3.1.0
+- adding shellcheck to workstation files
+
 # 3.0.9
 - added utf-8 to locale settings in bash_linux
 - added speedtest repo for yum

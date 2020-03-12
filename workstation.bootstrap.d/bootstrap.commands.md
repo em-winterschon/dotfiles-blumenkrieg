@@ -11,9 +11,9 @@ sudo systemctl set-default multi-user.target
 yum install elfutils-libelf-devel
 ```
 
-- add the following to /etc/default/grub
+- add the following to /etc/default/grub for SR-IOV and Nvidia
 ```
-rd.driver.blacklist=nouveau nouveau.modeset=0
+intel_iommu=on iommu=pt rd.driver.blacklist=nouveau nouveau.modeset=0
 ```
 
 - execute the following, then reboot, login as root and install the NVIDIA .run file
@@ -24,6 +24,12 @@ reboot
 
 ## Adaptec control app
 - copy from dotfiles/etc/binaries/arcconf /usr/local/bin/
+
+## Shellcheck files
+```
+sudo cp workstation.bootstrap.d/rootfs/usr/bin/shellcheck /usr/bin/shellcheck
+sudo cp -R workstation.bootstrap.d/rootfs/usr/share/shellcheck /usr/share/
+```
 
 ## Initial Web downloads for latest RPM files
 - keeper password manager

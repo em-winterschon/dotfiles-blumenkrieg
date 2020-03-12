@@ -16,87 +16,6 @@
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/mwinterschon/Pictures/Screenshot%20from%202020-02-09%2003-13-37.png" added="2020-02-09T11:13:56Z" modified="2020-02-09T11:14:03Z" visited="2020-02-09T11:13:57Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="image/png"/>
-        <bookmark:applications>
-          <bookmark:application name="gsd-media-keys" exec="&apos;gsd-media-keys %u&apos;" modified="2020-02-09T11:13:56Z" count="1"/>
-          <bookmark:application name="slack" exec="&apos;slack %u&apos;" modified="2020-02-09T11:14:03Z" count="1"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///home/mwinterschon/Desktop/switch-sfo9902.20200208.arista-config" added="2020-02-09T11:55:46Z" modified="2020-02-09T11:55:46Z" visited="2020-02-09T11:55:47Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="text/plain"/>
-        <bookmark:groups>
-          <bookmark:group>gedit</bookmark:group>
-        </bookmark:groups>
-        <bookmark:applications>
-          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2020-02-09T11:55:46Z" count="1"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///home/mwinterschon/Desktop/switch-sfo9902.20200208.stripped-updated" added="2020-02-09T12:01:27Z" modified="2020-02-09T19:42:03Z" visited="2020-02-09T12:01:27Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="text/plain"/>
-        <bookmark:groups>
-          <bookmark:group>gedit</bookmark:group>
-        </bookmark:groups>
-        <bookmark:applications>
-          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2020-02-09T19:42:03Z" count="3"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///home/mwinterschon/Pictures/Screenshot%20from%202020-02-09%2005-35-38.png" added="2020-02-09T13:35:53Z" modified="2020-02-09T13:35:53Z" visited="2020-02-09T13:35:53Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="image/png"/>
-        <bookmark:applications>
-          <bookmark:application name="gsd-media-keys" exec="&apos;gsd-media-keys %u&apos;" modified="2020-02-09T13:35:53Z" count="1"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///home/mwinterschon/Pictures/Screenshot%20from%202020-02-09%2006-03-35.png" added="2020-02-09T14:03:38Z" modified="2020-02-09T14:04:09Z" visited="2020-02-09T14:03:38Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="image/png"/>
-        <bookmark:applications>
-          <bookmark:application name="gsd-media-keys" exec="&apos;gsd-media-keys %u&apos;" modified="2020-02-09T14:03:38Z" count="1"/>
-          <bookmark:application name="slack" exec="&apos;slack %u&apos;" modified="2020-02-09T14:04:09Z" count="1"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///home/mwinterschon/Desktop/Avatars/_home/2018-05-10.jpg" added="2020-02-09T15:25:58Z" modified="2020-02-09T15:25:58Z" visited="2020-02-09T15:25:59Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="image/jpeg"/>
-        <bookmark:applications>
-          <bookmark:application name="chromium-browser" exec="&apos;chromium-browser %u&apos;" modified="2020-02-09T15:25:58Z" count="1"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///home/mwinterschon/Desktop/test-sfo9961-IntelSSD-info.txt" added="2020-02-09T15:45:00Z" modified="2020-02-09T19:42:01Z" visited="2020-02-09T15:45:00Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="text/plain"/>
-        <bookmark:groups>
-          <bookmark:group>gedit</bookmark:group>
-        </bookmark:groups>
-        <bookmark:applications>
-          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2020-02-09T19:42:01Z" count="3"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
   <bookmark href="file:///home/mwinterschon/Pictures/Screenshot%20from%202020-02-10%2010-34-22.png" added="2020-02-10T18:34:29Z" modified="2020-02-10T18:34:29Z" visited="2020-02-10T18:34:29Z">
     <info>
       <metadata owner="http://freedesktop.org">
@@ -2208,6 +2127,451 @@
         <bookmark:applications>
           <bookmark:application name="gsd-media-keys" exec="&apos;gsd-media-keys %u&apos;" modified="2020-03-10T18:58:36Z" count="1"/>
           <bookmark:application name="slack" exec="&apos;slack %u&apos;" modified="2020-03-10T18:58:55Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/mwinterschon/bin/binaries/tmux.3.0a" added="2020-03-10T20:23:05Z" modified="2020-03-10T20:23:05Z" visited="2020-03-10T20:23:05Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="slack" exec="&apos;slack %u&apos;" modified="2020-03-10T20:23:05Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/mwinterschon/bin/binaries/tmux.3.0a.xenial" added="2020-03-10T20:23:05Z" modified="2020-03-10T20:23:05Z" visited="2020-03-10T20:23:05Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="slack" exec="&apos;slack %u&apos;" modified="2020-03-10T20:23:05Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/mwinterschon/Desktop/envAdminD.yml" added="2020-03-10T20:54:28Z" modified="2020-03-11T10:05:07Z" visited="2020-03-10T20:54:29Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-yaml"/>
+        <bookmark:applications>
+          <bookmark:application name="slack" exec="&apos;slack %u&apos;" modified="2020-03-11T10:05:07Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/mwinterschon/Pictures/Screenshot%20from%202020-03-10%2014-03-17.png" added="2020-03-10T21:03:17Z" modified="2020-03-11T10:03:18Z" visited="2020-03-10T21:03:18Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="gsd-media-keys" exec="&apos;gsd-media-keys %u&apos;" modified="2020-03-10T21:03:17Z" count="1"/>
+          <bookmark:application name="slack" exec="&apos;slack %u&apos;" modified="2020-03-11T10:03:18Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/mwinterschon/Pictures/Screenshot%20from%202020-03-10%2014-29-33.png" added="2020-03-10T21:29:38Z" modified="2020-03-10T21:29:38Z" visited="2020-03-10T21:29:38Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="gsd-media-keys" exec="&apos;gsd-media-keys %u&apos;" modified="2020-03-10T21:29:38Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/mwinterschon/Desktop/standup.strace.txt" added="2020-03-11T03:40:09Z" modified="2020-03-11T03:40:09Z" visited="2020-03-11T03:40:09Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:applications>
+          <bookmark:application name="slack" exec="&apos;slack %u&apos;" modified="2020-03-11T03:40:09Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/mwinterschon/Pictures/Screenshot%20from%202020-03-11%2003-19-36.png" added="2020-03-11T10:19:46Z" modified="2020-03-11T10:25:44Z" visited="2020-03-11T10:19:46Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="gsd-media-keys" exec="&apos;gsd-media-keys %u&apos;" modified="2020-03-11T10:19:46Z" count="1"/>
+          <bookmark:application name="slack" exec="&apos;slack %u&apos;" modified="2020-03-11T10:25:44Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/mwinterschon/Pictures/Screenshot%20from%202020-03-11%2003-19-51.png" added="2020-03-11T10:19:55Z" modified="2020-03-11T10:25:49Z" visited="2020-03-11T10:19:55Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="gsd-media-keys" exec="&apos;gsd-media-keys %u&apos;" modified="2020-03-11T10:19:55Z" count="1"/>
+          <bookmark:application name="slack" exec="&apos;slack %u&apos;" modified="2020-03-11T10:25:49Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/mwinterschon/Pictures/Screenshot%20from%202020-03-11%2003-21-59.png" added="2020-03-11T10:22:05Z" modified="2020-03-11T10:25:54Z" visited="2020-03-11T10:22:05Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="gsd-media-keys" exec="&apos;gsd-media-keys %u&apos;" modified="2020-03-11T10:22:05Z" count="1"/>
+          <bookmark:application name="slack" exec="&apos;slack %u&apos;" modified="2020-03-11T10:25:54Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/mwinterschon/Pictures/Screenshot%20from%202020-03-11%2003-22-41.png" added="2020-03-11T10:22:46Z" modified="2020-03-11T10:26:00Z" visited="2020-03-11T10:22:46Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="gsd-media-keys" exec="&apos;gsd-media-keys %u&apos;" modified="2020-03-11T10:22:46Z" count="1"/>
+          <bookmark:application name="slack" exec="&apos;slack %u&apos;" modified="2020-03-11T10:26:00Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/mwinterschon/Pictures/Screenshot%20from%202020-03-11%2003-22-55.png" added="2020-03-11T10:22:59Z" modified="2020-03-11T10:26:04Z" visited="2020-03-11T10:22:59Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="gsd-media-keys" exec="&apos;gsd-media-keys %u&apos;" modified="2020-03-11T10:22:59Z" count="1"/>
+          <bookmark:application name="slack" exec="&apos;slack %u&apos;" modified="2020-03-11T10:26:04Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/mwinterschon/Desktop/perfdev.hosts.secretcdn.net.cert.before.txt" added="2020-03-11T11:40:40Z" modified="2020-03-11T11:51:58Z" visited="2020-03-11T11:40:40Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="chromium-browser" exec="&apos;chromium-browser %u&apos;" modified="2020-03-11T11:40:40Z" count="1"/>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2020-03-11T11:40:50Z" count="1"/>
+          <bookmark:application name="slack" exec="&apos;slack %u&apos;" modified="2020-03-11T11:51:58Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/mwinterschon/Desktop/perfadmin.hosts.secretcdn.net.cert.before.txt" added="2020-03-11T11:42:54Z" modified="2020-03-11T11:42:54Z" visited="2020-03-11T11:42:54Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:applications>
+          <bookmark:application name="chromium-browser" exec="&apos;chromium-browser %u&apos;" modified="2020-03-11T11:42:54Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/mwinterschon/Desktop/perfstage.hosts.secretcdn.net.cert.before.txt" added="2020-03-11T11:43:39Z" modified="2020-03-11T11:43:39Z" visited="2020-03-11T11:43:39Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:applications>
+          <bookmark:application name="chromium-browser" exec="&apos;chromium-browser %u&apos;" modified="2020-03-11T11:43:39Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/mwinterschon/Pictures/Screenshot%20from%202020-03-11%2004-49-09.png" added="2020-03-11T11:49:15Z" modified="2020-03-11T11:51:41Z" visited="2020-03-11T11:49:15Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="gsd-media-keys" exec="&apos;gsd-media-keys %u&apos;" modified="2020-03-11T11:49:15Z" count="1"/>
+          <bookmark:application name="slack" exec="&apos;slack %u&apos;" modified="2020-03-11T11:51:41Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/mwinterschon/Pictures/Screenshot%20from%202020-03-11%2004-49-19.png" added="2020-03-11T11:49:22Z" modified="2020-03-11T11:51:41Z" visited="2020-03-11T11:49:22Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="gsd-media-keys" exec="&apos;gsd-media-keys %u&apos;" modified="2020-03-11T11:49:22Z" count="1"/>
+          <bookmark:application name="slack" exec="&apos;slack %u&apos;" modified="2020-03-11T11:51:41Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/mwinterschon/Pictures/Screenshot%20from%202020-03-11%2004-49-28.png" added="2020-03-11T11:49:31Z" modified="2020-03-11T11:51:41Z" visited="2020-03-11T11:49:31Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="gsd-media-keys" exec="&apos;gsd-media-keys %u&apos;" modified="2020-03-11T11:49:31Z" count="1"/>
+          <bookmark:application name="slack" exec="&apos;slack %u&apos;" modified="2020-03-11T11:51:41Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/mwinterschon/Desktop/perfdev.hosts.secretcdn.net.cert.SNA.txt" added="2020-03-11T11:50:27Z" modified="2020-03-11T11:52:02Z" visited="2020-03-11T11:50:27Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:applications>
+          <bookmark:application name="chromium-browser" exec="&apos;chromium-browser %u&apos;" modified="2020-03-11T11:50:27Z" count="1"/>
+          <bookmark:application name="slack" exec="&apos;slack %u&apos;" modified="2020-03-11T11:52:02Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/mwinterschon/Pictures/Screenshot%20from%202020-03-11%2004-54-20.png" added="2020-03-11T11:54:23Z" modified="2020-03-11T11:54:23Z" visited="2020-03-11T11:54:23Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="gsd-media-keys" exec="&apos;gsd-media-keys %u&apos;" modified="2020-03-11T11:54:23Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/mwinterschon/Pictures/Screenshot%20from%202020-03-11%2004-54-26.png" added="2020-03-11T11:54:31Z" modified="2020-03-11T11:58:35Z" visited="2020-03-11T11:54:31Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="gsd-media-keys" exec="&apos;gsd-media-keys %u&apos;" modified="2020-03-11T11:54:31Z" count="1"/>
+          <bookmark:application name="slack" exec="&apos;slack %u&apos;" modified="2020-03-11T11:58:35Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/mwinterschon/Pictures/Screenshot%20from%202020-03-11%2004-54-34.png" added="2020-03-11T11:54:38Z" modified="2020-03-11T11:58:35Z" visited="2020-03-11T11:54:38Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="gsd-media-keys" exec="&apos;gsd-media-keys %u&apos;" modified="2020-03-11T11:54:38Z" count="1"/>
+          <bookmark:application name="slack" exec="&apos;slack %u&apos;" modified="2020-03-11T11:58:35Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/mwinterschon/Pictures/Screenshot%20from%202020-03-11%2004-54-42.png" added="2020-03-11T11:54:48Z" modified="2020-03-11T11:58:35Z" visited="2020-03-11T11:54:48Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="gsd-media-keys" exec="&apos;gsd-media-keys %u&apos;" modified="2020-03-11T11:54:48Z" count="1"/>
+          <bookmark:application name="slack" exec="&apos;slack %u&apos;" modified="2020-03-11T11:58:35Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/mwinterschon/Pictures/Screenshot%20from%202020-03-11%2004-56-12.png" added="2020-03-11T11:56:16Z" modified="2020-03-11T11:58:35Z" visited="2020-03-11T11:56:16Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="gsd-media-keys" exec="&apos;gsd-media-keys %u&apos;" modified="2020-03-11T11:56:16Z" count="1"/>
+          <bookmark:application name="slack" exec="&apos;slack %u&apos;" modified="2020-03-11T11:58:35Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/mwinterschon/Pictures/Screenshot%20from%202020-03-11%2004-56-19.png" added="2020-03-11T11:56:23Z" modified="2020-03-11T11:58:35Z" visited="2020-03-11T11:56:24Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="gsd-media-keys" exec="&apos;gsd-media-keys %u&apos;" modified="2020-03-11T11:56:23Z" count="1"/>
+          <bookmark:application name="slack" exec="&apos;slack %u&apos;" modified="2020-03-11T11:58:35Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/mwinterschon/Pictures/Screenshot%20from%202020-03-11%2004-57-09.png" added="2020-03-11T11:57:14Z" modified="2020-03-11T11:58:35Z" visited="2020-03-11T11:57:14Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="gsd-media-keys" exec="&apos;gsd-media-keys %u&apos;" modified="2020-03-11T11:57:14Z" count="1"/>
+          <bookmark:application name="slack" exec="&apos;slack %u&apos;" modified="2020-03-11T11:58:35Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/mwinterschon/Desktop/perfdev.hosts.secretcdn.net.crt" added="2020-03-11T12:08:33Z" modified="2020-03-11T12:20:45Z" visited="2020-03-11T12:08:34Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pkix-cert"/>
+        <bookmark:applications>
+          <bookmark:application name="chromium-browser" exec="&apos;chromium-browser %u&apos;" modified="2020-03-11T12:20:45Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/mwinterschon/Pictures/Screenshot%20from%202020-03-11%2006-21-56.png" added="2020-03-11T13:22:09Z" modified="2020-03-11T13:23:22Z" visited="2020-03-11T13:22:09Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="gsd-media-keys" exec="&apos;gsd-media-keys %u&apos;" modified="2020-03-11T13:22:09Z" count="1"/>
+          <bookmark:application name="slack" exec="&apos;slack %u&apos;" modified="2020-03-11T13:23:22Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/mwinterschon/Desktop/Dynect_%20Uptime%20is%20the%20Bottom%20Line.pdf" added="2020-03-11T15:09:58Z" modified="2020-03-11T15:09:58Z" visited="2020-03-11T15:09:58Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="chromium-browser" exec="&apos;chromium-browser %u&apos;" modified="2020-03-11T15:09:58Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/mwinterschon/Desktop/newzone.txt" added="2020-03-11T15:15:49Z" modified="2020-03-11T15:15:49Z" visited="2020-03-11T15:15:49Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2020-03-11T15:15:49Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/mwinterschon/Documents/Data/Profiles/Avatars/profile-blue-dress.jpg" added="2020-03-11T19:15:02Z" modified="2020-03-11T19:15:02Z" visited="2020-03-11T19:15:02Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="vivaldi-stable" exec="&apos;vivaldi-stable %u&apos;" modified="2020-03-11T19:15:02Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/mwinterschon/Documents/Data/Profiles/Avatars/_home/Photo_on_4-27-18_at_11_01.jpg" added="2020-03-11T19:43:15Z" modified="2020-03-11T19:43:15Z" visited="2020-03-11T19:43:15Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="slack" exec="&apos;slack %u&apos;" modified="2020-03-11T19:43:15Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/mwinterschon/Pictures/Screenshot%20from%202020-03-11%2014-31-15.png" added="2020-03-11T21:31:20Z" modified="2020-03-11T21:31:32Z" visited="2020-03-11T21:31:20Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="gsd-media-keys" exec="&apos;gsd-media-keys %u&apos;" modified="2020-03-11T21:31:20Z" count="1"/>
+          <bookmark:application name="slack" exec="&apos;slack %u&apos;" modified="2020-03-11T21:31:32Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/mwinterschon/Desktop/perfadmin.hosts.secretcdn.net.crt" added="2020-03-11T22:40:52Z" modified="2020-03-11T22:41:02Z" visited="2020-03-11T22:40:52Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pkix-cert"/>
+        <bookmark:applications>
+          <bookmark:application name="chromium-browser" exec="&apos;chromium-browser %u&apos;" modified="2020-03-11T22:40:52Z" count="1"/>
+          <bookmark:application name="slack" exec="&apos;slack %u&apos;" modified="2020-03-11T22:41:02Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/mwinterschon/Desktop/test-sfo9960.varnish.out.txt" added="2020-03-11T23:24:02Z" modified="2020-03-11T23:24:11Z" visited="2020-03-11T23:24:03Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2020-03-11T23:24:03Z" count="2"/>
+          <bookmark:application name="slack" exec="&apos;slack %u&apos;" modified="2020-03-11T23:24:11Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/mwinterschon/Pictures/Screenshot%20from%202020-03-12%2003-58-31.png" added="2020-03-12T10:58:38Z" modified="2020-03-12T10:59:44Z" visited="2020-03-12T10:58:39Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="gsd-media-keys" exec="&apos;gsd-media-keys %u&apos;" modified="2020-03-12T10:58:38Z" count="1"/>
+          <bookmark:application name="slack" exec="&apos;slack %u&apos;" modified="2020-03-12T10:59:44Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/mwinterschon/Pictures/Screenshot%20from%202020-03-12%2003-58-50.png" added="2020-03-12T10:58:57Z" modified="2020-03-12T11:01:35Z" visited="2020-03-12T10:58:57Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="gsd-media-keys" exec="&apos;gsd-media-keys %u&apos;" modified="2020-03-12T10:58:57Z" count="1"/>
+          <bookmark:application name="slack" exec="&apos;slack %u&apos;" modified="2020-03-12T11:01:35Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/mwinterschon/Pictures/Screenshot%20from%202020-03-12%2004-40-26.png" added="2020-03-12T11:40:34Z" modified="2020-03-12T11:41:43Z" visited="2020-03-12T11:40:34Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="gsd-media-keys" exec="&apos;gsd-media-keys %u&apos;" modified="2020-03-12T11:40:34Z" count="1"/>
+          <bookmark:application name="slack" exec="&apos;slack %u&apos;" modified="2020-03-12T11:41:43Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/mwinterschon/Pictures/Screenshot%20from%202020-03-12%2005-12-00.png" added="2020-03-12T12:12:04Z" modified="2020-03-12T12:12:30Z" visited="2020-03-12T12:12:04Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="gsd-media-keys" exec="&apos;gsd-media-keys %u&apos;" modified="2020-03-12T12:12:04Z" count="1"/>
+          <bookmark:application name="slack" exec="&apos;slack %u&apos;" modified="2020-03-12T12:12:30Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/mwinterschon/Downloads/PyCharm-license-file_V2T1GWHC84.txt" added="2020-03-12T13:19:01Z" modified="2020-03-12T13:19:01Z" visited="2020-03-12T13:19:01Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:applications>
+          <bookmark:application name="keeperpasswordmanager" exec="&apos;keeperpasswordmanager %u&apos;" modified="2020-03-12T13:19:01Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/mwinterschon/Downloads/MarkdownNavigator-license-file_EAJ2S9IBKB.txt" added="2020-03-12T13:20:45Z" modified="2020-03-12T13:20:45Z" visited="2020-03-12T13:20:45Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:applications>
+          <bookmark:application name="keeperpasswordmanager" exec="&apos;keeperpasswordmanager %u&apos;" modified="2020-03-12T13:20:45Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/mwinterschon/Downloads/OrchidIDE-ansible-license-file_0MQ2RJP6JL.zip" added="2020-03-12T13:24:43Z" modified="2020-03-12T13:24:43Z" visited="2020-03-12T13:24:44.017278Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/zip"/>
+        <bookmark:applications>
+          <bookmark:application name="keeperpasswordmanager" exec="&apos;keeperpasswordmanager %u&apos;" modified="2020-03-12T13:24:43Z" count="1"/>
         </bookmark:applications>
       </metadata>
     </info>
