@@ -1,0 +1,59 @@
+session_name: lt-varnish-setC
+windows:
+- window_name: lt-varnish-setC
+  layout: df55,268x94,0,0[268x29,0,0{92x29,0,0,143,83x29,93,0,158,91x29,177,0,145},268x64,0,30{92x64,0,30[92x32,0,30,147,92x31,0,63,148],45x64,93,30[45x42,93,30,150,45x7,93,73,161,45x13,93,81,151],129x64,139,30[129x32,139,30{45x32,139,30,153,83x32,185,30,159},129x31,139,63{45x31,139,63,154,83x31,185,63,160}]}]
+  options_after:
+      synchronize-panes: on
+  panes:
+  - shell_command:
+      - ssh set-c-loadgen.perftest.secretcdn.net
+      - cd ~/lt-ansible-loadgen/fast.test-sfo9960/lnx-perf-iteration-arch/lt-testbed/wrk2
+      - clear
+      - echo "./lt-wrk2-worker.sh --set C --rate 1024 -c 1024 -t 64"
+  - shell_command:
+      - ssh set-c-varnish.perftest.secretcdn.net
+      - clear
+      - sctl status varnish --no-pager
+      - echo "sctl start vtc-loader"
+    focus: true
+  - shell_command:
+      - ssh set-c-origin.perftest.secretcdn.net
+      - clear
+      - follow /var/log/nginx/access.log | lnav
+  - shell_command:
+      - ssh set-c-varnish.perftest.secretcdn.net
+      - clear
+      - varnishlog -o -c
+  - shell_command:
+      - ssh set-c-varnish.perftest.secretcdn.net
+      - clear
+      - varnishlog -o -b
+  - shell_command:
+      - ssh set-c-varnish.perftest.secretcdn.net
+      - clear
+      - varnishstat
+  - shell_command:
+      - ssh set-c-varnish.perftest.secretcdn.net
+      - clear
+      - nicstat 2 -M -U -n
+  - shell_command:
+      - ssh set-c-varnish.perftest.secretcdn.net
+      - source .bash_varnish
+      - clear
+      - lognow
+  - shell_command:
+      - ssh set-c-loadgen.perftest.secretcdn.net
+      - glances
+  - shell_command:
+      - ssh set-c-loadgen.perftest.secretcdn.net
+      - htop
+  - shell_command:
+      - ssh set-c-varnish.perftest.secretcdn.net
+      - glances
+  - shell_command:
+      - ssh set-c-varnish.perftest.secretcdn.net
+      - htop
+
+# Layout Notes
+# run to display active tmux session layout:
+# $> tmux list-windows -F "#{window_active} #{window_layout}" | grep "^1" | cut -d " " -f 2

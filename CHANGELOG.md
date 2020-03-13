@@ -1,3 +1,6 @@
+# 3.1.1
+- added lt-varnish-setC tmuxp dashboard
+
 # 3.1.0
 - adding shellcheck to workstation files
 
