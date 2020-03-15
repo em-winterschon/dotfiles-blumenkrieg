@@ -2302,7 +2302,7 @@
   <component type="shell-extension">
     <id>SomaFm-Radio_alireza6677.gmail.com</id>
     <name>SomaFm internet radio</name>
-    <description><p>Listen to SomaFm free internet radio using Gnome * Featues:</p><p>- 32 Channels - Volume slider - Favorites menu - Good sound quality - Supports most gnome-shell versions - Channel logos</p><p></p><p>* Requirements: - Gstreamer: You need to install gstreamer and multimedia codecs/plugins for your distro.</p></description>
+    <description><p>Listen to SomaFm free internet radio using Gnome</p><p>* Featues: - 32 Channels - Volume slider - Favorites menu - Good sound quality - Supports most gnome-shell versions - Channel logos</p><p></p><p>* Requirements: - Gstreamer + Plugins:     You need to install &apos;gstreamer&apos; and multimedia codecs and &apos;plugins&apos; for your distro.</p></description>
     <icon type="stock">application-x-addon-symbolic</icon>
     <project_license>GPL-2.0+</project_license>
     <url type="homepage">https://extensions.gnome.org/extension/1237/somafm-internet-radio/</url>
@@ -2312,7 +2312,7 @@
       </screenshot>
     </screenshots>
     <releases>
-      <release version="24"/>
+      <release version="22"/>
     </releases>
     <metadata>
       <value key="GnomeSoftware::OriginHostnameUrl">https://extensions.gnome.org/</value>
@@ -6191,7 +6191,7 @@
   <component type="shell-extension">
     <id>drop-down-terminal-x_bigbn.pro</id>
     <name>Drop Down Terminal X</name>
-    <description><p>A GNOME Shell drop down terminal with extra feautures.</p><p>▒█▀▀▄ ▒█▀▀▄ ▀▀█▀▀ ▀▄▒▄▀  ▒█░▒█ ▒█░▒█ ░▒█░░ ░▒█░░  ▒█▄▄▀ ▒█▄▄▀ ░▒█░░ ▄▀▒▀▄</p><p>Includes: tabs, multi-monitor, font scaling support; [Focus out] / [Escape pressed] events for hide.</p><p>February 2020 updates: - Multi monitor enhancements - Workarea of current monitor for maximized mode</p><p>January 2020 updates: - Fixed fullscreen window priority - Keybinding to maximize terminal window; - Keybinding to manually focus terminal window; - Scrolling the volume indicator not affecting terminal;</p><p>November 2019 updates: - Added support for the ~/.ssh/config file. Now you can get quick access to any your ssh host in one click; - Added support for ~/.config/drop-down-terminal-x/shortcuts file Now you can define any action that will become available in a special drop-down list for quick launch. This small improvement can improve your productivity See file format at https://github.com/bigbn/drop-down-terminal-x - Added option to prevent terminal jumps down to the bottom on long command output</p><p>Special thanks to: - Osman Alperen Elhan (https://github.com/oae) - Balder Claassen (https://github.com/balderclaassen) - Adrien Pyke (https://github.com/kufii) - Alan J Carvajal (https://github.com/ajcarvajal) - Massimo Mund (https://github.com/masmu) - Jakub Żywiec (https://github.com/jakubzet) - Mattias Eriksson (https://github.com/snaggen) for active contribution.</p><p>Based on original extension &quot;gs-extensions-drop-down-terminal&quot; from Stéphane Démurget (https://github.com/zzrough)</p></description>
+    <description><p>A GNOME Shell drop down terminal with extra feautures.</p><p>▒█▀▀▄ ▒█▀▀▄ ▀▀█▀▀ ▀▄▒▄▀  ▒█░▒█ ▒█░▒█ ░▒█░░ ░▒█░░  ▒█▄▄▀ ▒█▄▄▀ ░▒█░░ ▄▀▒▀▄</p><p>Includes: tabs, multi-monitor, font scaling support; [Focus out] / [Escape pressed] events for hide.</p><p>March 2020 updates: - Gnome 3.36 support - &quot;Open in current directory&quot; option</p><p>February 2020 updates: - Multi monitor enhancements - Workarea of current monitor for maximized mode</p><p>January 2020 updates: - Fixed fullscreen window priority - Keybinding to maximize terminal window; - Keybinding to manually focus terminal window; - Scrolling the volume indicator not affecting terminal;</p><p>November 2019 updates: - Added support for the ~/.ssh/config file. Now you can get quick access to any your ssh host in one click; - Added support for ~/.config/drop-down-terminal-x/shortcuts file Now you can define any action that will become available in a special drop-down list for quick launch. This small improvement can improve your productivity See file format at https://github.com/bigbn/drop-down-terminal-x - Added option to prevent terminal jumps down to the bottom on long command output</p><p>Special thanks to: - Osman Alperen Elhan (https://github.com/oae) - Balder Claassen (https://github.com/balderclaassen) - Adrien Pyke (https://github.com/kufii) - Alan J Carvajal (https://github.com/ajcarvajal) - Massimo Mund (https://github.com/masmu) - Jakub Żywiec (https://github.com/jakubzet) - Mattias Eriksson (https://github.com/snaggen) for active contribution.</p><p>Based on original extension &quot;gs-extensions-drop-down-terminal&quot; from Stéphane Démurget (https://github.com/zzrough)</p></description>
     <icon type="stock">application-x-addon-symbolic</icon>
     <project_license>GPL-2.0+</project_license>
     <url type="homepage">https://extensions.gnome.org/extension/1509/drop-down-terminal-x/</url>
@@ -6201,7 +6201,7 @@
       </screenshot>
     </screenshots>
     <releases>
-      <release version="12"/>
+      <release version="13"/>
     </releases>
     <metadata>
       <value key="GnomeSoftware::OriginHostnameUrl">https://extensions.gnome.org/</value>
@@ -9964,7 +9964,7 @@
       </screenshot>
     </screenshots>
     <releases>
-      <release version="35"/>
+      <release version="36"/>
     </releases>
     <metadata>
       <value key="GnomeSoftware::OriginHostnameUrl">https://extensions.gnome.org/</value>
@@ -11029,7 +11029,7 @@
     <url type="homepage">https://extensions.gnome.org/extension/1276/night-light-slider/</url>
     <screenshots>
       <screenshot type="default">
-        <image type="source">https://extensions.gnome.org/extension-data/screenshots/screenshot_1276_6JtsuQh.png</image>
+        <image type="source">https://extensions.gnome.org/extension-data/screenshots/screenshot_1276_gNya1IO.png</image>
       </screenshot>
     </screenshots>
     <releases>
@@ -14305,7 +14305,7 @@
       </screenshot>
     </screenshots>
     <releases>
-      <release version="26"/>
+      <release version="28"/>
     </releases>
     <metadata>
       <value key="GnomeSoftware::OriginHostnameUrl">https://extensions.gnome.org/</value>
@@ -15854,8 +15854,8 @@
   </component>
   <component type="shell-extension">
     <id>unblank_sun.wxg_gmail.com</id>
-    <name>Unblank screen saver</name>
-    <description><p>Unblank screen when screen saver becomes active. </p><p> After you install extension, the extension will become enable. If you want to disable extension, you need to delete this extension or go to this extension settings to turn off switch.</p></description>
+    <name>Unblank lock screen</name>
+    <description><p>Unblank lock screen. </p><p> After you install this extension, the extension will be enabled by default. If you want to disable this extension, you need to delete this extension or go to this extension settings to turn off switch.</p></description>
     <icon type="stock">application-x-addon-symbolic</icon>
     <project_license>GPL-2.0+</project_license>
     <url type="homepage">https://extensions.gnome.org/extension/1414/unblank/</url>
@@ -15966,8 +15966,8 @@
   </component>
   <component type="shell-extension">
     <id>unlockDialogBackground_sun.wxg_gmail.com</id>
-    <name>Unlock dialog background</name>
-    <description><p>Change unlock dialog background. You can change background picture from extension settings. If you use Ubuntu, install package gir1.2-clutter-1.0 first.</p></description>
+    <name>Lock screen background</name>
+    <description><p>Change lock screen background. If you use Ubuntu, install package gir1.2-clutter-1.0 first.</p></description>
     <icon type="stock">application-x-addon-symbolic</icon>
     <project_license>GPL-2.0+</project_license>
     <url type="homepage">https://extensions.gnome.org/extension/1476/unlock-dialog-background/</url>

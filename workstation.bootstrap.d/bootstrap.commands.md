@@ -70,11 +70,16 @@ dconf load / < gnome3.desktop-init-prefs.conf
 yum update
 yum --enhancement --security distro-sync
 yum install -y ansible ansible-doc
-yum install -y tmux emacs-nox iotop nethogs htop fio sysbench sysstat iperf3
-yum install -y gnome-tweaks NetworkManager-openvpn-gnome snapd xclip speedtest
+yum install -y tmux emacs-nox iotop nethogs htop fio sysbench sysstat iperf3 tree
+yum install -y gnome-tweaks NetworkManager-openvpn-gnome snapd xclip speedtest dconf-editor
 yum install -y libcurl-devel python3-devel python3-virtualenv python3-perf perf
 yum install -y p7zip* mysql mysql-common mysql-devel ImageMagick7 jq golang npm dpkg-dev
 yum install -y slack google-chrome-stable chromium
+```
+
+## NetData
+```
+installers/netdata-installer.sh --non-interactive --disable-telemetry
 ```
 
 ## Virtualization

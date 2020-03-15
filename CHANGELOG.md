@@ -1,3 +1,6 @@
+# 3.1.2
+- added NetData installer and command to bootstrap
+
 # 3.1.1
 - added lt-varnish-setC tmuxp dashboard
 
